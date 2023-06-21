@@ -1,0 +1,52 @@
+/* dashboard-layout.component.css */
+
+.container-fluid {
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.row {
+  height: 100%; /* Make the row take up the full height of the container */
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* Additional styling for sidebar menu */
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-menu li a:hover {
+  color: #000;
+  font-weight: bold;
+}

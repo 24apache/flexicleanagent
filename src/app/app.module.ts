@@ -3,14 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './auth/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { ReportsComponent } from './components/reports/reports.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { WalletComponent } from './components/wallet/wallet.component';
+import { CustomersComponent } from './components/customers/customers.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { CreateComponent } from './components/orders/create/create.component';
+import { AccountComponent } from './components/account/account.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardComponent,
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent,
+    ReportsComponent,
+    SettingsComponent,
+    WalletComponent,
+    CustomersComponent,
+    OrdersComponent,
+    CreateComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
