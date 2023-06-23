@@ -9,6 +9,7 @@ import { OrdersComponent } from './components/orders/orders.component';
 // import { CreateComponent } from './components/orders/create/create.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { WalletComponent } from './components/wallet/wallet.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -16,7 +17,7 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
     children: [
-      // { path: '', redirectTo: 'reports', pathMatch: 'full' },
+      { path: '', component: HomeComponent },
       { path: 'account', component: AccountComponent },
       { path: 'orders', component: OrdersComponent },
       { path: 'customers', component: CustomersComponent },
