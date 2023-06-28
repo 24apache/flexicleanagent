@@ -20,7 +20,7 @@
 }
 
 
-.bg-login-image {
+.bg-verify-image {
     background: url("/src/assets/images/auth.png") no-repeat;
     background-position: center;
     background-size: 25rem;
@@ -76,11 +76,10 @@
   }
 
 
-  .p-welcome{
-    font-size: inherit;
-    font-family: "Poppins, Regular";
+  .verifyed{
+    margin-top: 5rem;
   }
 
-  .f-password{
-    color: #7E56DA;
+  .verifyed-1{
+    margin-bottom: 8rem;
   }

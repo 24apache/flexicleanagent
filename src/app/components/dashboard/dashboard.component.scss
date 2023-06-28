@@ -1,52 +1,153 @@
-/* dashboard-layout.component.css */
 
-.container-fluid {
-  height: 100vh; /* Set the container height to full viewport height */
+.poppins-bold{
+  font-family: "Poppins, Bold";
 }
 
-.row {
-  height: 100%; /* Make the row take up the full height of the container */
+.poppins-semibold{
+  font-family: "Poppins, SemiBold";
 }
 
-.sidebar {
-  background-color: #f0f0f0;
-  padding: 20px;
+.poppins-medium{
+  font-family: "Poppins, Medium";
 }
 
-.header {
+.poppins-regular{
+  font-family: "Poppins, Regular";
+}
+
+.poppins-light{
+  font-family: "Poppins, Light";
+}
+
+.dashboard{
+  padding: 10px;
+}
+
+.total-order {
+  border: 2px solid #395EA1;
+  border-style: dashed;
+  border-radius: 20px;
+  padding: 24px;
+  font-family: 'Poppins, Medium';
+  color: #666666;
+}
+
+.complete-order {
+  border: 2px solid #395EA1;
+  border-style: dashed;
+  border-radius: 20px;
+  padding: 24px;
+  font-family: 'Poppins, Medium';
+  color: #666666;
   background-color: #fff;
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
 }
 
-.content {
-  padding: 20px;
+.pickup {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 18px;
+  padding: 16px;
+  background: #fff;
+  font-family: 'Poppins, Medium';
 }
 
-.footer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-top: 1px solid #ccc;
+.p-list {
+  background-color: #F3F5F9;
+  color: #2B5298;
+  padding: 10px;
+  font-family: 'Poppins, Medium';
+  text-align: left;
 }
 
-/* Additional styling for sidebar menu */
-
-.sidebar-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar-menu li {
-  margin-bottom: 10px;
-}
-
-.sidebar-menu li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.sidebar-menu li a:hover {
+.new-orders {
+  background-color: #fff;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 14px;
+  padding: 12px;
+  font-family: 'Poppins, Medium';
   color: #000;
-  font-weight: bold;
+  text-align: center;
+}
+
+.order-num {
+  color: #898A93;
+  font-size: 12px;
+  font-family: 'Poppins, Medium';
+}
+
+.item-center{
+  align-items: center;
+}
+
+.today-total {
+  font-family: 'Poppins, Semibold';
+  font-size: 25px;
+}
+
+.status-code {
+  border: 2px dashed #395EA1;
+  padding: 16px;
+  border-radius: 20px;
+  color: #2B5298;
+  width: inherit;
+  font-family: 'Poppins, Semibold';
+  text-transform: uppercase;
+}
+
+.btn-check {
+  background-color: #2B5298;
+  color: #fff;
+  padding: 17px 42px 17px 46px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.item-start{
+  align-items: flex-start;
+}
+
+.order-check{
+  background-color: #F3F5F9;
+  padding: 25px;
+  font-family: 'Poppins, Medium';
+}
+
+.check-status{
+  background-color: #fff;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  padding: 17px;
+  border-radius: 20px;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.status-order{
+  color: #2B5298;
+  font-size: 18px;
+  font-family: 'Poppins, Semibold';
+}
+
+.booked {
+  background: #C7D1E4;
+  text-align: center;
+  padding: 8px 4px 8px 4px;
+  color: #2B5298;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tick{
+  background-color: #2B5298;
+  border-radius: 2rem;
+  padding: 7px 5px 6px 6px;
+}
+
+.filter {
+  border: 2px solid #c0cbdf;
+  padding: 9px 11px 9px 11px;
+  color: #1C2330;
+  font-family: 'Poppins, Medium';
+  font-size: 18px;
+  border-radius: 8px;
 }

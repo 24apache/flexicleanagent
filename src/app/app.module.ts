@@ -17,6 +17,8 @@ import { OrdersComponent } from './components/orders/orders.component';
 import { CreateComponent } from './components/orders/create/create.component';
 import { AccountComponent } from './components/account/account.component';
 import { HomeComponent } from './components/home/home.component';
+import { OtpVerifyedComponent } from './auth/otp-verifyed/otp-verifyed.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { HomeComponent } from './components/home/home.component';
     OrdersComponent,
     CreateComponent,
     AccountComponent,
-    HomeComponent
+    HomeComponent,
+    OtpVerifyedComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

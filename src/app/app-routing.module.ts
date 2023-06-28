@@ -4,6 +4,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AccountComponent } from './components/account/account.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { OtpVerifyedComponent } from './auth/otp-verifyed/otp-verifyed.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 
 
 
@@ -21,8 +23,8 @@ const routes: Routes = [
 
   // { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
-  // { path: 'forgotpassword', component: ForgotPasswordComponent},
-  // { path: 'verifyed', component: OtpVerifyedComponent}
+  { path: 'forgotpassword', component: ForgotPasswordComponent},
+  { path: 'verifyed', component: OtpVerifyedComponent}
 ]
 
 @NgModule({
