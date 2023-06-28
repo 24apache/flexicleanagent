@@ -3,16 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AccountComponent } from './components/account/account.component';
-import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+// import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { OtpVerifyedComponent } from './auth/otp-verifyed/otp-verifyed.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
 
 const routes: Routes = [
 
-  { path: '', component: SidebarComponent },
+  { path: '', component: HomeComponent },
   // { path: 'dashboard', component: DashboardComponent },
   // { path: 'account', component: AccountComponent },
   // { path: 'orders', component: OrdersComponent },
