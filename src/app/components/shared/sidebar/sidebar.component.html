@@ -1,63 +1,57 @@
-
-
-
-      <!-- Sidebar -->
-
-      <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion border-right" id="accordionSidebar">
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-              <div class="sidebar-brand-icon">
-                  <!-- <i class="fa-solid fa-user"></i> -->
-              </div>
-              <!-- <div class="sidebar-brand-text mx-3">TITLE</div> -->
-              <img src="assets/images/logo.png" alt="logo">
-          </a>
-
-          <hr class="sidebar-divider my-0">
-
-          <li class="nav-item active">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <span>Dashboard</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-file-medical"></i>
-                  <span>Account setup</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-cart-plus"></i>
-                  <span>Create Order</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-bag-shopping"></i>
-                  <span>Orders</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-users"></i>
-                  <span>Customers</span></a>
-          </li>
-
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-wallet"></i>
-                  <span>Wallet</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <span>Reports</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" routerLink="#">
-                  <i class="fa-solid fa-gear"></i>
-                  <span>Settings</span></a>
-          </li>
-          
-      </ul>
-      
-      <!-- End of Sidebar -->
-
-      
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion border-right" id="accordionSidebar">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="javascript:void(0);"[routerLink]="['/dashboard']">
+        <div class="sidebar-brand-icon">
+            <!-- <i class="fa-solid fa-user"></i> --></div>
+        <!-- <div class="sidebar-brand-text mx-3">TITLE</div> -->
+        <img src="assets/images/logo.png" alt="logo">
+    </a>
+    <hr class="sidebar-divider my-0">
+    <li class="nav-item active">
+        <a class="nav-link" href="javascript:void(0);"[routerLink]="['/dashboard']">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="account">
+            <i class="fa-solid fa-file-medical"></i>
+            <span>Account setup</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="javascript:void(0)">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>Create Order</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="orders">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Orders</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="customers">
+            <i class="fa-solid fa-users"></i>
+            <span>Customers</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="wallet">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Wallet</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="reports">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Reports</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="settings">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+        </a>
+    </li>
+</ul>

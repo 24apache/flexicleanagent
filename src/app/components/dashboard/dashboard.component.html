@@ -1,282 +1,37 @@
-<div class="dashboard">
-  <div class="row mb-4 text-black poppins-medium item-center">
-      <div class="col">
-          <h4 class="text-start">Dashboard</h4>
-      </div>
-      <div class="col text-right">
-          <div class="btn filter"> <img src="assets/images/filter.png" alt="filter"> Filter devices</div>
-      </div>
-  </div>
+<body id="page-top">
 
-  <div class="row mt-3">
-      <div class="col-xl-6 mb-4">
-          <div class="row text-center">
-              <div class="col-lg-6 mb-3">
-                  <div class="total-order">
-                      <img src="assets/images/total-order.png" alt="total-order">
-                      <h4 class="mt-3 text-lg">Total Orders</h4>
-                      <h1 class="text-black text-xl">25</h1>
-                  </div>
+  <div id="wrapper">
 
-              </div>
-              <div class="col-lg-6">
-                  <div class="complete-order">
-                      <img src="assets/images/complete-order.png" alt="complete-order">
-                      <h4 class="mt-3 text-lg">Completed Orders</h4>
-                      <h1 class="text-black text-xl">12</h1>
-                  </div>
+      <!-- Sidebar -->
 
-              </div>
+      <app-sidebar></app-sidebar>
 
-          </div>
+      <!-- End of Sidebar -->
 
-          <div class="row mt-3 mb-3 text-black poppins-medium item-center">
-              <div class="col">
-                  <h4 class="text-start">New Orders</h4>
-              </div>
-              <div class="col">
-                  <h4 class="text-right text-sm">See All</h4>
-              </div>
-          </div>
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
 
-          <div class="new-orders">
-              <div class="row item-center">
-                  <div class="col-md-1">
-                      <img class="user" src="assets/images/user.png" alt="user">
-                  </div>
-                  <div class="col-md-3">
-                      Allie Grater <br> <span class="order-num">Order Number</span>
-                  </div>
-                  <div class="col-md-2">
-                      01/03/23
-                  </div>
-                  <div class="col-md-3">
-                      Online
-                  </div>
-                  <div class="col-md-3">
-                      <div class="booked"> <img class="tick" src="assets/images/tick.png" alt="select"> Booked</div>
-                  </div>
+          <!-- Main Content -->
+          <div id="content">
 
-              </div>
-          </div>
-          <div class="new-orders mt-4">
-              <div class="row item-center">
-                  <div class="col-md-1">
-                      <img class="user" src="assets/images/user.png" alt="user">
-                  </div>
-                  <div class="col-md-3">
-                      Allie Grater <br> <span class="order-num">Order Number</span>
-                  </div>
-                  <div class="col-md-2">
-                      01/03/23
-                  </div>
-                  <div class="col-md-3">
-                      Online
-                  </div>
-                  <div class="col-md-3">
-                      <div class="booked"> <img class="tick" src="assets/images/tick.png" alt="select"> Booked</div>
-                  </div>
+              <app-header></app-header>
 
-              </div>
-          </div>
-          <div class="new-orders mt-4">
-              <div class="row item-center">
-                  <div class="col-md-1">
-                      <img class="user" src="assets/images/user.png" alt="user">
-                  </div>
-                  <div class="col-md-3">
-                      Allie Grater <br> <span class="order-num">Order Number</span>
-                  </div>
-                  <div class="col-md-2">
-                      01/03/23
-                  </div>
-                  <div class="col-md-3">
-                      POS
-                  </div>
-                  <div class="col-md-3">
-                      <div class="booked"> <img class="tick" src="assets/images/tick.png" alt="select"> Booked</div>
-                  </div>
+              <div class="container-fluid">
 
-              </div>
-          </div>
-          <div class="new-orders mt-4">
-              <div class="row item-center">
-                  <div class="col-md-1">
-                      <img class="user" src="assets/images/user.png" alt="user">
-                  </div>
-                  <div class="col-md-3">
-                      Allie Grater <br> <span class="order-num">Order Number</span>
-                  </div>
-                  <div class="col-md-2">
-                      01/03/23
-                  </div>
-                  <div class="col-md-3">
-                      POS
-                  </div>
-                  <div class="col-md-3">
-                      <div class="booked"><img class="tick" src="assets/images/tick.png" alt="select"> Booked</div>
-                  </div>
+                  <!-- Page Heading -->
+                  <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                      <a href="#" class="d-none d-sm-inline-block btn btn-md shadow-sm">Filter Devices</a>
+                  </div> -->
+                  <!-- <app-dashboard></app-dashboard> -->
+                  <router-outlet></router-outlet>
 
-              </div>
-          </div>
-          <div class="new-orders mt-4">
-              <div class="row item-center">
-                  <div class="col-md-1">
-                      <img class="user" src="assets/images/user.png" alt="user">
-                  </div>
-                  <div class="col-md-3">
-                      Allie Grater <br> <span class="order-num">Order Number</span>
-                  </div>
-                  <div class="col-md-2">
-                      01/03/23
-                  </div>
-                  <div class="col-md-3">
-                      POS
-                  </div>
-                  <div class="col-md-3">
-                      <div class="booked"> <img class="tick" src="assets/images/tick.png" alt="select"> Booked</div>
-                  </div>
+                  <!-- Content Row -->
 
-              </div>
-          </div>
-
-      </div>
-      <div class="col-xl-6">
-          <div class="row text-center">
-              <div class="col-lg-6">
-                  <div class="pickup mb-4">
-                      <h4 class="text-black text-left">Today's Pickup</h4>
-                      <img class="mb-12" src="assets/images/delivery.png" alt="delivery">
-
-                      <div class="p-list mt-4">
-                          <div class="row item-center">
-                              <div class="col-1">
-                                  <img src="assets/images/receipt.png" alt="receipt">
-                              </div>
-                              <div class="col-7">
-                                  Total
-                              </div>
-                              <div class="col-2 today-total">
-                                  23
-                              </div>
-                          </div>
-                          <div class="row mt-2 item-center">
-                              <div class="col-1">
-                                  <img src="assets/images/receipt.png" alt="receipt">
-                              </div>
-                              <div class="col-7">
-                                  Completed
-                              </div>
-                              <div class="col-2 today-total">
-                                  18
-                              </div>
-                          </div>
-                          <div class="row mt-2 item-center">
-                              <div class="col-1">
-                                  <img src="assets/images/receipt.png" alt="receipt">
-                              </div>
-                              <div class="col-7">
-                                  Pending
-                              </div>
-                              <div class="col-2 today-total">
-                                  5
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-6">
-                  <div class="pickup">
-                      <h4 class="text-black text-left">Today's Delivery</h4>
-                      <img src="assets/images/pickup.png" alt="pickup">
-                      <div class="p-list mt-4">
-                          <div class="row item-center">
-                              <div class="col-1">
-                                  <img src="assets/images/receipt.png" alt="receipt">
-                              </div>
-                              <div class="col-7">
-                                  Total
-                              </div>
-                              <div class="col-2 today-total">
-                                  23
-                              </div>
-                          </div>
-                          <div class="row mt-2 item-center">
-                              <div class="col-1">
-                                  <img src="assets/images/receipt.png" alt="receipt">
-                              </div>
-                              <div class="col-7">
-                                  Completed
-                              </div>
-                              <div class="col-2 today-total">
-                                  18
-                              </div>
-                          </div>
-                          <div class="row mt-2 item-center">
-                              <div class="col-1">
-                                  <img src="assets/images/receipt.png" alt="receipt">
-                              </div>
-                              <div class="col-7">
-                                  Pending
-                              </div>
-                              <div class="col-2 today-total">
-                                  5
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-          <h4 class="mt-4 mb-4 text-black poppins-medium">Check Status</h4>
-          <div class="check-status mb-4">
-              <div class="row mt-3">
-
-                  <div class="col-lg-12">
-                      <div class="row poppins-medium item-start text-center">
-                          <div class="col-lg-8 mb-3">
-                              <!-- <h4 class="status-code">ORD12884893</h4> -->
-                              <input class="status-code" type="text">
-                          </div>
-                          <div class="col-lg-4">
-                              <div class="btn btn-check">Check</div>
-                          </div>
-                      </div>
-                      <div class="order-check mt-4 mb-5">
-                          <div class="row">
-                              <div class="col-lg-5">
-                                  <div class="row">
-                                      <div class="col-1">
-                                          <img src="assets/images/receipt.png" alt="order">
-
-                                      </div>
-                                      <div class="col">
-                                          <div> <span class="text-black">Order Details</span> <br> <span class="status-order">Status : Booked</span></div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="row">
-                                      <div class="col-1">
-                                          <img src="assets/images/setting.png" alt="change">
-
-                                      </div>
-                                      <div class="col">
-                                          <div><span  class="text-black">Change</span> <br> <span class="status-order">Change Order</span>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
 
               </div>
           </div>
       </div>
 
   </div>
-
-</div>
+</body>

@@ -21,7 +21,7 @@
 
 
 .bg-verify-image {
-    background: url("/src/assets/images/auth.png") no-repeat;
+    background: url("~src/assets/images/auth.png") no-repeat;
     background-position: center;
     background-size: 25rem;
     background-color: rgba(243, 245, 249, 1);
@@ -33,14 +33,14 @@
     border-color: #9A9DA5;
     font-family: "Poppins, Medium";
   }
-  
+
   .btn-login:hover {
     color: #1E4893;
     background-color: #fff;
     border-color: #1E4893;
     font-family: "Poppins, Medium";
   }
-  
+
   .btn-login:focus, .btn-login.focus {
     color: #fff;
     background-color: #1E4893;
@@ -54,14 +54,14 @@
     padding: 0.75rem 1rem;
     font-family: "Poppins, Medium";
 }
-  
+
   .btn-login.disabled, .btn-login:disabled {
     color: #9A9DA5;
     background-color: #3b5998;
     border-color: #9A9DA5;
     font-family: "Poppins, Medium";
   }
-  
+
   .btn-login:not(:disabled):not(.disabled):active, .btn-login:not(:disabled):not(.disabled).active,
   .show > .btn-login.dropdown-toggle {
     color: #9A9DA5;
@@ -69,7 +69,7 @@
     border-color: #dfdfdf;
     font-family: "Poppins, Medium";
   }
-  
+
   .btn-login:not(:disabled):not(.disabled):active:focus, .btn-login:not(:disabled):not(.disabled).active:focus,
   .show > .btn-login.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
