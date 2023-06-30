@@ -11,6 +11,7 @@ import { CustomersComponent } from './components/customers/customers.component';
 import { WalletComponent } from './components/wallet/wallet.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { CompanyDetailsComponent } from './components/account/company-details/company-details.component';
 
 
 
@@ -29,6 +30,7 @@ const routes: Routes = [
         { path: 'wallet', component: WalletComponent },
         { path: 'reports', component: ReportsComponent },
         { path: 'settings', component: SettingsComponent },
+        { path: 'company-detail', component: CompanyDetailsComponent }
       ]
     },
   { path: 'login', component: LoginComponent },

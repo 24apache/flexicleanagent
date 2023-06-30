@@ -18,6 +18,13 @@
     font-family: "Poppins, Light";
 }
 
+
+.users {
+    color: #3960A1;
+    font-size: 20px;
+    font-family: "Poppins, SemiBold";
+}
+
 .dashboard {
     padding: 10px;
     // background-color: #fff;
@@ -43,11 +50,11 @@
 }
 
 .filter {
-    border: 2px solid #1E4894;
+    border: 2px solid #cdd7e7;
     padding: 9px 11px 9px 11px;
     color: rgba(30, 72, 148, 1);
     font-family: "Poppins, Medium";
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
     margin-right: 1rem;
     // width: fit-content;
@@ -60,21 +67,35 @@
     font-family: "Poppins, Medium";
     color: #00B79D;
     text-align: center;
-    font-size: 16px;
-    padding: 6px 1px 6px 1px;
-    // width: 8rem;
+    font-size: 12px;
+    padding: 4px 7px 4px 7px;
 }
 
 .t-body {
     color: #4C4D52;
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Poppins, Medium";
 }
 
-.scroll{
+.scroll {
     overflow: auto;
 }
 
-.h-2{
+.h-2 {
     height: 2.5rem;
+}
+
+.new-user {
+    border-radius: 8px;
+    border: 2px solid #cdd7e7;
+    padding: 11px;
+    font-family: "Poppins, Medium";
+    color: #000;
+    font-size: 15px;
+}
+
+.all-customer {
+    color: #898A93;
+    font-size: 18px;
+    font-family: "Poppins, Medium";
 }

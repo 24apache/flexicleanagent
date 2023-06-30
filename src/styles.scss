@@ -10506,8 +10506,9 @@ html {
   .sidebar-dark .nav-item .nav-link {
     color: #9A9DA5;
     /* margin-left: 30px; */
-    font-family: 'Poppins, Medium';
-    padding: 10px;
+    font-family: 'Poppins, Semibold';
+    padding: 10px 0px 10px 20px;
+    font-size: 14px;
 }
   
   .sidebar-dark .nav-item .nav-link i {
@@ -10515,11 +10516,13 @@ html {
   }
   
   .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
-    color: #1E4796;
+    color: #1D4893;
     font-weight: 700;
-    background-color: #d5d5d6;
+    background: #d2daea;
     width: auto;
-    padding: 10px;
+    font-size: 13.5px;
+    font-family: 'Poppins, Medium';;
+    // padding: 10px 0px 10px 20px;
   }
   
   .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {

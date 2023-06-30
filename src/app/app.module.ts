@@ -19,6 +19,11 @@ import { AccountComponent } from './components/account/account.component';
 import { HomeComponent } from './components/home/home.component';
 import { OtpVerificationComponent } from './auth/otp-verification/otp-verification.component'
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { CompanyDetailsComponent } from './components/account/company-details/company-details.component';
+import { LocationComponent } from './components/account/location/location.component';
+import { UsersComponent } from './components/account/users/users.component';
+import { SubscriptionComponent } from './components/account/subscription/subscription.component';
+import { TimeslotComponent } from './components/account/timeslot/timeslot.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,12 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
     AccountComponent,
     HomeComponent,
     OtpVerificationComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    CompanyDetailsComponent,
+    LocationComponent,
+    UsersComponent,
+    SubscriptionComponent,
+    TimeslotComponent
   ],
   imports: [
     BrowserModule,

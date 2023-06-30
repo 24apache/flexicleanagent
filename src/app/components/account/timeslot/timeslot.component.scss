@@ -1,0 +1,75 @@
+.poppins-bold {
+    font-family: "Poppins, Bold";
+}
+
+.poppins-semibold {
+    font-family: "Poppins, SemiBold";
+}
+
+.poppins-medium {
+    font-family: "Poppins, Medium";
+}
+
+.poppins-regular {
+    font-family: "Poppins, Regular";
+}
+
+.poppins-light {
+    font-family: "Poppins, Light";
+}
+
+.location {
+    color: #3960A1;
+    font-size: 20px;
+    font-family: "Poppins, Medium";
+}
+
+.day {
+    background-color: rgb(208, 228, 247);
+    color: #3960A1;
+    font-family: 'Poppins, SemiBold';
+    padding: 8px 20px;
+}
+
+.days {
+    background-color: rgba(243, 245, 249, 1);
+    color: #aebdd8;
+    font-family: 'Poppins, SemiBold';
+    padding: 8px 20px;
+}
+
+.session {
+    color: #000;
+    // font-size: 18px;
+    font-family: "Poppins, Medium";
+    border-radius: 4px;
+    background: #D0E4F7;
+}
+
+.sessions {
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    font-family: "Poppins, Medium";
+    color: #000;
+}
+
+.clear {
+    border-radius: 4px;
+    border: 1.5px solid #285198;
+    background: #F3F5F9;
+    font-family: "Poppins, Medium";
+    color: #285198;
+    font-size: 20px;
+    width: inherit;
+    padding: 11px;
+}
+
+.save {
+    border-radius: 4px;
+    background: #285198;
+    color: #FCFBFD;
+    font-size: 20px;
+    font-family: "Poppins, Medium";
+    width: inherit;
+    padding: 11px;
+}
