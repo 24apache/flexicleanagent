@@ -12,6 +12,8 @@ import { WalletComponent } from './components/wallet/wallet.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { CompanyDetailsComponent } from './components/account/company-details/company-details.component';
+import { CreateOrderComponent } from './components/create-order/create-order.component';
+import { OrderComponent } from './components/order/order.component';
 
 
 
@@ -25,6 +27,8 @@ const routes: Routes = [
       children: [
         { path: '', component: HomeComponent },
         { path: 'account', component: AccountComponent },
+        { path: 'create-order', component: CreateOrderComponent },
+        { path: 'order', component: OrderComponent },
         { path: 'orders', component: OrdersComponent },
         { path: 'customers', component: CustomersComponent },
         { path: 'wallet', component: WalletComponent },

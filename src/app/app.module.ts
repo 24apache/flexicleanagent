@@ -24,6 +24,8 @@ import { LocationComponent } from './components/account/location/location.compon
 import { UsersComponent } from './components/account/users/users.component';
 import { SubscriptionComponent } from './components/account/subscription/subscription.component';
 import { TimeslotComponent } from './components/account/timeslot/timeslot.component';
+import { CreateOrderComponent } from './components/create-order/create-order.component';
+import { OrderComponent } from './components/order/order.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { TimeslotComponent } from './components/account/timeslot/timeslot.compon
     LocationComponent,
     UsersComponent,
     SubscriptionComponent,
-    TimeslotComponent
+    TimeslotComponent,
+    CreateOrderComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

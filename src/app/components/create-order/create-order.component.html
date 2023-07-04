@@ -1,0 +1,228 @@
+<div class="row">
+    <div class="col-xl-8 border-right">
+        <div class="row item-end">
+            <div class="col-md-4 mb-3">
+                <label class="p-text-gray poppins-medium"> Search for Items</label>
+                <input type="text" class="form-control w-auto ht-45 p-search" placeholder="Search by Item name">
+            </div>
+            <div class="col-md-4 mb-3">
+                    <label for="validationDefault04" class="form-label p-text-gray poppins-medium">Category</label>
+                    <select class="form-select text-gray-200 poppins-regular" id="validationDefault04" required>
+                        <option selected disabled value="">All </option>
+                        <option>products....</option>
+                    </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="btn border add-item"> <img class="add-btn" src="assets/images/upload.png" alt="addItem"> Add
+                    Item</div>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-3 text-center">
+            <div class="col-md-4 mb-3 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/pant.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/shirt-1.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/shirt-2.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/pant.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/shirt-1.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/shirt-2.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/pant.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/shirt-1.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-border p-5">
+                    <img src="assets/images/shirt-2.png" alt="product"> <br>
+                    <div class="p-name mt-4"> Name</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-4 mb-3">
+        <div class="row mb-3">
+            <div class="col-6 text-start p-text-gray poppins-medium">
+                CART
+            </div>
+            <div class="col-6 text-end reset">
+                <i class="fa fa-refresh" aria-hidden="true"></i> Reset
+            </div>
+        </div>
+        <div class="row customer">
+            <div class="col">
+                Customer
+            </div>
+        </div>
+        <div class="row mt-4 align-item-center">
+            <div class="col-10">
+                <div><input type="text" class="form-control ht-45 poppins-regular text-sx"
+                        placeholder="Search Customers"></div>
+            </div>
+            <div class="col-1">
+                <div class="btn p-0" data-toggle="modal" data-target="#myModal2"><img class="w-h-40 p-0"
+                        src="assets/images/add-user.png" alt="addUser"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header item-baseline modal-header-name">
+                <h4 class="modal-title" id="myModalLabel2">Filter Orders</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"><img src="assets/images/close.png" alt="close"></span></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom01" class="form-label h-filter">First Name</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom01" placeholder="First Name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">Last Name</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="Last Name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label for="validationCustomUsername" class="form-label h-filter">Phone Number</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-number" id="inputGroupPrepend">+91</span>
+                            <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                                id="validationCustom02" placeholder="Mobile Number" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">DoorNo & Street</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="DoorNo & Street" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">Locality</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="Locality" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">Area</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="Area" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">City</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="City" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">State</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="State" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">Country</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="Country" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">Post Code</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="Post Code" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label for="validationCustom02" class="form-label h-filter">Special Discount</label>
+                        <input type="text" class="form-control text-xs text-gray-200 poppins-regular ht-45"
+                            id="validationCustom02" placeholder="Special Discount" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                </form>
+                <div class="row mt-3">
+                    <div class="col-md-6 mt-3">
+                      <div class="btn clear">Clear</div>
+                    </div>
+                    <div class="col-md-6 mt-3 mb-3">
+                      <div class="btn save">Add Customer</div>
+                    </div>
+                  </div>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>

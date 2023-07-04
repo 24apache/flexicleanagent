@@ -3854,13 +3854,14 @@
   }
   
   .nav-pills .nav-link {
-    border-radius: 0.35rem;
+    border-radius: 0rem;
   }
   
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #4e73df;
+    background: #d0e4f7;
+    color: #3C61A2;
+    font-family: 'Poppins, SemiBold';
   }
   
   .nav-fill > .nav-link,
@@ -5552,7 +5553,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 10px 10px;
+    background: #EBEEF6;
     border-bottom: 1px solid #e3e6f0;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
