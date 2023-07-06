@@ -56,8 +56,8 @@ select#validationDefault04 {
     font-family: 'Poppins, SemiBold';
 }
 
-.ht-45 {
-    height: 45px;
+.ht-53 {
+    height: 53px;
 }
 
 .p-border {
@@ -119,7 +119,7 @@ select#validationDefault04 {
 .h-filter {
     color: #534D58;
     font-size: 20px;
-    font-family: 'Poppins, Medium';
+    font-family: 'Work-sans, Medium';
 }
 
 .input-group-number {
@@ -142,7 +142,7 @@ select#validationDefault04 {
     border-radius: 4px;
     border: 1.5px solid #285198;
     background: #F3F5F9;
-    font-family: "Poppins, Regular";
+    font-family: "Work-sans, Medium";
     color: #285198;
     font-size: 20px;
     width: inherit;
@@ -154,11 +154,27 @@ select#validationDefault04 {
     background: #285198;
     color: #FCFBFD;
     font-size: 20px;
-    font-family: "Poppins, Regular";
+    font-family: "Work-sans, Medium";
     width: inherit;
     padding: 11px;
 }
 
+img.close-bttn {
+    width: 23.5px;
+    height: 23.5px;
+}
+
+.s-header{
+    color: #A1A6AC;
+font-size: 20px;
+font-family: "Poppins, Regular";
+}
+
+.input-text{
+    color: #4C4D52;
+font-size: 16px;
+font-family: 'Work-sans, Regular';
+}
 
 
 
@@ -184,13 +200,18 @@ select#validationDefault04 {
 	.modal.left .modal-content,
 	.modal.right .modal-content {
 		height: 100%;
-		overflow-y: auto;
+		// overflow-y: auto;
 	}
+
+    .modal-body{
+        // max-height: calc(100vh - 200px);
+        overflow-y: auto;
+    }
 	
-	.modal.left .modal-body,
-	.modal.right .modal-body {
-		padding: 15px 15px 80px;
-	}
+	// .modal.left .modal-body,
+	// .modal.right .modal-body {
+	// 	padding: 15px 15px 80px;
+	// }
 
         
 /*Right*/
@@ -230,6 +251,7 @@ button.close {
     border: transparent;
 }
 
-
-
+.container-fluid{
+    background-color: #fff;
+}
 

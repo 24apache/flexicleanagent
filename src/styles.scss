@@ -39,35 +39,123 @@
   }
 
 
+  // Poppins
+
   @font-face {
     font-family: "Poppins, Bold";
-    src: url(../src/assets/fonts/Poppins-Bold.ttf);
+    src: url(../src/assets/fonts/Poppins/Poppins-Bold.ttf);
   }
   
   @font-face {
     font-family: "Poppins, Light";
-    src: url(../src/assets/fonts/Poppins-Light.ttf);
+    src: url(../src/assets/fonts/Poppins/Poppins-Light.ttf);
   }
   
   @font-face {
     font-family: "Poppins, Medium";
-    src: url(../src/assets/fonts/Poppins-Medium.ttf);
+    src: url(../src/assets/fonts/Poppins/Poppins-Medium.ttf);
   }
   
   @font-face {
     font-family: "Poppins, Regular";
-    src: url(../src/assets/fonts/Poppins-Regular.ttf);
+    src: url(../src/assets/fonts/Poppins/Poppins-Regular.ttf);
   }
 
   @font-face {
     font-family: "Poppins, SemiBold";
-    src: url(../src/assets/fonts/Poppins-SemiBold.ttf);
+    src: url(../src/assets/fonts/Poppins/Poppins-SemiBold.ttf);
   }
 
   @font-face {
     font-family: "Poppins, Italic";
-    src: url(../src/assets/fonts/Poppins-Italic.ttf);
+    src: url(../src/assets/fonts/Poppins/Poppins-Italic.ttf);
   }
+
+
+
+.poppins-bold {
+    font-family: "Poppins, Bold";
+}
+
+.poppins-semibold {
+    font-family: "Poppins, SemiBold";
+}
+
+.poppins-medium {
+    font-family: "Poppins, Medium";
+}
+
+.poppins-regular {
+    font-family: "Poppins, Regular";
+}
+
+.poppins-light {
+    font-family: "Poppins, Light";
+}
+
+
+
+
+  // Work-sans
+
+  @font-face {
+    font-family: "Work-sans, Bold";
+    src: url(../src/assets/fonts/work-sans/work-sans.bold.ttf);
+  }
+
+  @font-face {
+    font-family: "Work-sans, Black";
+    src: url(../src/assets/fonts/work-sans/work-sans.black.ttf);
+  }
+
+  @font-face {
+    font-family: "Work-sans, Medium";
+    src: url(../src/assets/fonts/work-sans/work-sans.medium.ttf);
+  }
+
+  @font-face {
+    font-family: "Work-sans, Regular";
+    src: url(../src/assets/fonts/work-sans/work-sans.regular.ttf);
+  }
+
+  @font-face {
+    font-family: "Work-sans, Semibold";
+    src: url(../src/assets/fonts/work-sans/work-sans.semibold.ttf);
+  }
+
+  @font-face {
+    font-family: "Work-sans, Light";
+    src: url(../src/assets/fonts/work-sans/work-sans.light.ttf);
+  }
+
+
+  .worksans-bold {
+    font-family: "Work-sans, Bold";
+  }
+  
+  .worksans-semibold {
+    font-family: "Work-sans, SemiBold";
+  }
+  
+  .worksans-medium {
+    font-family: "Work-sans, Medium";
+  }
+  
+  .worksans-regular {
+    font-family: "Work-sans, Regular";
+  }
+  
+  .worksans-light {
+    font-family: "Work-sans, Light";
+  }
+
+
+
+
+
+
+
+//...............//
 
   html {
     font-family: sans-serif;
@@ -5355,28 +5443,28 @@
     font-weight: 700;
     line-height: 1;
     color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
+    // text-shadow: 0 1px 0 #fff;
+    // opacity: .5;
   }
   
-  .close:hover {
-    color: #000;
-    text-decoration: none;
-  }
+  // .close:hover {
+  //   color: #000;
+  //   text-decoration: none;
+  // }
   
-  .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
-    opacity: .75;
-  }
+  // .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  //   opacity: .75;
+  // }
   
-  button.close {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-  }
+  // button.close {
+  //   padding: 0;
+  //   background-color: transparent;
+  //   border: 0;
+  // }
   
-  a.close.disabled {
-    pointer-events: none;
-  }
+  // a.close.disabled {
+  //   pointer-events: none;
+  // }
   
   .toast {
     flex-basis: 350px;
@@ -5527,7 +5615,7 @@
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0.3rem;
+    // border-radius: 0.3rem;
     outline: 0;
   }
   
@@ -5553,7 +5641,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 12px 12px;
     background: #EBEEF6;
     border-bottom: 1px solid #e3e6f0;
     border-top-left-radius: calc(0.3rem - 1px);
@@ -10005,8 +10093,10 @@ html {
   
   .topbar .navbar-search input {
     font-size: 0.85rem;
-    height: auto;
-  }
+    /* height: auto; */
+    width: 13rem;
+    padding: 3px 3px 3px 30px;
+}
   
   .topbar .topbar-divider {
     width: 0;

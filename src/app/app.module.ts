@@ -26,6 +26,7 @@ import { SubscriptionComponent } from './components/account/subscription/subscri
 import { TimeslotComponent } from './components/account/timeslot/timeslot.component';
 import { CreateOrderComponent } from './components/create-order/create-order.component';
 import { OrderComponent } from './components/order/order.component';
+import { SubHeaderComponent } from './components/shared/sub-header/sub-header.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { OrderComponent } from './components/order/order.component';
     SubscriptionComponent,
     TimeslotComponent,
     CreateOrderComponent,
-    OrderComponent
+    OrderComponent,
+    SubHeaderComponent
   ],
   imports: [
     BrowserModule,
