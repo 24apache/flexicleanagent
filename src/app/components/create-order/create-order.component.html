@@ -1,221 +1,251 @@
 <app-sub-header></app-sub-header>
 
 <div class="container-fluid">
-<div class="row">
-    <div class="col-xl-8 border-right pt-4">
-        <div class="row item-end">
-            <div class="col-md-4 mb-3">
-                <label class="p-text-gray poppins-medium"> Search for Items</label>
-                <input type="text" class="form-control w-auto ht-45 p-search" placeholder="Search by Item name">
-            </div>
-            <div class="col-md-4 mb-3">
+    <div class="row">
+        <div class="col-xl-8 border-right pt-4">
+            <div class="row item-end">
+                <div class="col-md-4 mb-3">
+                    <label class="p-text-gray poppins-medium"> Search for Items</label>
+                    <input type="text" class="form-control w-auto p-search" placeholder="Search by Item name">
+                </div>
+                <div class="col-md-4 mb-3">
                     <label for="validationDefault04" class="form-label p-text-gray poppins-medium">Category</label>
-                    <select class="form-select text-gray-200 poppins-regular" id="validationDefault04" required>
+                    <select class="form-select select-category" id="validationDefault04" required>
                         <option selected disabled value="">All </option>
                         <option>products....</option>
                     </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="btn border add-item"> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26"
+                            viewBox="0 0 23 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.7026 1.01566H6.01056C3.29265 1.00521 1.06475 3.17039 1.00072 5.8883V20.0646C0.954988 22.7433 3.08881 24.9529 5.76882 24.9999C5.84853 24.9999 5.92955 24.9999 6.01056 24.9973H16.4484C19.1519 24.9699 21.3262 22.7681 21.3223 20.0646V7.91236L14.7026 1.01566Z"
+                                stroke="#1D4893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.3599 1V4.80115C14.3599 6.65665 15.8613 8.16065 17.7168 8.16587H21.3154"
+                                stroke="#1D4893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.1239 14.2813H7.72118" stroke="#1D4893" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10.9236 17.4824V11.0796" stroke="#1D4893" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg> &nbsp; Add Item</div>
+                </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="btn border add-item"> <img class="add-btn" src="assets/images/upload.png" alt="addItem"> Add
-                    Item</div>
+
+            <div class="row mt-3 mb-3 text-center">
+                <div class="col-md-4 mb-3 mb-3">
+                    <div class="p-border p-5">
+                        <img src="assets/images/pant.png" alt="product"> <br>
+                        <div class="p-name mt-4"> Name</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-border p-5">
+                        <img src="assets/images/shirt-1.png" alt="product"> <br>
+                        <div class="p-name mt-4"> Name</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-border p-5">
+                        <img src="assets/images/shirt-2.png" alt="product"> <br>
+                        <div class="p-name mt-4"> Name</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-border p-5">
+                        <img src="assets/images/pant.png" alt="product"> <br>
+                        <div class="p-name mt-4"> Name</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-border p-5">
+                        <img src="assets/images/shirt-1.png" alt="product"> <br>
+                        <div class="p-name mt-4"> Name</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-border p-5">
+                        <img src="assets/images/shirt-2.png" alt="product"> <br>
+                        <div class="p-name mt-4"> Name</div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
 
-        <div class="row mt-3 mb-3 text-center">
-            <div class="col-md-4 mb-3 mb-3">
-                <div class="p-border p-5">
-                    <img src="assets/images/pant.png" alt="product"> <br>
-                    <div class="p-name mt-4"> Name</div>
+        <div class="col-xl-4 mb-3 pt-4">
+            <div class="row mb-3">
+                <div class="col-6 text-start p-text-gray poppins-medium">
+                    CART
+                </div>
+                <div class="col-6 text-end reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <path
+                            d="M1 8.5C1 4.63401 4.13401 1.5 8 1.5C10.231 1.5 12.2182 2.54367 13.5 4.1694M15 8.5C15 12.366 11.866 15.5 8 15.5C5.76904 15.5 3.78183 14.4563 2.5 12.8306M5.5 12.5H2V16M14 1V4.5L10.5 4.5"
+                            stroke="#1D4893" stroke-width="1.5" />
+                    </svg> Reset
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-border p-5">
-                    <img src="assets/images/shirt-1.png" alt="product"> <br>
-                    <div class="p-name mt-4"> Name</div>
+            <div class="row customer">
+                <div class="col">
+                    Customer
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-border p-5">
-                    <img src="assets/images/shirt-2.png" alt="product"> <br>
-                    <div class="p-name mt-4"> Name</div>
+            <div class="row mt-4 align-item-center">
+                <div class="col-10">
+                    <div>
+                        <img class="search-icon" src="assets/images/search.svg" alt="search">
+                        <input type="text" class="form-control search-customer" placeholder="Search Customers">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-border p-5">
-                    <img src="assets/images/pant.png" alt="product"> <br>
-                    <div class="p-name mt-4"> Name</div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-border p-5">
-                    <img src="assets/images/shirt-1.png" alt="product"> <br>
-                    <div class="p-name mt-4"> Name</div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-border p-5">
-                    <img src="assets/images/shirt-2.png" alt="product"> <br>
-                    <div class="p-name mt-4"> Name</div>
+                <div class="col-1">
+                    <div class="btn p-0" data-toggle="modal" data-target="#myModal2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                            <circle cx="27.5" cy="27.5" r="27.5" fill="#288BE6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M27.2957 32.499C22.8213 32.499 19 33.1753 19 35.885C19 38.5948 22.7981 39.2955 27.2957 39.2955C31.7712 39.2955 35.5913 38.618 35.5913 35.9095C35.5913 33.2009 31.7944 32.499 27.2957 32.499Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M27.2957 28.6341C30.2324 28.6341 32.6128 26.2538 32.6128 23.317C32.6128 20.3803 30.2324 18 27.2957 18C24.3602 18 21.9798 20.3803 21.9798 23.317C21.9694 26.2433 24.3322 28.6236 27.2596 28.6341H27.2957Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M38.1522 24.8896V29.5572" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M40.5336 27.2236H35.7729" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
             </div>
 
         </div>
-
     </div>
 
-    <div class="col-xl-4 mb-3 pt-4">
-        <div class="row mb-3">
-            <div class="col-6 text-start p-text-gray poppins-medium">
-                CART
-            </div>
-            <div class="col-6 text-end reset">
-                <i class="fa fa-refresh" aria-hidden="true"></i> Reset
-            </div>
-        </div>
-        <div class="row customer">
-            <div class="col">
-                Customer
-            </div>
-        </div>
-        <div class="row mt-4 align-item-center">
-            <div class="col-10">
-                <div><input type="text" class="form-control ht-45 poppins-regular text-sx"
-                        placeholder="Search Customers"></div>
-            </div>
-            <div class="col-1">
-                <div class="btn p-0" data-toggle="modal" data-target="#myModal2"><img class="w-h-40 p-0"
-                        src="assets/images/add-user.png" alt="addUser"></div>
-            </div>
-        </div>
+    <!-- Modal -->
+    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" style="max-width: 721px;" role="document">
+            <div class="modal-content">
 
-    </div>
-</div>
+                <div class="modal-header item-baseline modal-header-name">
+                    <h4 class="modal-title" id="myModalLabel2">Filter Orders</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><img class="close-bttn" src="assets/images/close.png"
+                                alt="close"></span></button>
+                </div>
 
-<!-- Modal -->
-<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" style="max-width: 721px;" role="document">
-        <div class="modal-content">
-
-            <div class="modal-header item-baseline modal-header-name">
-                <h4 class="modal-title" id="myModalLabel2">Filter Orders</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true"><img class="close-bttn" src="assets/images/close.png" alt="close"></span></button>
-            </div>
-
-            <div class="modal-body">
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-12">
-                        <div class="s-header">Basic Info</div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom01" class="form-label h-filter">First Name</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom01" placeholder="First Name" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-12">
+                            <div class="s-header">Basic Info</div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">Last Name</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="Last Name" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <label for="validationCustomUsername" class="form-label h-filter">Phone Number</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-number" id="inputGroupPrepend">+91</span>
-                            <input type="text" class="form-control input-text ht-53"
-                                id="validationCustom02" placeholder="Mobile Number" required>
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom01" class="form-label h-filter">First Name</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom01"
+                                placeholder="First Name" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
-                    </div>
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">Last Name</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="Last Name" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <label for="validationCustomUsername" class="form-label h-filter">Phone Number</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-number" id="inputGroupPrepend">+91</span>
+                                <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                    placeholder="Mobile Number" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="col-12 mt-3">
-                        <div class="s-header">Address</div>
-                    </div>
+                        <div class="col-12 mt-3">
+                            <div class="s-header">Address</div>
+                        </div>
 
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">DoorNo & Street</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="DoorNo & Street" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">DoorNo & Street</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="DoorNo & Street" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">Locality</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="Locality" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">Locality</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="Locality" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">Area</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="Area" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">Area</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="Area" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">City</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="City" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">City</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="City" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">State</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="State" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">State</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="State" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">Country</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="Country" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">Country</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="Country" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">Post Code</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="Post Code" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-6 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">Post Code</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="Post Code" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <label for="validationCustom02" class="form-label h-filter">Special Discount</label>
-                        <input type="text" class="form-control input-text ht-53"
-                            id="validationCustom02" placeholder="Special Discount" required>
-                        <div class="valid-feedback">
-                            Looks good!
+                        <div class="col-md-12 mt-2">
+                            <label for="validationCustom02" class="form-label h-filter">Special Discount</label>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                                placeholder="Special Discount" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
-                    </div>
 
-                </form>
-                <div class="row mt-4">
-                    <div class="col-md-6 mt-3">
-                      <div class="btn clear">Clear</div>
+                    </form>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mt-3">
+                            <div class="btn clear">Clear</div>
+                        </div>
+                        <div class="col-md-6 mt-3 mb-3">
+                            <div class="btn save">Add Customer</div>
+                        </div>
                     </div>
-                    <div class="col-md-6 mt-3 mb-3">
-                      <div class="btn save">Add Customer</div>
-                    </div>
-                  </div>
-            </div>
+                </div>
 
-        </div><!-- modal-content -->
-    </div><!-- modal-dialog -->
-</div>
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div>
 </div>

@@ -9869,6 +9869,86 @@ html {
     overflow: hidden !important;
   }
 
+  
+  .fs-5{
+    font-size: 5px;
+  }
+  .fs-6{
+    font-size: 6px;
+  }
+  .fs-7{
+    font-size: 7px;
+  }
+  .fs-8{
+    font-size: 8px;
+  }
+  .fs-9{
+    font-size: 9px;
+  }
+  .fs-10{
+    font-size: 10px;
+  }
+  .fs-11{
+    font-size: 11px;
+  }
+  .fs-12{
+    font-size: 12px;
+  }
+  .fs-13{
+    font-size: 13px;
+  }
+  .fs-14{
+    font-size: 14px;
+  }
+  .fs-15{
+    font-size: 15px;
+  }
+  .fs-16{
+    font-size: 16px;
+  }
+  .fs-17{
+    font-size: 17px;
+  }
+  .fs-18{
+    font-size: 18px;
+  }
+  .fs-19{
+    font-size: 19px;
+  }
+  .fs-20{
+    font-size: 20px;
+  }
+  .fs-21{
+    font-size: 21px;
+  }
+  .fs-22{
+    font-size: 22px;
+  }
+  .fs-23{
+    font-size: 23px;
+  }
+  .fs-24{
+    font-size: 24px;
+  }
+  .fs-25{
+    font-size: 25px;
+  }
+  .fs-26{
+    font-size: 26px;
+  }
+  .fs-27{
+    font-size: 27px;
+  }
+  .fs-28{
+    font-size: 28px;
+  }
+  .fs-29{
+    font-size: 29px;
+  }
+  .fs-30{
+    font-size: 30px;
+  }
+
   .text-sm{
     font-size: 1rem;
   }
@@ -10239,7 +10319,7 @@ html {
   
   .sidebar .nav-item .nav-link {
     text-align: center;
-    padding: 0.75rem 1rem;
+    // padding: 0.75rem 1rem;
     width: 6.5rem;
   }
   
@@ -10445,7 +10525,7 @@ html {
     }
     .sidebar .nav-item .nav-link i {
       font-size: 0.85rem;
-      margin-right: 0.25rem;
+      // margin-right: 0.25rem;
     }
     .sidebar .nav-item .nav-link span {
       font-size: 0.85rem;
@@ -10528,6 +10608,9 @@ html {
     .sidebar.toggled .sidebar-heading {
       text-align: center;
     }
+    .sidebar .nav-item{
+      padding: 0px 0px 0px 0px;
+    }
   }
   
   .sidebar-light .sidebar-brand {
@@ -10598,8 +10681,8 @@ html {
   .sidebar-dark .nav-item .nav-link {
     color: #9A9DA5;
     /* margin-left: 30px; */
-    font-family: 'Poppins, Semibold';
-    padding: 10px 0px 10px 20px;
+    font-family: 'Work-sans, Semibold';
+    padding: 12px 10px 12px 45px;
     font-size: 14px;
 }
   
@@ -10613,7 +10696,7 @@ html {
     background: #d2daea;
     width: auto;
     font-size: 13.5px;
-    font-family: 'Poppins, Medium';;
+    font-family: 'Work-sans, Medium';;
     // padding: 10px 0px 10px 20px;
   }
   
@@ -10627,7 +10710,7 @@ html {
   
   .sidebar-dark .nav-item.active .nav-link {
     color: #1D4893;
-    font-family: 'Poppins, Medium';
+    font-family: 'Work-sans, Medium';
 }
   
   .sidebar-dark .nav-item.active .nav-link i {
@@ -10703,7 +10786,8 @@ html {
   .show > .btn-google.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
   }
-  
+
+
   
   
 

@@ -1,25 +1,4 @@
-
-.poppins-bold{
-  font-family: "Poppins, Bold";
-}
-
-.poppins-semibold{
-  font-family: "Poppins, SemiBold";
-}
-
-.poppins-medium{
-  font-family: "Poppins, Medium";
-}
-
-.poppins-regular{
-  font-family: "Poppins, Regular";
-}
-
-.poppins-light{
-  font-family: "Poppins, Light";
-}
-
-.dashboard{
+.dashboard {
   padding: 10px;
 }
 
@@ -28,7 +7,7 @@
   border-style: dashed;
   border-radius: 20px;
   padding: 24px;
-  font-family: 'Poppins, Medium';
+  font-family: 'Work-sans, Semibold';
   color: #666666;
 }
 
@@ -37,7 +16,7 @@
   border-style: dashed;
   border-radius: 20px;
   padding: 24px;
-  font-family: 'Poppins, Medium';
+  font-family: 'Work-sans, Semibold';
   color: #666666;
   background-color: #fff;
 }
@@ -54,8 +33,9 @@
   background-color: #F3F5F9;
   color: #2B5298;
   padding: 10px;
-  font-family: 'Poppins, Medium';
+  font-family: 'Work-sans, Medium';
   text-align: left;
+  font-size: 18px;
 }
 
 .new-orders {
@@ -70,17 +50,18 @@
 
 .order-num {
   color: #898A93;
-  font-size: 12px;
+  font-size: 11.7px;
   font-family: 'Poppins, Medium';
 }
 
-.item-center{
+.item-center {
   align-items: center;
 }
 
 .today-total {
-  font-family: 'Poppins, Semibold';
-  font-size: 25px;
+  font-family: "Work-sans, Semibold";
+  font-size: 30px;
+  text-align: right;
 }
 
 .status-code {
@@ -96,58 +77,64 @@
 .btn-check {
   background-color: #2B5298;
   color: #fff;
-  padding: 17px 42px 17px 46px;
-  font-size: 16px;
+  padding: 16px 42px 16px 46px;
+  font-size: 18px;
   border-radius: 12px;
+  width: 161px;
+  font-family: 'Work-sans, Medium';
 }
 
-.item-start{
+.item-start {
   align-items: flex-start;
 }
 
-.order-check{
+.order-check {
   background-color: #F3F5F9;
-  padding: 25px;
-  font-family: 'Poppins, Medium';
+  padding: 20px;
+
 }
 
-.check-status{
+.check-status {
   background-color: #fff;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   padding: 17px;
   border-radius: 20px;
 }
 
-.mb-12{
+.mb-12 {
   margin-bottom: 12px;
 }
 
-.status-order{
+.status-order {
   color: #2B5298;
   font-size: 18px;
-  font-family: 'Poppins, Semibold';
+  font-family: 'Work-sans, Medium';
 }
 
 .booked {
-  background: #C7D1E4;
+  background: #eceff6;
+  // width: 109px;
   text-align: center;
   padding: 8px 4px 8px 4px;
   color: #2B5298;
   border-radius: 4px;
   font-size: 14px;
+  font-family: 'Work-sans, Medium';
 }
 
-.tick{
+.tick {
   background-color: #2B5298;
   border-radius: 2rem;
-  padding: 7px 5px 6px 6px;
+  padding: 6px 4px 5px 5px;
 }
 
 .filter {
   border: 2px solid #c0cbdf;
-  padding: 9px 11px 9px 11px;
+  padding: 11px 11px 9px 11px;
   color: #1C2330;
-  font-family: 'Poppins, Medium';
-  font-size: 18px;
+  font-family: "Work-sans, Semibold";
+  font-size: 16px;
   border-radius: 8px;
+  width: 168px;
+  height: 49px;
 }

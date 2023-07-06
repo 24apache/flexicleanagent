@@ -39,15 +39,22 @@
     color: #979AA5;
     font-size: 13px;
     text-transform: uppercase;
-    font-family: "Poppins, SemiBold";
+    font-family: 'Work-sans, Medium';
+    font-weight: 600;
+}
+
+.t-body {
+    color: #4C4D52;
+    font-size: 17px;
+    font-family: "Work-sans, Medium";
 }
 
 .filter {
     border: 2px solid #1E4894;
-    padding: 7px 11px 7px 11px;
+    padding: 13px 19px 13px 19px;
     color: rgba(30, 72, 148, 1);
-    font-family: "Poppins, Medium";
-    font-size: 18px;
+    font-family: "Work-sans, Medium";
+    font-size: 14.7px;
     border-radius: 8px;
     margin-right: 1rem;
     // width: fit-content;
@@ -57,28 +64,64 @@
 .t-progress {
     border-radius: 2rem;
     background: #E3F0E9;
-    font-family: "Poppins, Medium";
+    font-family: "Work-sans, Medium";
     color: #00B79D;
     text-align: center;
     font-size: 16px;
-    padding: 6px 1px 6px 1px;
+    padding: 5px 1px 5px 1px;
     // width: 8rem;
-}
-
-.t-body {
-    color: #4C4D52;
-    font-size: 17px;
-    font-family: "Poppins, Medium";
 }
 
 .scroll{
     overflow: auto;
 }
 
-.h-2{
-    height: 2.5rem;
+.h-52{
+    height: 52px;
 }
 
 .container-fluid{
     background-color: #fff;
+}
+
+.search-icon {
+    position: absolute;
+    top: 17px;
+    left: 23px;
+    width: 19px;
+    color: rgba(172, 170, 174, 1);
+}
+
+.search-pading{
+    padding: 3px 3px 3px 41px;
+    color: #5A555D;
+}
+
+.all-customer {
+    font-size: 18px;
+    font-family: 'Poppins, Light';
+    color: #6B6D75;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 380px)  {
+    .container-fluid{
+        height: 100vh;
+    }
 }
