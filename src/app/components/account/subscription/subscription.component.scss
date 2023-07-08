@@ -1,45 +1,27 @@
-.poppins-bold {
-    font-family: "Poppins, Bold";
-}
 
-.poppins-semibold {
-    font-family: "Poppins, SemiBold";
-}
-
-.poppins-medium {
-    font-family: "Poppins, Medium";
-}
-
-.poppins-regular {
-    font-family: "Poppins, Regular";
-}
-
-.poppins-light {
-    font-family: "Poppins, Light";
-}
 
 
 .subscription {
     color: #3960A1;
     font-size: 20px;
-    font-family: "Poppins, SemiBold";
+    font-family: 'Poppins, SemiBold';
 }
 
 .new-user {
     border-radius: 8px;
     border: 2px solid #cdd7e7;
-    padding: 11px;
-    font-family: "Poppins, Medium";
+    padding: 13px 20px 13px 20px;
+    font-family: 'Work-sans, Semibold';
     color: #000;
-    font-size: 15px;
+    font-size: 13.739px;
 }
 
 .filter {
     border: 2px solid #cdd7e7;
-    padding: 9px 11px 9px 11px;
-    color: rgba(30, 72, 148, 1);
-    font-family: "Poppins, Medium";
-    font-size: 16px;
+    padding: 13px 18px 13px 18px;
+    color: #1E4894;
+    font-family: "Work-sans, Semibold";
+    font-size: 13.739px;
     border-radius: 8px;
     margin-right: 1rem;
     // width: fit-content;
@@ -47,9 +29,9 @@
 
 
 .sub-detail {
-    color: #6B6D75;
-    font-size: 18px;
-    font-family: "Poppins, Medium";
+    color: #898A93;
+    font-size: 17.25px;
+    font-family: 'Work-sans, SemiBold';
 }
 
 .sub-expire {
@@ -59,49 +41,53 @@
 
 .bhd {
     color: #1E4894;
-    font-size: 24px;
-    font-family: "Poppins, SemiBold";
+    font-size: 24.74px;
+    font-family: 'Work-sans, Semibold';
 }
 
 .bhd-sub {
     color: #898A93;
     font-size: 14px;
-    font-family: "Poppins, Medium";
+    font-family: 'Work-sans, Semibold';
 }
 
 .sub-cancel {
     border-radius: 4px;
     background: #FF8777;
-    font-family: "Poppins, Regular";
+    font-family: 'Work-sans, Medium';
     color: #FCFBFD;
-    font-size: 13px;
-    padding: 10px;
+    font-size: 13.739px;
+    padding: 12px;
+    width: 167px;
+    height: 44px;
 }
 
 .primary {
     color: #FF3F25;
     font-size: 19px;
-    font-family: "Poppins, Medium";
+    font-family: 'Work-sans, Medium';
 }
 
 .active {
     border-radius: 3.5px;
     background: #E3F0E9;
     color: #00B79D;
-    font-size: 17px;
-    font-family: 'Poppins, Regular';
-    padding: 0px 15px 0px 15px;
+    font-size: 17.746px;
+    font-family: "Roboto, Medium";
+    padding: 4px;
+    width: 126px;
+    height: 35.493px;
 }
 
 .add-card {
     color: #898A93;
     font-size: 15px;
-    font-family: 'Poppins, Regular';
+    font-family: 'Work-sans, Medium';
 }
 
 .number {
-    font-family: 'Poppins, SemiBold';
-    color: #898A93;
+    font-family: 'Work-sans, Semibold';
+    color: #585858;
     font-size: 14px;
 }
 
@@ -115,7 +101,8 @@
     color: #979AA5;
     font-size: 13px;
     text-transform: uppercase;
-    font-family: "Poppins, SemiBold";
+    font-family: 'Work-sans, Regular';
+    font-weight: 600;
 }
 
 .w-15 {
@@ -125,11 +112,14 @@
 .invoice {
     color: #585858;
     font-size: 14px;
-    font-family: 'Poppins, Regular';
+    font-family: 'Work-sans, Medium';
 }
 
 .renewal{
     color: #61d0c2;
+    font-size: 14px;
+    font-family: 'Work-sans, Regular';
+    font-weight: 600;
 }
 
 .scroll{

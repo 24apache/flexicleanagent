@@ -1,3 +1,40 @@
 .container-fluid{
     background-color: #fff;
 }
+
+
+.a-setup {
+    margin-left: 2rem;
+    color: #285198;
+    /* border: 1px solid; */
+    width: 238.043px;
+    height: 439px;
+    padding: 25px 0px 1px 27px;
+    font-size: 17.25px;
+    font-family: 'Work-sans, Medium';
+    background: #F3F5F9;
+}
+
+.nav-account .nav-link.active, .nav-account .show > .nav-link {
+    background: #d0e4f7;
+    font-size: 17.25px;
+    font-family: 'Work-sans, Semibold';
+    color: #486ca7;
+}
+
+a.non-tab {
+    color: #898A93;
+    font-size: 17.25px;
+    font-family: 'Work-sans, Semibold';
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (min-width: 380px)  {
+    .container-fluid{
+        height: 100vh;
+    }
+}

@@ -1,28 +1,9 @@
-.poppins-bold {
-    font-family: "Poppins, Bold";
-}
-
-.poppins-semibold {
-    font-family: "Poppins, SemiBold";
-}
-
-.poppins-medium {
-    font-family: "Poppins, Medium";
-}
-
-.poppins-regular {
-    font-family: "Poppins, Regular";
-}
-
-.poppins-light {
-    font-family: "Poppins, Light";
-}
 
 
 .users {
     color: #3960A1;
     font-size: 20px;
-    font-family: "Poppins, SemiBold";
+    font-family: 'Work-sans, Semibold';
 }
 
 .dashboard {
@@ -46,15 +27,16 @@
     color: #979AA5;
     font-size: 13px;
     text-transform: uppercase;
-    font-family: "Poppins, SemiBold";
+    font-weight: 600;
+    font-family: 'Work-sans, Regular';
 }
 
 .filter {
     border: 2px solid #cdd7e7;
-    padding: 9px 11px 9px 11px;
-    color: rgba(30, 72, 148, 1);
-    font-family: "Poppins, Medium";
-    font-size: 16px;
+    padding: 13px 18px 13px 18px;
+    color: #1E4894;
+    font-family: "Work-sans, Semibold";
+    font-size: 13.739px;
     border-radius: 8px;
     margin-right: 1rem;
     // width: fit-content;
@@ -64,17 +46,17 @@
 .t-progress {
     border-radius: 2rem;
     background: #E3F0E9;
-    font-family: "Poppins, Medium";
+    font-family: "Work-sans, Medium";
     color: #00B79D;
     text-align: center;
     font-size: 12px;
-    padding: 4px 7px 4px 7px;
+    padding: 5px 10px 5px 10px;
 }
 
 .t-body {
     color: #4C4D52;
     font-size: 15px;
-    font-family: "Poppins, Medium";
+    font-family: "Work-sans, Medium";
 }
 
 .scroll {
@@ -88,14 +70,14 @@
 .new-user {
     border-radius: 8px;
     border: 2px solid #cdd7e7;
-    padding: 11px;
-    font-family: "Poppins, Medium";
+    padding: 13px 20px 13px 20px;
+    font-family: 'Work-sans, Semibold';
     color: #000;
-    font-size: 15px;
+    font-size: 13.739px;
 }
 
 .all-customer {
     color: #898A93;
-    font-size: 18px;
-    font-family: "Poppins, Medium";
+    font-size: 17.25px;
+    font-family: 'Work-sans, SemiBold';
 }
