@@ -2,114 +2,59 @@
 
 <div class="container-fluid pt-4">
 
-<div class="row">
+    <div class="row">
 
 
-<div class="col-md-3">
-    <div class="a-setup">
-    <div class="nav flex-column  nav-account" id="v-tab" role="tablist" aria-orientation="vertical">
-        <a 
-            class="nav-link active gray-tab non-tab" 
-            id="company-tab" 
-            data-toggle="pill" 
-            href="#company" 
-            role="tab" 
-            aria-controls="company" 
-            aria-selected="true">
-            COMPANY
-        </a>
-        <a 
-            class="nav-link gray-tab non-tab"  
-            id="location-tab" 
-            data-toggle="pill" 
-            href="#location" 
-            role="tab" 
-            aria-controls="location" 
-            aria-selected="true">
-            LOCATION
-        </a>
-        <a 
-            class="nav-link gray-tab non-tab" 
-            id="timeslot-tab" 
-            data-toggle="pill" 
-            href="#timeslot" 
-            role="tab" 
-            aria-controls="timeslot" 
-            aria-selected="true">
-            TIMESLOT
-        </a>
-        <a 
-            class="nav-link gray-tab non-tab" 
-            id="users-tab" 
-            data-toggle="pill" 
-            href="#users" 
-            role="tab" 
-            aria-controls="users" 
-            aria-selected="true">
-            USERS
-        </a>
-        <a 
-            class="nav-link gray-tab non-tab" 
-            id="my-subscription-tab" 
-            data-toggle="pill" 
-            href="#my-subscription" 
-            role="tab" 
-            aria-controls="my-subscription" 
-            aria-selected="true">
-            MY SUBSCRIPTION 
-        </a>
-        <a 
-            class="nav-link gray-tab non-tab" 
-            id="items-pricing" 
-            data-toggle="pill" 
-            href="#items-pricing" 
-            role="tab" 
-            aria-controls="items-pricing" 
-            aria-selected="true">
-            ITEMS PRICING
-        </a>
+        <div class="col-md-3">
+            <div class="a-setup">
+                <div class="nav flex-column  nav-account" id="v-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active gray-tab non-tab" id="company-tab" data-toggle="pill" href="#company"
+                        role="tab" aria-controls="company" aria-selected="true">
+                        COMPANY
+                    </a>
+                    <a class="nav-link gray-tab non-tab" id="location-tab" data-toggle="pill" href="#location"
+                        role="tab" aria-controls="location" aria-selected="true">
+                        LOCATION
+                    </a>
+                    <a class="nav-link gray-tab non-tab" id="timeslot-tab" data-toggle="pill" href="#timeslot"
+                        role="tab" aria-controls="timeslot" aria-selected="true">
+                        TIMESLOT
+                    </a>
+                    <a class="nav-link gray-tab non-tab" id="users-tab" data-toggle="pill" href="#users" role="tab"
+                        aria-controls="users" aria-selected="true">
+                        USERS
+                    </a>
+                    <a class="nav-link gray-tab non-tab" id="my-subscription-tab" data-toggle="pill"
+                        href="#my-subscription" role="tab" aria-controls="my-subscription" aria-selected="true">
+                        MY SUBSCRIPTION
+                    </a>
+                    <a class="nav-link gray-tab non-tab" id="items-pricing" data-toggle="pill" href="#items-pricing"
+                        role="tab" aria-controls="items-pricing" aria-selected="true">
+                        ITEMS PRICING
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-9">
+            <div class="tab-content" id="v-tabContent">
+                <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                    <app-company-details></app-company-details>
+                </div>
+                <div class="tab-pane fade show" id="location" role="tabpanel" aria-labelledby="location-tab">
+                    <app-location></app-location>
+                </div>
+                <div class="tab-pane fade show" id="timeslot" role="tabpanel" aria-labelledby="timeslot-tab">
+                    <app-timeslot></app-timeslot>
+                </div>
+                <div class="tab-pane fade show" id="users" role="tabpanel" aria-labelledby="users-tab">
+                    <app-users></app-users>
+                </div>
+                <div class="tab-pane fade show" id="my-subscription" role="tabpanel"
+                    aria-labelledby="my-subscription-tab">
+                    <app-subscription></app-subscription>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
-</div>
-<div class="col-xl-9">
-    <div class="tab-content" id="v-tabContent">
-        <div 
-            class="tab-pane fade show active" 
-            id="company" 
-            role="tabpanel" 
-            aria-labelledby="company-tab">
-            <app-company-details></app-company-details>
-        </div>
-        <div 
-            class="tab-pane fade show" 
-            id="location" 
-            role="tabpanel" 
-            aria-labelledby="location-tab">
-            <app-location></app-location>
-        </div>
-        <div 
-            class="tab-pane fade show" 
-            id="timeslot" 
-            role="tabpanel" 
-            aria-labelledby="timeslot-tab">
-            <app-timeslot></app-timeslot>
-        </div>
-        <div 
-            class="tab-pane fade show" 
-            id="users" 
-            role="tabpanel" 
-            aria-labelledby="users-tab">
-            <app-users></app-users>
-        </div>
-        <div 
-            class="tab-pane fade show" 
-            id="my-subscription" 
-            role="tabpanel" 
-            aria-labelledby="my-subscription-tab">
-            <app-subscription></app-subscription>
-        </div>
-    </div>
-</div>
-
-</div>
 </div>
