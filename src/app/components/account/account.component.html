@@ -1,226 +1,120 @@
 <app-sub-header></app-sub-header>
-
 <div class="container-fluid p-4">
-
     <h4 class="poppins-medium fs-23">Search for Customers</h4>
-
     <div class="row mt-4 mb-4 text-black poppins-medium item-center">
         <div class="col-4">
-            <img src="assets/images/search.svg" alt="search" class="search-icon"><input type="text"
-                class="form-control worksans-regular h-52 fs-16 search-pading" value=""
-                placeholder="Search for orders by order ID">
+            <img src="assets/images/search.svg" alt="search" class="search-icon">
+            <input
+                type="text"
+                class="form-control worksans-regular h-52 fs-16 search-pading"
+                value=""
+                placeholder="Search for orders by order ID"
+            >
         </div>
         <div class="col text-right">
-            <div class="btn filter"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"
-                    fill="none">
-                    <path d="M7.33016 13.0929H1.02944" stroke="#1E4894" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M10.1405 3.40039H16.4412" stroke="#1E4894" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+            <div class="btn filter">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                    fill="none"
+                >
+                    <path
+                        d="M7.33016 13.0929H1.02944"
+                        stroke="#1E4894"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M10.1405 3.40039H16.4412"
+                        stroke="#1E4894"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
                         d="M5.72629 3.34625C5.72629 2.0506 4.66813 1 3.36314 1C2.05816 1 1 2.0506 1 3.34625C1 4.64191 2.05816 5.69251 3.36314 5.69251C4.66813 5.69251 5.72629 4.64191 5.72629 3.34625Z"
-                        stroke="#1E4894" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        stroke="#1E4894"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
                         d="M17 13.0537C17 11.7581 15.9427 10.7075 14.6377 10.7075C13.3319 10.7075 12.2737 11.7581 12.2737 13.0537C12.2737 14.3494 13.3319 15.4 14.6377 15.4C15.9427 15.4 17 14.3494 17 13.0537Z"
-                        stroke="#1E4894" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>&nbsp; Filter</div>
-            <div class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24"
-                    fill="none">
-                    <path d="M13.0002 16.6208L13.0002 1" stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M16.7833 12.823L13.0004 16.6215L9.21745 12.823" stroke="#130F26" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                        stroke="#1E4894"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>&nbsp; Filter
+            </div>
+            <div class="btn">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                >
+                    <path
+                        d="M13.0002 16.6208L13.0002 1"
+                        stroke="#130F26"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M16.7833 12.823L13.0004 16.6215L9.21745 12.823"
+                        stroke="#130F26"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
                     <path
                         d="M19.0104 7.14014H20.2208C22.8608 7.14014 25 9.27938 25 11.9207L25 18.2567C25 20.8902 22.8659 23.0242 20.2324 23.0242L5.78054 23.0242C3.14054 23.0242 1 20.8837 1 18.2437L1 11.9064C1 9.27419 3.13535 7.14014 5.76757 7.14014H6.98962"
-                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg> </div>
+                        stroke="#130F26"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </div>
         </div>
     </div>
 
-    <div class="row mt-4 scroll">
-        <div class="col">
-            <table class="table border">
-
-                <thead>
-                    <tr>
-                        <th scope="row" class="all-customer">All Customers</th>
-                    </tr>
-                    <tr class="table-header">
-                        <th class="text-center" scope="col-1">name</th>
-                        <th scope="col">emailid</th>
-                        <th scope="col">mobile</th>
-                        <th scope="col">registered no</th>
-                        <th scope="col">registered via</th>
-                        <th class="text-center" scope="col">status</th>
-                        <th class="text-center" scope="col">action</th>
-                    </tr>
-                </thead>
-                <tbody class="t-body">
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                    stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center" scope="row">John</td>
-                        <td>fjerome@example.com</td>
-                        <td>928728282</td>
-                        <td>12/03/23</td>
-                        <td>Direct</td>
-                        <td>
-                            <div class="t-progress">In Progress</div>
-                        </td>
-                        <td class="text-center"> <a href="javascript:void(0);" routerLink="company-detail">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.4115 8.30214C13.4115 10.0481 11.9955 11.4631 10.2495 11.4631C8.5035 11.4631 7.0885 10.0481 7.0885 8.30214C7.0885 6.55514 8.5035 5.14014 10.2495 5.14014C11.9955 5.14014 13.4115 6.55514 13.4115 8.30214Z"
-                                        stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
-                                        stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg> </a></td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-    </div>
-
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+      <li ngbNavItem>
+        <button ngbNavLink>COMPANY</button>
+        <ng-template ngbNavContent>
+          <app-company-details></app-company-details>
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>LOCATION</button>
+        <ng-template ngbNavContent><app-location></app-location></ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>TIMESLOT</button>
+        <ng-template ngbNavContent><app-timeslot></app-timeslot></ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>USERS</button>
+        <ng-template ngbNavContent><app-users></app-users></ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>MY SUBSCRIPTION</button>
+        <ng-template ngbNavContent><app-subscription></app-subscription></ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>ITEMS PRICING</button>
+        <ng-template ngbNavContent><app-item-price></app-item-price></ng-template>
+      </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
 </div>
