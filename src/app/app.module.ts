@@ -27,6 +27,7 @@ import { TimeslotComponent } from './components/account/timeslot/timeslot.compon
 import { CreateOrderComponent } from './components/create-order/create-order.component';
 import { OrderComponent } from './components/order/order.component';
 import { SubHeaderComponent } from './components/shared/sub-header/sub-header.component';
+import { ItemPriceComponent } from './components/account/item-price/item-price.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { SubHeaderComponent } from './components/shared/sub-header/sub-header.co
     TimeslotComponent,
     CreateOrderComponent,
     OrderComponent,
-    SubHeaderComponent
+    SubHeaderComponent,
+    ItemPriceComponent
   ],
   imports: [
     BrowserModule,
