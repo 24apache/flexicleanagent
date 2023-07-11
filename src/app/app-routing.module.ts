@@ -14,6 +14,9 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { CompanyDetailsComponent } from './components/account/company-details/company-details.component';
 import { CreateOrderComponent } from './components/create-order/create-order.component';
 import { OrderComponent } from './components/order/order.component';
+import { CustomerDetailsComponent } from './components/customers/customer-details/customer-details.component';
+import { CustomersListComponent } from './components/customers/customers-list/customers-list.component';
+import { CustomerInvoceComponent } from './components/customers/customer-invoce/customer-invoce.component';
 
 
 
@@ -30,7 +33,15 @@ const routes: Routes = [
         { path: 'create-order', component: CreateOrderComponent },
         { path: 'order', component: OrderComponent },
         { path: 'orders', component: OrdersComponent },
-        { path: 'customers', component: CustomersComponent },
+        {
+          path: 'customers',
+          component: CustomersComponent,
+          children: [
+            { path: '', component: CustomersListComponent },
+            { path: 'details', component: CustomerDetailsComponent },
+            { path: 'invoice', component: CustomerInvoceComponent },
+          ]
+        },
         { path: 'wallet', component: WalletComponent },
         { path: 'reports', component: ReportsComponent },
         { path: 'settings', component: SettingsComponent },

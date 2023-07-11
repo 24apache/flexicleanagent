@@ -28,6 +28,9 @@ import { CreateOrderComponent } from './components/create-order/create-order.com
 import { OrderComponent } from './components/order/order.component';
 import { SubHeaderComponent } from './components/shared/sub-header/sub-header.component';
 import { ItemPriceComponent } from './components/account/item-price/item-price.component';
+import { CustomerDetailsComponent } from './components/customers/customer-details/customer-details.component';
+import { CustomersListComponent } from './components/customers/customers-list/customers-list.component';
+import { CustomerInvoceComponent } from './components/customers/customer-invoce/customer-invoce.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,10 @@ import { ItemPriceComponent } from './components/account/item-price/item-price.c
     CreateOrderComponent,
     OrderComponent,
     SubHeaderComponent,
-    ItemPriceComponent
+    ItemPriceComponent,
+    CustomerDetailsComponent,
+    CustomersListComponent,
+    CustomerInvoceComponent
   ],
   imports: [
     BrowserModule,
