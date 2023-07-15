@@ -1,0 +1,147 @@
+.container-fluid {
+    background: #fff;
+}
+
+.customer-details {
+    border-radius: 10px;
+    border: 2.185px dashed #9caed0;
+    /* opacity: 0.5; */
+    // width: 357.318px;
+    // height: 165px;
+    align-items: center;
+    padding: 35px 0px 25px 15px;;
+}
+
+.d-customer {
+    color: #666;
+    font-family: "Work-sans, Medium";
+    font-size: 26.225px;
+    font-weight: 500;
+}
+
+.pad-left{
+    padding: 0px 68px 0px 0px;;
+}
+
+.n-customer {
+    color: #000;
+    font-family: "Work-sans, Medium";
+    font-size: 41.523px;
+    font-weight: 600;
+}
+
+img.customer-order {
+    width: 67.748px;
+    height: 61.192px;
+}
+
+.customer-name {
+    // width: 1142px;
+    // height: 126.405px;
+    padding: 25px 2px 25px 2px;
+    border-radius: 10px;
+    background: #F3F5F9;
+    align-items: center;
+}
+
+.name-customer {
+    color: #000;
+    font-family: "Poppins, Medium";
+    font-size: 19.331px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.detail {
+    color: #898A93;
+    font-family: "Work-sans, Medium";
+    font-size: 14.971px;
+    font-weight: 500;
+}
+
+.d-list {
+    color: #1D4893;
+    font-family: "Poppins, Medium";
+    font-size: 13.076px;
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+img.profile {
+    width: 70.83px;
+    height: 70.83px;
+}
+
+.manage-address {
+    border-radius: 6.538px;
+    background: #1E4894;
+    color: #FFF;
+    font-family: "Poppins, Medium";
+    font-size: 19.331px;
+    // width: 233.195px;
+    // height: 42.498px;
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+.edit-profile {
+    border-radius: 6.538px;
+    background: #1E4894;
+    color: #FFF;
+    font-family: "Poppins, Medium";
+    font-size: 19.331px;
+    // width: 195px;
+    // height: 43px;
+    padding: 6.5px 28px;
+    font-weight: 500;
+}
+
+
+
+.table-header {
+    background: #EBEEF6;
+    color: #979AA5;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Work-sans, Medium';
+    font-weight: 600;
+  }
+  
+  .t-body {
+    color: #4C4D52;
+    font-size: 17px;
+    font-family: "Work-sans, Medium";
+  }
+  
+  .filter {
+    border: 2px solid #1E4894;
+    padding: 13px 19px 13px 19px;
+    color: rgb(30, 72, 148);
+    font-family: "Work-sans, Medium";
+    font-size: 14.7px;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+  
+  
+  .t-progress {
+    border-radius: 2rem;
+    background: #E3F0E9;
+    font-family: "Work-sans, Medium";
+    color: #00B79D;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 0px 3px 0px;
+    width: 97.75px;
+  }
+  
+  .scroll{
+    overflow: auto;
+  }
+
+  .c-pading{
+    padding: 0px 0px 0px 19px;
+  }

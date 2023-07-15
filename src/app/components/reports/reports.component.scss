@@ -1,0 +1,29 @@
+
+.container-fluid{
+    background: #fff;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
+    background: transparent;
+    color: #B5B6BA;
+    font-family: "Poppins, Medium";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #1E4894;
+    font-family: "Poppins, Medium";
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+}

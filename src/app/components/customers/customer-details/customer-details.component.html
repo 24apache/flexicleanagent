@@ -1,2 +1,157 @@
-<p>customer-details works!</p>
-<a href="#" [routerLink]="'../invoice'">Invoice</a>
+<!-- <a href="#" [routerLink]="'../invoice'">Invoice</a> -->
+
+<div class="container-fluid pt-3">
+    <div class="row">
+        <div class="col-md-4 pad-left mt-3">
+            <div class="customer-details">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img class="customer-order" src="assets/images/total-order.png" alt="order">
+                    </div>
+                    <div class="col">
+                        <div class="c-pading"> <span class="d-customer">Total Orders </span> <br> <span
+                                class="n-customer"> 25</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 pad-left mt-3">
+            <div class="customer-details">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img class="customer-order" src="assets/images/total-order.png" alt="order">
+                    </div>
+                    <div class="col">
+                        <div class="c-pading"> <span class="d-customer">Special Discount </span> <br> <span
+                                class="n-customer">10%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 pad-left mt-3">
+            <div class="customer-details">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img class="customer-order" src="assets/images/total-order.png" alt="order">
+                    </div>
+                    <div class="col">
+                        <div class="c-pading"> <span class="d-customer">Last Ordered </span> <br> <span
+                                class="n-customer">10 Jan 22</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-11">
+            <div class="row customer-name mt-3">
+                <div class="col-sm-1">
+                    <img class="profile" src="assets/images/user.png" alt="profile">
+                </div>
+                <div class="col-lg-5 mb-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="name-customer">Customer Name</div>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="detail">Mobile</span><br> <span class="d-list underline"> Karthick Shiva</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="detail">Email</span> <br> <span class="d-list">fabona1333@aramask.com</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="btn manage-address"> <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22"
+                            viewBox="0 0 19 22" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.4578 9.10687C12.4578 7.60171 11.2381 6.38208 9.73407 6.38208C8.2289 6.38208 7.00928 7.60171 7.00928 9.10687C7.00928 10.6109 8.2289 11.8306 9.73407 11.8306C11.2381 11.8306 12.4578 10.6109 12.4578 9.10687Z"
+                                stroke="white" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.73321 20.5479C8.42724 20.5479 1.56104 14.9886 1.56104 9.17503C1.56104 4.62375 5.21925 0.93335 9.73321 0.93335C14.2472 0.93335 17.9065 4.62375 17.9065 9.17503C17.9065 14.9886 11.0392 20.5479 9.73321 20.5479Z"
+                                stroke="white" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> &nbsp; Manage Address </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="btn edit-profile"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21"
+                            viewBox="0 0 22 21" fill="none">
+                            <path d="M12.7114 20.0072H20.6145" stroke="white" stroke-width="1.63454"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.6572 1.86608C12.5024 0.855928 14.0218 0.707804 15.0529 1.53584C15.11 1.58076 16.9417 3.00372 16.9417 3.00372C18.0744 3.68849 18.4264 5.14422 17.7262 6.25515C17.689 6.31464 7.33325 19.2682 7.33325 19.2682C6.98872 19.698 6.46573 19.9517 5.90679 19.9578L1.94098 20.0076L1.04743 16.2256C0.922264 15.6938 1.04743 15.1353 1.39196 14.7055L11.6572 1.86608Z"
+                                stroke="white" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.74023 4.27051L15.6815 8.8332" stroke="white" stroke-width="1.63454"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> &nbsp; Edit Profile </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row mt-4 scroll">
+        <div class="col">
+
+            <table class="table border">
+                <thead>
+                    <tr>
+                        <th scope="row">Orders</th>
+                        <th scope="row">Transactions</th>
+                    </tr>
+                    <tr class="table-header">
+                        <th class="text-center" scope="col">Date</th>
+                        <th scope="col">order id</th>
+                        <th scope="col">nos</th>
+                        <th scope="col">type</th>
+                        <th scope="col">method</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">charges</th>
+                        <th scope="col">total</th>
+                        <th scope="col">discount</th>
+                        <th scope="col">final</th>
+                        <th scope="col">payment status</th>
+                        <th class="text-center" scope="col">order status</th>
+                        <th class="text-center" scope="col">invoice</th>
+                    </tr>
+                </thead>
+                <tbody class="t-body">
+                    <tr *ngFor="let i of [1,2,3,4,5,6,7,8]">
+                        <td class="text-center" scope="row">12/03/23</td>
+                        <td>ORD001</td>
+                        <td>3</td>
+                        <td>Online</td>
+                        <td>Wallet</td>
+                        <td>0.500</td>
+                        <td>0.500</td>
+                        <td>0.100</td>
+                        <td>0</td>
+                        <td>550</td>
+                        <td>Success</td>
+                        <td>
+                            <div class="t-progress">Pickup</div>
+                        </td>
+                        <td class="text-center">
+                            <a href="#" [routerLink]="'/invoice'"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                    height="17" viewBox="0 0 21 17" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.4114 8.30262C13.4114 10.0486 11.9954 11.4636 10.2494 11.4636C8.50338 11.4636 7.08838 10.0486 7.08838 8.30262C7.08838 6.55562 8.50338 5.14062 10.2494 5.14062C11.9954 5.14062 13.4114 6.55562 13.4114 8.30262Z"
+                                        stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z"
+                                        stroke="#2F569C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg> </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

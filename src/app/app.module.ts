@@ -31,6 +31,10 @@ import { ItemPriceComponent } from './components/account/item-price/item-price.c
 import { CustomerDetailsComponent } from './components/customers/customer-details/customer-details.component';
 import { CustomersListComponent } from './components/customers/customers-list/customers-list.component';
 import { CustomerInvoceComponent } from './components/customers/customer-invoce/customer-invoce.component';
+import { RatingComponent } from './components/reports/rating/rating.component';
+import { StatsComponent } from './components/reports/stats/stats.component';
+import { TransactionComponent } from './components/wallet/transaction/transaction.component';
+
 
 @NgModule({
   declarations: [
@@ -41,6 +45,7 @@ import { CustomerInvoceComponent } from './components/customers/customer-invoce/
     HeaderComponent,
     FooterComponent,
     ReportsComponent,
+    RatingComponent,
     SettingsComponent,
     WalletComponent,
     CustomersComponent,
@@ -61,7 +66,9 @@ import { CustomerInvoceComponent } from './components/customers/customer-invoce/
     ItemPriceComponent,
     CustomerDetailsComponent,
     CustomersListComponent,
-    CustomerInvoceComponent
+    CustomerInvoceComponent,
+    StatsComponent,
+    TransactionComponent
   ],
   imports: [
     BrowserModule,

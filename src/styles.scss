@@ -9691,7 +9691,7 @@ html {
   #wrapper #content-wrapper {
     background-color: #F3F5F9;
     width: 100%;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
   
   #wrapper #content-wrapper #content {
@@ -10315,7 +10315,7 @@ html {
   }
   
   .sidebar {
-    width: 6.5rem;
+    width: 220px;
     min-height: 100vh;
   }
   
@@ -10504,7 +10504,7 @@ html {
   
   @media (min-width: 768px) {
     .sidebar {
-      width: 14rem !important;
+      width: 220px !important;
     }
     .sidebar .nav-item .collapse {
       position: relative;
@@ -10534,11 +10534,11 @@ html {
       width: 14rem;
     }
     .sidebar .nav-item .nav-link i {
-      font-size: 0.85rem;
+      font-size: 18px;
       // margin-right: 0.25rem;
     }
     .sidebar .nav-item .nav-link span {
-      font-size: 0.85rem;
+      font-size: 18px;
       display: inline;
     }
     .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -10596,7 +10596,7 @@ html {
     }
     .sidebar.toggled .nav-item .nav-link {
       text-align: center;
-      padding: 0.75rem 1rem;
+      padding: 0.75rem 0rem;
       width: 6.5rem;
     }
     .sidebar.toggled .nav-item .nav-link span {
@@ -10689,29 +10689,31 @@ html {
   }
 
   .sidebar-dark .nav-item .nav-link {
-    color: #9A9DA5;
+    color: #4C4D52;
     /* margin-left: 30px; */
     font-family: 'Work-sans, Medium';
-    padding: 12px 10px 12px 45px;
+    padding: 12px 20px 12px 30px;
     font-size: 18px;
 }
   
-  .sidebar-dark .nav-item .nav-link i {
-    color: #9899A0;
+  .sidebar-dark .nav-item .nav-link svg {
+    // filter: brightness(0.5);
   }
   
   .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
     color: #2B539A;;
-    // font-weight: 700;
+    font-weight: 500;
     background: #d2daea;
     width: auto;
     font-size: 18px;
-    font-family: 'Work-sans, Semibold';;
+    font-family: 'Work-sans, Medium';
+
     // padding: 10px 0px 10px 20px;
   }
   
-  .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
-    color: #2B539A;;
+  .sidebar-dark .nav-item .nav-link:active svg, .sidebar-dark .nav-item .nav-link:focus svg, .sidebar-dark .nav-item .nav-link:hover svg {
+    // filter: brightness(0.5);
+    filter: invert(8%) sepia(43%) saturate(1655%) hue-rotate(189deg) brightness(96%) contrast(97%);
   }
   
   .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -10720,8 +10722,9 @@ html {
   
   .sidebar-dark .nav-item.active .nav-link {
     color: #2B539A;
-    font-family: 'Work-sans, Semibold';
+    font-family: 'Work-sans, Medium';
     font-size: 18px;
+    font-weight: 500;
 }
   
   .sidebar-dark .nav-item.active .nav-link i {

@@ -1,1 +1,19 @@
-<p>reports works!</p>
+<app-sub-header></app-sub-header>
+<div class="container-fluid p-4">
+    
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+      <li ngbNavItem>
+        <button ngbNavLink>STATS</button>
+        <ng-template ngbNavContent>
+            <app-stats></app-stats>
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink>REVIEW & RATINGS</button>
+        <ng-template ngbNavContent>
+            <app-rating></app-rating>
+        </ng-template>
+      </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
+</div>

@@ -39,7 +39,7 @@ const routes: Routes = [
           children: [
             { path: '', component: CustomersListComponent },
             { path: 'details', component: CustomerDetailsComponent },
-            { path: 'invoice', component: CustomerInvoceComponent },
+            // { path: 'invoice', component: CustomerInvoceComponent },
           ]
         },
         { path: 'wallet', component: WalletComponent },
@@ -50,7 +50,8 @@ const routes: Routes = [
     },
   { path: 'login', component: LoginComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent},
-  { path: 'otp-verification', component: OtpVerificationComponent}
+  { path: 'otp-verification', component: OtpVerificationComponent},
+  { path: 'invoice', component: CustomerInvoceComponent }
 ]
 
 @NgModule({
