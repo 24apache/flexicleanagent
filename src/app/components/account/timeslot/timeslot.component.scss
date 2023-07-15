@@ -7,7 +7,8 @@
 
 .day {
   font-size: 22px;
-  background-color: rgb(208, 228, 247);
+  // background-color: rgb(208, 228, 247);
+  background-color: rgb(243, 245, 249);
   font-family: 'Work-sans, Medium';
   padding: 12px;
   color: #3960A1;
@@ -31,7 +32,8 @@
   font-family: "Work-sans, Medium";
   border-radius: 4px;
   padding: 14px 7px 9px 10px;
-  background: #D0E4F7;
+  border: 1px solid #dadce0;
+  // background: #D0E4F7;
   width: 180px;
   height: 55px;
 }
@@ -70,6 +72,8 @@
   height: 53px;
   font-family: 'Work-sans, Medium';
 }
+
+
 
 
 
