@@ -1,42 +1,23 @@
 <app-sub-header></app-sub-header>
 <div class="container-fluid p-4">
-
-  <div class="row r-border align-items-center">
-    <div class="col-12 border-bottom">
-        <div class="rating"> Wallet </div>
+  <div class="row mt-5">
+    <div class="col-12">
+      <ul ngbNav #nav="ngbNav" class="nav-tabs wallet-tab">
+        <li ngbNavItem>
+          <button ngbNavLink>Transactions</button>
+          <ng-template ngbNavContent>
+            <app-transaction></app-transaction>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <button ngbNavLink>Payout History </button>
+          <ng-template ngbNavContent>
+            <app-payout></app-payout>
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav"></div>
     </div>
-    <div class="col-1">
-        <img class="img-rating" src="assets/images/wallet.png" alt="rating">
-    </div>
-    <div class="col-md-8">
-        <div class="wallet"><span class="n-rating">250</span> <br> <span class="bhd">BHD</span></div>
-    </div>
-    <div class="col-md-3">
-        <div class="see-review"><span class="review">120 REVIEWS</span><br><span class="all-review">See all Reviews <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-            <path d="M16 7.02441L1 7.02441" stroke="#285198" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M9.9502 0.999828L16.0002 7.02383L9.9502 13.0488" stroke="#285198" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg></span></div>
-    </div>
-</div>
-
-    <div class="row mt-5">
-      <div class="col-12"> 
-        <ul ngbNav #nav="ngbNav" class="nav-tabs">
-          <li ngbNavItem>
-            <button ngbNavLink>Transactions</button>
-            <ng-template ngbNavContent>
-                <app-transaction></app-transaction>
-            </ng-template>
-          </li>
-          <li ngbNavItem>
-            <button ngbNavLink>Payout History </button>
-            <ng-template ngbNavContent>
-                <!-- <app-rating></app-rating> -->
-            </ng-template>
-          </li>
-        </ul>
-        <div [ngbNavOutlet]="nav"></div>
-      </div>
-    </div>
+  </div>
 
 </div>

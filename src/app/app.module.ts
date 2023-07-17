@@ -34,6 +34,7 @@ import { CustomerInvoceComponent } from './components/customers/customer-invoce/
 import { RatingComponent } from './components/reports/rating/rating.component';
 import { StatsComponent } from './components/reports/stats/stats.component';
 import { TransactionComponent } from './components/wallet/transaction/transaction.component';
+import { PayoutComponent } from './components/wallet/payout/payout.component';
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import { TransactionComponent } from './components/wallet/transaction/transactio
     CustomersListComponent,
     CustomerInvoceComponent,
     StatsComponent,
-    TransactionComponent
+    TransactionComponent,
+    PayoutComponent
   ],
   imports: [
     BrowserModule,

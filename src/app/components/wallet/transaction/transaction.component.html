@@ -1,32 +1,181 @@
-<div class="col text-right">
-    <div class="btn filter">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-            <path d="M7.33026 13.093H1.02954" stroke="#1E4894" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            <path d="M10.1404 3.40066H16.4411" stroke="#1E4894" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M5.72629 3.34625C5.72629 2.0506 4.66813 1 3.36314 1C2.05816 1 1 2.0506 1 3.34625C1 4.64191 2.05816 5.69251 3.36314 5.69251C4.66813 5.69251 5.72629 4.64191 5.72629 3.34625Z"
-                stroke="#1E4894" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M17 13.0533C17 11.7576 15.9426 10.707 14.6376 10.707C13.3318 10.707 12.2737 11.7576 12.2737 13.0533C12.2737 14.3489 13.3318 15.3995 14.6376 15.3995C15.9426 15.3995 17 14.3489 17 13.0533Z"
-                stroke="#1E4894" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        &nbsp; Filter
-    </div>
-    <div class="btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-            <path d="M13.0003 16.6208L13.0003 1" stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            <path d="M16.7832 12.8232L13.0003 16.6217L9.21737 12.8232" stroke="#130F26" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" />
-            <path
-                d="M19.0104 7.13965H20.2208C22.8608 7.13965 25 9.27889 25 11.9202L25 18.2562C25 20.8897 22.8659 23.0238 20.2324 23.0238L5.78054 23.0238C3.14054 23.0238 1 20.8832 1 18.2432L1 11.9059C1 9.2737 3.13535 7.13965 5.76757 7.13965H6.98962"
-                stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
+<div class="container-fluid wallet-bank">
+    <div class="row r-border align-items-center">
+        <div class="col-12 border-bottom">
+            <div class="rating"> Wallet </div>
+        </div>
+        <div class="col-1">
+            <img class="img-rating" src="assets/images/wallet.png" alt="rating">
+        </div>
+        <div class="col-md-8">
+            <div class="wallet"><span class="n-rating">250</span> <br> <span class="bhd">BHD</span></div>
+        </div>
+        <div class="col-md-3">
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <img src="assets/images/bank-detail.png" alt="bank-detail">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="see-review"><span class="review">Bank Details</span></div>
+                        </div>
+                        <div class="col-12">
+                            <h4 class="text-center"><span class="btn add-bank" data-toggle="modal" data-target="#myModal2">Add Bank details</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container-fluid">
 
+<div class="container-fluid text-right">
+    <div class="row justify-content-end">
+        <div class="col-6 wallet-filter">
+            <div class="btn filter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                    <path d="M7.33026 13.093H1.02954" stroke="#1E4894" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10.1404 3.40066H16.4411" stroke="#1E4894" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.72629 3.34625C5.72629 2.0506 4.66813 1 3.36314 1C2.05816 1 1 2.0506 1 3.34625C1 4.64191 2.05816 5.69251 3.36314 5.69251C4.66813 5.69251 5.72629 4.64191 5.72629 3.34625Z"
+                        stroke="#1E4894" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17 13.0533C17 11.7576 15.9426 10.707 14.6376 10.707C13.3318 10.707 12.2737 11.7576 12.2737 13.0533C12.2737 14.3489 13.3318 15.3995 14.6376 15.3995C15.9426 15.3995 17 14.3489 17 13.0533Z"
+                        stroke="#1E4894" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                &nbsp; Filter
+            </div>
+            <div class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                    <path d="M13.0003 16.6208L13.0003 1" stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M16.7832 12.8232L13.0003 16.6217L9.21737 12.8232" stroke="#130F26" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M19.0104 7.13965H20.2208C22.8608 7.13965 25 9.27889 25 11.9202L25 18.2562C25 20.8897 22.8659 23.0238 20.2324 23.0238L5.78054 23.0238C3.14054 23.0238 1 20.8832 1 18.2432L1 11.9059C1 9.2737 3.13535 7.13965 5.76757 7.13965H6.98962"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid wallet-table">
+    <div class="row scroll">
+        <div class="col">
+
+            <table class="table border">
+                <thead>
+                    <tr class="table-header">
+                        <th class="text-center" scope="col">order date</th>
+                        <th class="text-center" scope="col">order id</th>
+                        <th class="text-center" scope="col">transaction no</th>
+                        <th class="text-center" scope="col">type</th>
+                        <th class="text-center" scope="col">method</th>
+                        <th class="text-center" scope="col">amount spent</th>
+                        <th class="text-center" scope="col">payment status</th>
+                        <th class="text-center" scope="col">order status</th>
+                    </tr>
+                </thead>
+                <tbody class="t-body">
+                    <tr *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">
+                        <td class="text-center" scope="row">12/03/23</td>
+                        <td class="text-center">ORD0001</td>
+                        <td class="text-center">TXN0001</td>
+                        <td class="text-center">POS</td>
+                        <td class="text-center">Cash</td>
+                        <td class="text-center">55.000</td>
+                        <td class="text-center">Success</td>
+                        <td class="text-center">
+                            <div class="pickup">Pickup</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" style="max-width: 721px;" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header item-baseline modal-header-name">
+                <h4 class="modal-title" id="myModalLabel2">Add Bank Details</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"><img class="close-bttn" src="assets/images/close.png"
+                            alt="close"></span></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="row g-3 needs-validation" novalidate>
+                    
+                    <div class="col-md-12 mt-3">
+                        <label for="validationCustom02" class="form-label h-filter">Bank Account No
+                        </label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER ACCOUNT NO" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <label for="validationCustom02" class="form-label h-filter">Account Holder Name</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER HOLDER NAME" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <label for="validationCustom02" class="form-label h-filter">Bank Name</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER BANK NAME" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <label for="validationCustom02" class="form-label h-filter">Branch Name</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER BARANCH NAME" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <label for="validationCustom02" class="form-label h-filter">Branch IFSC CODE</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER IFSC CODE" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    
+
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6 mt-3">
+                        <div class="btn clear">Clear</div>
+                    </div>
+                    <div class="col-md-6 mt-3 mb-3">
+                        <div class="btn save">Save</div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
 </div>

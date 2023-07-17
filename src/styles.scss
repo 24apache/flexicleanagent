@@ -5651,7 +5651,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 12px 12px;
+    padding: 12px 25px;
     background: #EBEEF6;
     border-bottom: 1px solid #e3e6f0;
     border-top-left-radius: calc(0.3rem - 1px);
@@ -5671,7 +5671,7 @@
   .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 1rem;
+    padding: 0.5rem 1.5rem;
   }
   
   .modal-footer {
@@ -9699,7 +9699,6 @@ html {
   }
   
   .container,
-  .container-fluid,
   .container-sm,
   .container-md,
   .container-lg,

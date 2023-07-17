@@ -3,12 +3,11 @@ import { Component } from '@angular/core';
 declare var window: any;
 
 @Component({
-  selector: 'app-settings',
-  templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss']
+  selector: 'app-payout',
+  templateUrl: './payout.component.html',
+  styleUrls: ['./payout.component.scss']
 })
-export class SettingsComponent {
-
+export class PayoutComponent {
   formModal: any;
 
   ngOnInit(): void{

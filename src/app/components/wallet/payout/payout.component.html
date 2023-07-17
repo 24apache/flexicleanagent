@@ -1,0 +1,86 @@
+<div class="container-fluid wallet-bank">
+    <div class="row r-border align-items-center">
+        <div class="col-12 border-bottom">
+            <div class="rating"> Wallet </div>
+        </div>
+        <div class="col-1">
+            <img class="img-rating" src="assets/images/wallet.png" alt="rating">
+        </div>
+        <div class="col-md-7">
+            <div class="wallet"><span class="n-rating">250</span> <br> <span class="bhd">BHD</span></div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <div> <span class="bank-detail">Bank Details </span> <br> <span class="bank-no">2488 8888 8838
+                        </span></div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="btn verify-now" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        (click)="openModal()">Verify Now</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row mt-4 scroll">
+        <div class="col">
+
+            <table class="table border">
+                <thead>
+                    <tr class="table-header">
+                        <th class="text-center" scope="col">order date</th>
+                        <th class="text-center" scope="col">order id</th>
+                        <th class="text-center" scope="col">transaction no</th>
+                        <th class="text-center" scope="col">type</th>
+                        <th class="text-center" scope="col">method</th>
+                        <th class="text-center" scope="col">amount spent</th>
+                        <th class="text-center" scope="col">payment status</th>
+                        <th class="text-center" scope="col">order status</th>
+                    </tr>
+                </thead>
+                <tbody class="t-body">
+                    <tr *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">
+                        <td class="text-center" scope="row">12/03/23</td>
+                        <td class="text-center">ORD0001</td>
+                        <td class="text-center">TXN0001</td>
+                        <td class="text-center">POS</td>
+                        <td class="text-center">Cash</td>
+                        <td class="text-center">55.000</td>
+                        <td class="text-center">Success</td>
+                        <td class="text-center">
+                            <div class="pickup">Pickup</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <h4 class="account-verify">ACCOUNT VERIFICATION</h4>
+                <p class="account-para mb-3">(Amount has been deposited in your bank account, 
+                    Enter the same here to activate your account)</p>
+                <div><input class="form-control amount-enter input-text" type="text" placeholder="Enter the amount">
+                <div class="text-center mt-4">
+                    <div class="btn save" data-bs-dismiss="modal" (click)="doSomething()">Save</div> &nbsp;
+                <div class="btn discard" (click)="doSomething()">Discard</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

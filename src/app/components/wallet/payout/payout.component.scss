@@ -1,0 +1,212 @@
+.wallet-bank {
+    position: relative;
+    bottom: 5rem;
+}
+
+
+.rating {
+    color: #000;
+    font-family: "Work-sans, Medium";
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 15px;
+}
+
+.img-rating {
+    margin-left: 15px;
+    width: 69px;
+    height: 69px;
+}
+
+.see-review {
+    // padding: 9px 5px 8px 100px;
+    text-align: center;
+}
+
+.n-rating {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 57px;
+    font-weight: 600;
+    // margin-left: 15px;
+    // padding: 19px 15px;
+}
+
+.wallet {
+    padding: 0px 15px;
+}
+
+.bank-detail {
+    color: #898A93;
+    font-family: "Work-sans, Medium";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bank-no {
+    color: #1E4894;
+    text-align: center;
+    font-family: "Work-sans, Medium";
+    opacity: 0.8999999761581421;
+    font-size: 16.9px;
+    font-weight: 600;
+}
+
+.verify-now {
+    border-radius: 4px;
+    background: #1D4893;
+    color: #FFF;
+    padding: 10px 25px;
+    font-family: "Work-sans, Medium";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.r-border {
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    background: #F3F5F9;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #DBDDE0;
+}
+
+.bhd {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 27px;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+}
+
+
+.table-header {
+    background: #EBEEF6;
+    color: #979AA5;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Work-sans, Medium';
+    font-weight: 600;
+}
+
+.t-body {
+    color: #4C4D52;
+    font-size: 17px;
+    font-family: "Work-sans, Medium";
+}
+
+
+.scroll {
+    overflow: auto;
+}
+
+
+.filter {
+    border: 2px solid #1E4894;
+    padding: 13px 19px 13px 19px;
+    color: rgb(30, 72, 148);
+    font-family: "Work-sans, Medium";
+    font-size: 14.7px;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.pickup {
+    //     width: 76.301px;
+    // height: 21.493px;
+    border-radius: 2.149px;
+    background: #E3F0E9;
+    color: #00B79D;
+    font-family: "Roboto, Medium";
+    font-size: 10.747px;
+    font-weight: 500;
+    padding: 3px 0px 3px 0px;
+    margin: 0px 28px 0px 28px;
+}
+
+.account-verify {
+    color: #000;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 28.53px;
+    font-weight: 600;
+}
+
+.account-para {
+    color: #000;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+    opacity: 0.4000000059604645;
+}
+
+.amount-enter {
+    width: 620px;
+    height: 76px;
+    border: 1px solid #E5E5E5;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.input-text {
+    color: #000000;
+    opacity: 0.20000000298023224;
+}
+
+.save {
+    width: 167px;
+    height: 44px;
+    border-radius: 4px;
+    background: #285198;
+    color: #FCFBFD;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.discard {
+    width: 167px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    color: #285198;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.input-bhd {
+    color: #285198;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 832px;
+    height: 419px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    outline: 0;
+  }
+
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 5rem;
+  }
