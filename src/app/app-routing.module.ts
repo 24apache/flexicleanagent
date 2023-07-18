@@ -17,6 +17,8 @@ import { OrderComponent } from './components/order/order.component';
 import { CustomerDetailsComponent } from './components/customers/customer-details/customer-details.component';
 import { CustomersListComponent } from './components/customers/customers-list/customers-list.component';
 import { CustomerInvoceComponent } from './components/customers/customer-invoce/customer-invoce.component';
+import { ManageAddressComponent } from './components/customers/manage-address/manage-address.component';
+import { EditProfileComponent } from './components/customers/edit-profile/edit-profile.component';
 
 
 
@@ -39,7 +41,8 @@ const routes: Routes = [
           children: [
             { path: '', component: CustomersListComponent },
             { path: 'details', component: CustomerDetailsComponent },
-            // { path: 'invoice', component: CustomerInvoceComponent },
+            { path: 'manage-address', component: ManageAddressComponent },
+            { path: 'profile-update', component: EditProfileComponent }
           ]
         },
         { path: 'wallet', component: WalletComponent },

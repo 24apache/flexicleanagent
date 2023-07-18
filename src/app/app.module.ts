@@ -35,6 +35,8 @@ import { RatingComponent } from './components/reports/rating/rating.component';
 import { StatsComponent } from './components/reports/stats/stats.component';
 import { TransactionComponent } from './components/wallet/transaction/transaction.component';
 import { PayoutComponent } from './components/wallet/payout/payout.component';
+import { ManageAddressComponent } from './components/customers/manage-address/manage-address.component';
+import { EditProfileComponent } from './components/customers/edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -70,7 +72,9 @@ import { PayoutComponent } from './components/wallet/payout/payout.component';
     CustomerInvoceComponent,
     StatsComponent,
     TransactionComponent,
-    PayoutComponent
+    PayoutComponent,
+    ManageAddressComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
