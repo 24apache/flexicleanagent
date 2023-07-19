@@ -37,6 +37,7 @@ import { TransactionComponent } from './components/wallet/transaction/transactio
 import { PayoutComponent } from './components/wallet/payout/payout.component';
 import { ManageAddressComponent } from './components/customers/manage-address/manage-address.component';
 import { EditProfileComponent } from './components/customers/edit-profile/edit-profile.component';
+import { TrackstatusComponent } from './components/customers/trackstatus/trackstatus.component';
 
 
 @NgModule({
@@ -74,7 +75,8 @@ import { EditProfileComponent } from './components/customers/edit-profile/edit-p
     TransactionComponent,
     PayoutComponent,
     ManageAddressComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    TrackstatusComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ import { CustomersListComponent } from './components/customers/customers-list/cu
 import { CustomerInvoceComponent } from './components/customers/customer-invoce/customer-invoce.component';
 import { ManageAddressComponent } from './components/customers/manage-address/manage-address.component';
 import { EditProfileComponent } from './components/customers/edit-profile/edit-profile.component';
+import { TrackstatusComponent } from './components/customers/trackstatus/trackstatus.component';
 
 
 
@@ -42,7 +43,8 @@ const routes: Routes = [
             { path: '', component: CustomersListComponent },
             { path: 'details', component: CustomerDetailsComponent },
             { path: 'manage-address', component: ManageAddressComponent },
-            { path: 'profile-update', component: EditProfileComponent }
+            { path: 'profile-update', component: EditProfileComponent },
+            { path: 'pickup', component: TrackstatusComponent }
           ]
         },
         { path: 'wallet', component: WalletComponent },
