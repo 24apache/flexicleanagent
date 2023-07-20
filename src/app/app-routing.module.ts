@@ -20,43 +20,53 @@ import { CustomerInvoceComponent } from './components/customers/customer-invoce/
 import { ManageAddressComponent } from './components/customers/manage-address/manage-address.component';
 import { EditProfileComponent } from './components/customers/edit-profile/edit-profile.component';
 import { TrackstatusComponent } from './components/customers/trackstatus/trackstatus.component';
+import { OrderDetailComponent } from './components/orders/order-detail/order-detail.component';
+import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
+import { UpdateStatusComponent } from './components/orders/update-status/update-status.component';
 
 
 
 
 const routes: Routes = [
 
-    { path: '', redirectTo: '/login', pathMatch: 'full' },
-    {
-      path: 'dashboard',
-      component: DashboardComponent,
-      children: [
-        { path: '', component: HomeComponent },
-        { path: 'account', component: AccountComponent },
-        { path: 'create-order', component: CreateOrderComponent },
-        { path: 'order', component: OrderComponent },
-        { path: 'orders', component: OrdersComponent },
-        {
-          path: 'customers',
-          component: CustomersComponent,
-          children: [
-            { path: '', component: CustomersListComponent },
-            { path: 'details', component: CustomerDetailsComponent },
-            { path: 'manage-address', component: ManageAddressComponent },
-            { path: 'profile-update', component: EditProfileComponent },
-            { path: 'pickup', component: TrackstatusComponent }
-          ]
-        },
-        { path: 'wallet', component: WalletComponent },
-        { path: 'reports', component: ReportsComponent },
-        { path: 'settings', component: SettingsComponent },
-        { path: 'company-detail', component: CompanyDetailsComponent }
-      ]
-    },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'account', component: AccountComponent },
+      { path: 'create-order', component: CreateOrderComponent },
+      { path: 'order', component: OrderComponent },
+      {
+        path: 'orders', component: OrdersComponent,
+        children: [
+          { path: '', component: OrdersListComponent },
+          { path: 'status-update', component: UpdateStatusComponent },
+        ]
+      },
+      {
+        path: 'customers',
+        component: CustomersComponent,
+        children: [
+          { path: '', component: CustomersListComponent },
+          { path: 'details', component: CustomerDetailsComponent },
+          { path: 'manage-address', component: ManageAddressComponent },
+          { path: 'profile-update', component: EditProfileComponent },
+          { path: 'pickup', component: TrackstatusComponent }
+        ]
+      },
+      { path: 'wallet', component: WalletComponent },
+      { path: 'reports', component: ReportsComponent },
+      { path: 'settings', component: SettingsComponent },
+      { path: 'company-detail', component: CompanyDetailsComponent }
+    ]
+  },
   { path: 'login', component: LoginComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent},
-  { path: 'otp-verification', component: OtpVerificationComponent},
-  { path: 'invoice', component: CustomerInvoceComponent }
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'otp-verification', component: OtpVerificationComponent },
+  { path: 'invoice', component: CustomerInvoceComponent },
+  { path: 'order-detail', component: OrderDetailComponent }
 ]
 
 @NgModule({

@@ -14,7 +14,6 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { WalletComponent } from './components/wallet/wallet.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { OrdersComponent } from './components/orders/orders.component';
-import { CreateComponent } from './components/orders/create/create.component';
 import { AccountComponent } from './components/account/account.component';
 import { HomeComponent } from './components/home/home.component';
 import { OtpVerificationComponent } from './auth/otp-verification/otp-verification.component'
@@ -38,6 +37,9 @@ import { PayoutComponent } from './components/wallet/payout/payout.component';
 import { ManageAddressComponent } from './components/customers/manage-address/manage-address.component';
 import { EditProfileComponent } from './components/customers/edit-profile/edit-profile.component';
 import { TrackstatusComponent } from './components/customers/trackstatus/trackstatus.component';
+import { OrderDetailComponent } from './components/orders/order-detail/order-detail.component';
+import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
+import { UpdateStatusComponent } from './components/orders/update-status/update-status.component';
 
 
 @NgModule({
@@ -54,7 +56,6 @@ import { TrackstatusComponent } from './components/customers/trackstatus/trackst
     WalletComponent,
     CustomersComponent,
     OrdersComponent,
-    CreateComponent,
     AccountComponent,
     HomeComponent,
     OtpVerificationComponent,
@@ -76,7 +77,10 @@ import { TrackstatusComponent } from './components/customers/trackstatus/trackst
     PayoutComponent,
     ManageAddressComponent,
     EditProfileComponent,
-    TrackstatusComponent
+    TrackstatusComponent,
+    OrderDetailComponent,
+    OrdersListComponent,
+    UpdateStatusComponent
   ],
   imports: [
     BrowserModule,

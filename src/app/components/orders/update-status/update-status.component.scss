@@ -1,0 +1,79 @@
+.container-fluid {
+    background-color: #fff;
+}
+
+.status {
+    border-radius: 10px;
+    background: #F3F5F9;
+    padding: 15px 10px;
+    margin: 0px 0px;
+    // width: 1142px;
+    // height: 92px;
+}
+
+.order {
+    color: #898A93;
+    font-family: "Work-sans, Medium";
+    font-size: 14.971px;
+    font-weight: 500;
+}
+
+.booked {
+    color: #1D4893;
+    font-family: "Poppins, Medium";
+    font-size: 13.076px;
+    font-weight: 600;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #D7DFEC;
+}
+
+tr {
+    border-radius: 4px;
+    border: 1px solid #D7DFEC;
+    height: 60px;
+}
+
+.t-booked {
+    border-radius: 30px;
+    background: #edf8ee;
+    color: #4BBB55;
+    padding: 8px 18px;
+    font-family: "Poppins, Medium";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pickup-done {
+    color: #4C4D52;
+    font-family: "Work-sans, Medium";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.booking-p {
+    padding: 0px 30px;
+}
+
+.bending {
+    border-radius: 30px;
+    background: #ebeff6;
+    color: #6D6E73;
+    padding: 8px 18px;
+    font-family: "Poppins, Medium";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.scroll {
+    overflow: auto;
+}
+
+.w-max-content{
+    width: max-content;
+}

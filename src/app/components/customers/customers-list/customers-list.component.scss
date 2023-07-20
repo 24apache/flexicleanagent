@@ -80,6 +80,91 @@
 
 
 
+/* PAGINATION */
+
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+.page-item:first-child .page-links {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+/* .page-item:first-child .pages-links {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+} */
+
+.page-links {
+  padding: .375rem .75rem;
+}
+
+.pages-links {
+  padding: .375rem .75rem;
+}
+
+.page-links {
+  position: relative;
+  display: block;
+  font-size: 10px;
+  font-family: 'Work-Sans-Medium';
+  color: #303030;
+  text-decoration: none;
+  background-color: transparent;
+  /* border: 1px solid #dee2e6; */
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.pages-links {
+  position: relative;
+  display: block;
+  width: 5rem;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Work-Sans-Medium';
+  color: #303030;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #000000;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.page-item:not(:first-child) .page-links {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.page-item:not(:first-child) .pages-links {
+  margin-left: -1px;
+}
+
+.page-links:hover {
+  z-index: 2;
+  color: #965BA5;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.pages-links:hover {
+  z-index: 2;
+  color: #965BA5;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 380px)  {
