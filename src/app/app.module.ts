@@ -40,6 +40,7 @@ import { TrackstatusComponent } from './components/customers/trackstatus/trackst
 import { OrderDetailComponent } from './components/orders/order-detail/order-detail.component';
 import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
 import { UpdateStatusComponent } from './components/orders/update-status/update-status.component';
+import { SummaryComponent } from './components/create-order/summary/summary.component';
 
 
 @NgModule({
@@ -80,7 +81,8 @@ import { UpdateStatusComponent } from './components/orders/update-status/update-
     TrackstatusComponent,
     OrderDetailComponent,
     OrdersListComponent,
-    UpdateStatusComponent
+    UpdateStatusComponent,
+    SummaryComponent,
   ],
   imports: [
     BrowserModule,

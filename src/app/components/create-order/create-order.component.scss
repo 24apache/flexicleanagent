@@ -4,7 +4,7 @@ select.select-category {
     padding: 0.375rem 0.75rem;
     font-weight: 400;
     line-height: 1.5;
-    width: 13rem;
+    width: inherit;
     font-family: 'Work-sans, Regular';
     font-size: 16px;
     color: #6e707e;
@@ -49,8 +49,18 @@ select.select-category {
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     background: #FFF;
-    padding: 17px 23px;
+    padding: 40px 43px;
     margin: 0px 50px 0px 0px;
+}
+
+.p-border:hover {
+    border-radius: 4px;
+    border: 2px solid #288BE6;
+    // background: #FFF;
+    padding: 40px 43px;
+    margin: 0px 50px 0px 0px;
+    background: url("~src/assets/images/add-product.png") no-repeat;
+    background-position: 11.5rem 1rem;
 }
 
 .p-text-gray {
@@ -160,7 +170,7 @@ select.select-category {
     padding: 11px;
 }
 
-.save {
+.add-customer-btn {
     border-radius: 4px;
     background: #285198;
     color: #FCFBFD;
@@ -289,38 +299,38 @@ img.f-timer {
     font-weight: 600;
 }
 
-.u-address{
-    color: #534D58;
-font-family: "Work-sans, Medium";
-font-size: 12px;
-font-weight: 500;
-margin: 0px -11px;
-}
-
-.call-user{
+.u-address {
     color: #534D58;
     font-family: "Work-sans, Medium";
-font-size: 12px;
-font-weight: 500;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px -11px;
 }
 
-.u-mail{
+.call-user {
+    color: #534D58;
+    font-family: "Work-sans, Medium";
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.u-mail {
     color: #000;
     font-family: "Work-sans, Medium";
     font-size: 12px;
     font-weight: 500;
 }
 
-.margin-11{
+.margin-11 {
     margin: 0px 11px;
 }
 
-.multiple{
+.multiple {
     color: #000;
     font-family: "Poppins, Medium";
-font-size: 12px;
-font-weight: 500;
-padding: 0px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0px 4px;
 }
 
 .p-delivery {
@@ -384,6 +394,128 @@ padding: 0px 4px;
 }
 
 
+.jeans {
+    color: #252D38;
+    font-family: "Poppins, Medium";
+    font-size: 33.717px;
+    font-weight: 600;
+}
+
+img.jean {
+    width: 102.927px;
+    height: 102.927px;
+}
+
+.wash {
+    color: #252D38;
+    font-family: "Poppins, Medium";
+    font-size: 22.3px;
+    font-weight: 600;
+    opacity: 0.8899999856948853;
+}
+
+.w-bhd {
+    color: #1E4894;
+    font-family: "Poppins, Medium";
+    font-size: 21.295px;
+    font-weight: 600;
+}
+
+.decrement {
+    font-size: 33px;
+    color: #1E4894;
+    opacity: 0.5;
+    margin-bottom: 16px;
+}
+
+.increment {
+    color: #1E4894;
+    font-size: 33px;
+    margin-bottom: 16px;
+}
+
+.counter {
+    padding: 3px 18px;
+    text-align: center;
+    background: #F0F6FF;
+    color: #1E4894;
+    font-family: "Poppins, Medium";
+    font-size: 31.943px;
+    font-weight: 600;
+}
+
+.total-aed {
+    color: #252D38;
+    font-family: "Poppins, Medium";
+    font-size: 21.295px;
+    font-weight: 500;
+}
+
+.aed {
+    color: #1E4894;
+    font-family: "Poppins, Medium";
+    font-size: 31.943px;
+    font-weight: 700;
+}
+
+.add-padding {
+    padding: 0rem 4rem;
+}
+
+.urgent {
+    color: #4C4D52;
+    font-family: "Work-sans, Medium";
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    padding: 11px;
+    width: inherit;
+}
+
+.urgent:hover {
+    border-radius: 4px;
+    border: 1px solid #285198;
+    // background-color: #EBEEF6;
+    color: #285198;
+    font-family: "Work-sans, Medium";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 11px;
+    width: inherit;
+    background: url("~src/assets/images/blue-tick.png") no-repeat #EBEEF6;
+    background-position: 17rem;
+}
+
+.s-service{
+    color: #5F6266;
+    font-family: "Work-sans, Medium";
+font-size: 22px;
+font-weight: 500;
+}
+
+.s-bhd{
+    color: #285198;
+    font-family: "Work-sans, Medium";
+font-size: 24px;
+font-weight: 600;
+}
+
+.s-bhd1{
+    color: #4C4D52;
+    font-family: "Work-sans, Medium";
+font-size: 20px;
+font-weight: 500;
+}
+
+.service-bhd{
+    border-radius: 4px;
+border: 1px solid #e5e5e5;
+width: 141px;
+height: 53px;
+padding: 8px 10px;
+
+}
 
 
 
@@ -392,9 +524,66 @@ padding: 0px 4px;
 
 
 
+// SWITCH RADIO BUTTON
 
+.switch1 {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 24px;
+}
 
+.switch1 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
+.slider1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f00;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider1:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 19px;
+    left: 6px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked+.slider1 {
+    background-color: rgba(115, 211, 56, 1);
+}
+
+input:focus+.slider1 {
+    box-shadow: 0 0 1px rgba(115, 211, 56, 1);
+}
+
+input:checked+.slider1:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider1.round {
+    border-radius: 34px;
+}
+
+.slider1.round:before {
+    border-radius: 50%;
+}
 
 
 
@@ -693,7 +882,10 @@ input:checked+.slider:before {
     // border-top-right-radius: calc(.25rem - 1px);
 }
 
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
     cursor: pointer;
 }
 
@@ -838,9 +1030,73 @@ button.close {
 
 
 
+.modal-content-verify {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 832px;
+    height: 419px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    outline: 0;
+    right: 10rem;
+}
+
+.modal-body-verify {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 4rem;
+}
 
 
+.amount-enter {
+    width: 620px;
+    height: 76px;
+    border: 1px solid #E5E5E5;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+}
 
+
+.save {
+    width: 167px;
+    height: 44px;
+    border-radius: 4px;
+    background: #285198;
+    color: #FCFBFD;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.discard {
+    width: 167px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    color: #285198;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.input-bhd {
+    color: #285198;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.sucessfully {
+    text-align: center;
+    padding: 0.5rem 10rem;
+}
 
 
 

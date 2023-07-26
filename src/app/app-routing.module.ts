@@ -23,6 +23,7 @@ import { TrackstatusComponent } from './components/customers/trackstatus/trackst
 import { OrderDetailComponent } from './components/orders/order-detail/order-detail.component';
 import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
 import { UpdateStatusComponent } from './components/orders/update-status/update-status.component';
+import { SummaryComponent } from './components/create-order/summary/summary.component';
 
 
 
@@ -66,7 +67,8 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'otp-verification', component: OtpVerificationComponent },
   { path: 'invoice', component: CustomerInvoceComponent },
-  { path: 'order-detail', component: OrderDetailComponent }
+  { path: 'order-detail', component: OrderDetailComponent },
+  { path: 'summary-detail', component: SummaryComponent }
 ]
 
 @NgModule({

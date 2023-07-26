@@ -1,0 +1,487 @@
+
+<div class="container-fluid">
+    <div class="row invoice-summary text-center">
+        <div class="col-10">
+            Order Summary
+        </div>
+        <div class="col-2 text-right">
+            <div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                    fill="none">
+                    <path d="M15.793 15.782L9.70583 9.69482" stroke="#130F26" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9.70143 15.7846L15.7949 9.69238" stroke="#130F26" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.2554 1H7.24338C3.40589 1 1 3.71711 1 7.56222V17.9378C1 21.7829 3.39446 24.5 7.24338 24.5H18.2541C22.1043 24.5 24.5 21.7829 24.5 17.9378V7.56222C24.5 3.71711 22.1043 1 18.2554 1Z"
+                        stroke="#130F26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-lg-8 pt-5">
+            <div class="row justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="821" height="22" viewBox="0 0 821 22" fill="none">
+                    <path d="M0 22C0 9.84974 9.84974 0 22 0H799C811.15 0 821 9.84974 821 22H0Z" fill="#7E7C84" />
+                </svg>
+                <div class="invoice-card">
+                    <h4 class="detail-h mt-4">Agent Details</h4>
+                    <div class="col-12 mt-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-1">
+                                <img src="assets/images/loundry.png" alt="loundry">
+                            </div>
+                            <div class="col-md-11">
+                                <div>
+                                    <span class="invoice-topic">Cleanify services</span> <br> <span
+                                        class="invoice-detail">MN Area , Bangalore</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="detail-h mt-4">CUSTOMER Details</h4>
+                    <div class="col-md-12">
+                        <div class="row align-items-center">
+                            <div class="col-md-1">
+                                <img src="assets/images/user.png" alt="user">
+                            </div>
+                            <div class="col-md-11 mt-2">
+                                <span class="invoice-topic">Karthick Siva</span> <br> <span class="invoice-detail">
+                                    Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, <br>
+                                    Bangalore-560016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="detail-h mt-3 mb-3">ORDER STATUS</h4>
+                    <div class="col-md-12 p-0">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="invoice-complete">
+                                    Order Created
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="detail-h mt-5 mb-3">READY BY</h4>
+                        <div class="row mb-5">
+                            <div class="col-8">
+                                <span class="invoice-topic">Mon 28Feb 2022</span> <br> <span
+                                    class="invoice-detail">02:00 pm-03:00pm</span>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-3">
+                                <h4 class="detail-h mb-3">CREATED BY</h4>
+                                <h4 class="invoice-topic">Karthick</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 class="detail-h mb-3">CREATED BY</h4>
+                                <h4 class="invoice-topic">SUN 27,2022</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 border-left">
+
+            <div class="row mt-3">
+                <div class="col-12 pl-0 pr-0">
+                    <div ngbAccordion>
+                        <div ngbAccordionItem [collapsed]="false">
+                            <h2 ngbAccordionHeader>
+                                <button ngbAccordionButton>Items(3)</button>
+                            </h2>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody>
+                                    <ng-template>
+                                        <div class="row mt-3 mb-3 align-items-center">
+                                            <div class="col-lg-7">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="product"><img class="shirt"
+                                                                src="assets/images/shirt-1.png" alt="shirt">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="col-row">
+                                                            <div class="col">
+                                                                <div class="p-name">Product name</div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="dry-clean">Dry Clean</div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="15" viewBox="0 0 16 15" fill="none">
+                                                                    <path
+                                                                        d="M1 1L2.49876 1.2594L3.19265 9.52635C3.24814 10.2015 3.81233 10.7196 4.48966 10.7174H12.3502C12.9966 10.7189 13.5449 10.2433 13.6364 9.60345L14.3202 4.87804C14.3966 4.34987 14.0298 3.85989 13.5024 3.78351C13.4563 3.77703 2.73942 3.77342 2.73942 3.77342"
+                                                                        stroke="#1D4893" stroke-width="1.5"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M9.19727 6.43645H11.1954" stroke="#1D4893"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M4.17323 13.2148C4.39012 13.2148 4.56522 13.3907 4.56522 13.6068C4.56522 13.8237 4.39012 13.9995 4.17323 13.9995C3.95635 13.9995 3.78125 13.8237 3.78125 13.6068C3.78125 13.3907 3.95635 13.2148 4.17323 13.2148Z"
+                                                                        fill="#1D4893" stroke="#130F26"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M12.3021 13.2148C12.519 13.2148 12.6948 13.3907 12.6948 13.6068C12.6948 13.8237 12.519 13.9995 12.3021 13.9995C12.0853 13.9995 11.9102 13.8237 11.9102 13.6068C11.9102 13.3907 12.0853 13.2148 12.3021 13.2148Z"
+                                                                        fill="#1D4893" stroke="#130F26"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg> &nbsp; <span class="dry-clean">0.500 BHD</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <g opacity="0.5">
+                                                            <path d="M9 1L1 9" stroke="black" />
+                                                            <path d="M9 9L1 1" stroke="black" />
+                                                        </g>
+                                                    </svg> <span class="multiple">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3">
+                                                <div class="summary-bhd">1.000 BHD</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-4 align-items-center">
+                                            <div class="col-lg-7">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="product"><img class="shirt"
+                                                                src="assets/images/pant.png" alt="shirt">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="col-row">
+                                                            <div class="col">
+                                                                <div class="p-name">Product name</div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="dry-clean">Dry Clean</div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="15" viewBox="0 0 16 15" fill="none">
+                                                                    <path
+                                                                        d="M1 1L2.49876 1.2594L3.19265 9.52635C3.24814 10.2015 3.81233 10.7196 4.48966 10.7174H12.3502C12.9966 10.7189 13.5449 10.2433 13.6364 9.60345L14.3202 4.87804C14.3966 4.34987 14.0298 3.85989 13.5024 3.78351C13.4563 3.77703 2.73942 3.77342 2.73942 3.77342"
+                                                                        stroke="#1D4893" stroke-width="1.5"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M9.19727 6.43645H11.1954" stroke="#1D4893"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M4.17323 13.2148C4.39012 13.2148 4.56522 13.3907 4.56522 13.6068C4.56522 13.8237 4.39012 13.9995 4.17323 13.9995C3.95635 13.9995 3.78125 13.8237 3.78125 13.6068C3.78125 13.3907 3.95635 13.2148 4.17323 13.2148Z"
+                                                                        fill="#1D4893" stroke="#130F26"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M12.3021 13.2148C12.519 13.2148 12.6948 13.3907 12.6948 13.6068C12.6948 13.8237 12.519 13.9995 12.3021 13.9995C12.0853 13.9995 11.9102 13.8237 11.9102 13.6068C11.9102 13.3907 12.0853 13.2148 12.3021 13.2148Z"
+                                                                        fill="#1D4893" stroke="#130F26"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg> &nbsp; <span class="dry-clean">0.500 BHD</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                        viewBox="0 0 10 10" fill="none">
+                                                        <g opacity="0.5">
+                                                            <path d="M9 1L1 9" stroke="black" />
+                                                            <path d="M9 9L1 1" stroke="black" />
+                                                        </g>
+                                                    </svg> <span class="multiple">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3">
+                                                <div class="summary-bhd">0.500 BHD</div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row mt-3">
+                <div class="col-12 pl-0 pr-0">
+                    <div ngbAccordion>
+                        <div ngbAccordionItem [collapsed]="false">
+                            <h2 ngbAccordionHeader>
+                                <button ngbAccordionButton>Pickup & Delivery Time</button>
+                            </h2>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody>
+                                    <ng-template>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row align-items-center pt-2">
+                                                    <div class="col-1">
+                                                        <img class="f-timer" src="assets/images/fast-pickup.png"
+                                                            alt="fast-pickup">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="p-delivery">Fast Pickup & Delivery</div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" class="toggle" id="toggle" />
+                                                        <label for="toggle">
+                                                            <span class="on">YES</span>
+                                                            <span class="off">NO</span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                                <h4 class="i-time mt-3 mb-2">Pickup Time</h4>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-6 mb-3">
+                                                        <input type="date" value="Feb27, 2023">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <select class="time-form form-select form-select-lg mb-3"
+                                                            aria-label=".form-select-lg example">
+                                                            <option selected>01 pm to 02 pm</option>
+                                                            <option value="1">02 pm to 03 pm</option>
+                                                            <option value="2">03 pm to 04 pm</option>
+                                                            <option value="3">04 pm to 05 pm</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <h4 class="i-time mt-2 mb-3">Delivery Time</h4>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <input type="date" value="Feb27, 2023">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <select class="time-form form-select form-select-lg mb-3"
+                                                            aria-label=".form-select-lg example">
+                                                            <option selected>01 pm to 02 pm</option>
+                                                            <option value="1">02 pm to 03 pm</option>
+                                                            <option value="2">03 pm to 04 pm</option>
+                                                            <option value="3">04 pm to 05 pm</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row mt-3">
+                <div class="col-12 pl-0 pr-0">
+                    <div ngbAccordion>
+                        <div ngbAccordionItem [collapsed]="false">
+                            <h2 ngbAccordionHeader>
+                                <button ngbAccordionButton>Check out</button>
+                            </h2>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody>
+                                    <ng-template>
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <div class="row">
+                                                    <div class="col-6 mb-3">
+                                                        <div class="i-time">Subtotal</div>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <div class="bhd">6.400 BHD</div>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <div class="i-discount"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                                <path
+                                                                    d="M3.04476 5.30613C3.04476 4.05713 4.05676 3.04513 5.30576 3.04413H6.33476C6.93176 3.04413 7.50376 2.80713 7.92776 2.38713L8.64676 1.66713C9.52776 0.781134 10.9598 0.777134 11.8458 1.65813L11.8468 1.65913L11.8558 1.66713L12.5758 2.38713C12.9998 2.80813 13.5718 3.04413 14.1688 3.04413H15.1968C16.4458 3.04413 17.4588 4.05613 17.4588 5.30613V6.33313C17.4588 6.93013 17.6948 7.50313 18.1158 7.92713L18.8358 8.64713C19.7218 9.52813 19.7268 10.9601 18.8458 11.8461L18.8448 11.8471L18.8358 11.8561L18.1158 12.5761C17.6948 12.9991 17.4588 13.5711 17.4588 14.1681V15.1971C17.4588 16.4461 16.4468 17.4581 15.1978 17.4581H15.1968H14.1668C13.5698 17.4581 12.9968 17.6951 12.5738 18.1161L11.8538 18.8351C10.9738 19.7211 9.54276 19.7261 8.65676 18.8471C8.65576 18.8461 8.65476 18.8451 8.65376 18.8441L8.64476 18.8351L7.92576 18.1161C7.50276 17.6951 6.92976 17.4591 6.33276 17.4581H5.30576C4.05676 17.4581 3.04476 16.4461 3.04476 15.1971V14.1661C3.04476 13.5691 2.80776 12.9971 2.38676 12.5741L1.66776 11.8541C0.781764 10.9741 0.776764 9.54313 1.65676 8.65713C1.65676 8.65613 1.65776 8.65513 1.65876 8.65413L1.66776 8.64513L2.38676 7.92513C2.80776 7.50113 3.04476 6.92913 3.04476 6.33113V5.30613"
+                                                                    stroke="#1E4894" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.68164 12.8219L12.8216 7.68188"
+                                                                    stroke="#1E4894" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M12.7455 12.7502H12.7545" stroke="#1E4894"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path d="M7.7455 7.75024H7.7545" stroke="#1E4894"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg> &nbsp; Discount</div>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <div class="bhd">-0.400 BHD</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3 mb-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2"
+                                                        viewBox="0 0 485 2" fill="none">
+                                                        <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
+                                                    </svg>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-6">
+                                                        <div class="total">Total</div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="bhd">6.000 BHD</div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="row text-center">
+                                                    <div class="col bg-invoice">
+                                                        <div class="btn print-invoice"> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7026 1.01591H6.01056C3.29265 1.00545 1.06475 3.17063 1.00072 5.88854V20.0648C0.954988 22.7435 3.08881 24.9531 5.76882 25.0002C5.84853 25.0002 5.92955 25.0002 6.01056 24.9975H16.4484C19.1519 24.9701 21.3262 22.7683 21.3223 20.0648V7.9126L14.7026 1.01591Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M14.3604 1V4.80115C14.3604 6.65665 15.8617 8.16065 17.7172 8.16587H21.3158" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M14.1235 14.281H7.7207" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.9239 17.4821V11.0793" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                          </svg> Print Invoice</div>
+                                                    </div>
+                                    
+                                                </div> -->
+
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="row check-outline mb-4">
+                        <div class="col">
+                            <h4 class="check-out">Payment Method</h4>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="form">
+                                <button type="button" class="btn pay-now me-2" placement="bottom"
+                                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                popoverTitle="Popover on bottom">
+                                <label class="paynow"><input type="radio" class="input-radio off mr-4" name="pilih"> Pay Now</label>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="form">
+                                <button type="button" class="btn me-2 pay-now" placement="bottom"
+                                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                popoverTitle="Popover on bottom">
+                                <label class="paynow"><input type="radio" class="input-radio on mr-" name="pilih"> Pay on Delivery</label>
+                            </button>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+                <div class="row mt-3 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2"
+                        viewBox="0 0 485 2" fill="none">
+                        <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
+                    </svg>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="row mt-3 align-items-center">
+                            <div class="col-md-6">
+                                <div class="amount-received">
+                                    Amount Received
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                <span class="r-bhd">BHD</span> &nbsp; <span class="btn enter">Enter</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 align-items-center">
+                            <div class="col-md-6">
+                                <div class="amount-received">
+                                    Balance Paid
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                <span class="r-bhd">BHD</span> &nbsp; <span class="btn enter">Enter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-3 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2"
+                        viewBox="0 0 485 2" fill="none">
+                        <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
+                    </svg>
+                </div>
+
+                <div class="row mt-3 mb-3">
+                    <div class="col-12 mb-3">
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Add Aditional Info" rows="3"></textarea>
+                          </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                <div class="btn pay">Paynow</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btn pay">Discard</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+        </div>
+
+    </div>
+
+</div>
