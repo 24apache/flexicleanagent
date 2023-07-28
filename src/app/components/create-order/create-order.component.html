@@ -209,7 +209,7 @@
                                                                             alt="profile">
                                                                     </div>
                                                                     <div class="col">
-                                                                        <div class="u-name">Karthick Shiva</div>
+                                                                        <div class="u-name">Amal Salman</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -237,9 +237,7 @@
                                                                         </svg>
                                                                     </div>
                                                                     <div class="col-10">
-                                                                        <div class="u-address"> Akshya Nagar 1st Block
-                                                                            1st Cross, Rammurthy nagar,
-                                                                            Bangalore-560016</div>
+                                                                        <div class="u-address"> Villa 1588, Road 8123, Block 473, Sehala, Bahrain</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -262,7 +260,7 @@
                                                                             </svg></div>
                                                                     </div>
                                                                     <div class="col-9">
-                                                                        <div class="call-user">Karthick Shiva</div>
+                                                                        <div class="call-user">Amal Salman</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -888,8 +886,11 @@
                     </form>
                     <div class="row mt-4 add-padding">
                         <div class="col mt-3 mb-3">
-                            <div class="btn add-customer-btn">Add to Basket ({{ someValue }})</div>
+                            <div class="btn add-customer-btn" (click)="changeSuccessMessage()">Add to Basket ({{ someValue }})</div>
                         </div>
+                        
+                        <ngb-alert #selfClosingAlert *ngIf="successMessage" type="success" (closed)="successMessage = ''">{{ successMessage }}
+                        </ngb-alert>
                     </div>
                 </div>
 

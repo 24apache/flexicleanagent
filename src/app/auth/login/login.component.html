@@ -20,21 +20,24 @@
                                         <h4 class="p-welcome h4 mb-4 text-left">Welcome back! Please enter your details
                                         </h4>
                                     </div>
-                                    <form class="user">
+                                    <form [formGroup]="exform" class="user">
                                         <div class="form-group">
                                             <label class="text-black poppins-medium">Email</label>
-                                            <input type="email" class="form-control form-control-user poppins-regular is-valid"
-                                            id="validationServer01" aria-describedby="emailHelp"
-                                                placeholder="" value="flexiclean@gmail.com" required>
-                                                <!-- <div class="valid-feedback">
-                                                    Looks good!
-                                                  </div> -->
+                                            <input formControlName="email" type="email" class="form-control form-control-user poppins-regular"
+                                            
+                                                placeholder="" >
+                                                <small *ngIf="exform.get('email')?.invalid && exform.get('email')?.touched" class="text-danger">
+                                                    Valid Email Required
+                                                </small>
                                         </div>
                                         <div class="form-group">
                                             <label class="text-black poppins-medium">Password</label>
-                                            <input type="password"
-                                                class="form-control form-control-user poppins-regular is-valid"
-                                                id="validationServer02" placeholder="" value="123@abcd" required>
+                                            <input formControlName="password" type="password"
+                                                class="form-control form-control-user poppins-regular"
+                                                 placeholder="">
+                                                 <small *ngIf="exform.get('password')?.invalid && exform.get('password')?.touched" class="text-danger">
+                                                    Valid Password Required
+                                                </small>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
@@ -52,11 +55,7 @@
                                             </div>
 
                                         </div>
-                                        <a href="javascript:void(0);" routerLink="/dashboard"
-                                            class="btn btn-login btn-user btn-block">
-                                            SIGNIN
-                                        </a>
-
+                                        <button [disabled]="exform.invalid" class="btn btn-login btn-user btn-block" href="javascript:void(0);"  routerLink="/dashboard">SIGNIN</button>
                                     </form>
 
                                 </div>

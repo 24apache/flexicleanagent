@@ -56,7 +56,7 @@
 }
 
   .btn-login.disabled, .btn-login:disabled {
-    color: #9A9DA5;
+    color: #fff;
     background-color: #3b5998;
     border-color: #9A9DA5;
     font-family: "Poppins, Medium";
@@ -83,4 +83,12 @@
 
   .f-password{
     color: #7E56DA;
+  }
+
+  .form-control.ng-touched.ng-invalid{
+    border: 1.5px solid red;
+  }
+
+  .form-control.ng-touched.ng-valid{
+    border: 1.5px solid rgb(2, 165, 2);
   }

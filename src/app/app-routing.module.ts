@@ -11,7 +11,6 @@ import { CustomersComponent } from './components/customers/customers.component';
 import { WalletComponent } from './components/wallet/wallet.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { SettingsComponent } from './components/settings/settings.component';
-import { CompanyDetailsComponent } from './components/account/company-details/company-details.component';
 import { CreateOrderComponent } from './components/create-order/create-order.component';
 import { OrderComponent } from './components/order/order.component';
 import { CustomerDetailsComponent } from './components/customers/customer-details/customer-details.component';
@@ -24,6 +23,12 @@ import { OrderDetailComponent } from './components/orders/order-detail/order-det
 import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
 import { UpdateStatusComponent } from './components/orders/update-status/update-status.component';
 import { SummaryComponent } from './components/create-order/summary/summary.component';
+import { CompanyComponent } from './components/settings/company/company.component';
+import { ItemspriceComponent } from './components/settings/itemsprice/itemsprice.component';
+import { LocationsComponent } from './components/settings/locations/locations.component';
+import { SubscriptionsComponent } from './components/settings/subscriptions/subscriptions.component';
+import { UserComponent } from './components/settings/user/user.component';
+import { TimeslotsComponent } from './components/settings/timeslots/timeslots.component';
 
 
 
@@ -59,10 +64,20 @@ const routes: Routes = [
       },
       { path: 'wallet', component: WalletComponent },
       { path: 'reports', component: ReportsComponent },
-      { path: 'settings', component: SettingsComponent },
-      { path: 'company-detail', component: CompanyDetailsComponent }
+
+      { path: 'settings',
+       component: SettingsComponent,
+      children: [
+        { path: '', component: CompanyComponent  },
+        { path: 'item-price', component: ItemspriceComponent },
+        { path: 'locations', component: LocationsComponent },
+        { path: 'subscription', component: SubscriptionsComponent },
+        { path: 'timeslot', component: TimeslotsComponent },
+        { path: 'users', component: UserComponent }
+      ] }, 
     ]
   },
+
   { path: 'login', component: LoginComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'otp-verification', component: OtpVerificationComponent },

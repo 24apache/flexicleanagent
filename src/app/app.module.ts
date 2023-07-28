@@ -41,6 +41,13 @@ import { OrderDetailComponent } from './components/orders/order-detail/order-det
 import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
 import { UpdateStatusComponent } from './components/orders/update-status/update-status.component';
 import { SummaryComponent } from './components/create-order/summary/summary.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CompanyComponent } from './components/settings/company/company.component';
+import { TimeslotsComponent } from './components/settings/timeslots/timeslots.component';
+import { LocationsComponent } from './components/settings/locations/locations.component';
+import { ItemspriceComponent } from './components/settings/itemsprice/itemsprice.component';
+import { UserComponent } from './components/settings/user/user.component';
+import { SubscriptionsComponent } from './components/settings/subscriptions/subscriptions.component';
 
 
 @NgModule({
@@ -83,11 +90,18 @@ import { SummaryComponent } from './components/create-order/summary/summary.comp
     OrdersListComponent,
     UpdateStatusComponent,
     SummaryComponent,
+    CompanyComponent,
+    TimeslotsComponent,
+    LocationsComponent,
+    ItemspriceComponent,
+    UserComponent,
+    SubscriptionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
