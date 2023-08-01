@@ -48,6 +48,11 @@ import { LocationsComponent } from './components/settings/locations/locations.co
 import { ItemspriceComponent } from './components/settings/itemsprice/itemsprice.component';
 import { UserComponent } from './components/settings/user/user.component';
 import { SubscriptionsComponent } from './components/settings/subscriptions/subscriptions.component';
+import { CompanyInfoComponent } from './components/account/company-details/company-info/company-info.component';
+import { CompanyAddressComponent } from './components/account/company-details/company-address/company-address.component';
+import { CompanyServiceComponent } from './components/account/company-details/company-service/company-service.component';
+import { CompanyHourComponent } from './components/account/company-details/company-hour/company-hour.component';
+import { CompanyAccountComponent } from './components/account/company-details/company-account/company-account.component';
 
 
 @NgModule({
@@ -95,7 +100,12 @@ import { SubscriptionsComponent } from './components/settings/subscriptions/subs
     LocationsComponent,
     ItemspriceComponent,
     UserComponent,
-    SubscriptionsComponent
+    SubscriptionsComponent,
+    CompanyInfoComponent,
+    CompanyAddressComponent,
+    CompanyServiceComponent,
+    CompanyHourComponent,
+    CompanyAccountComponent
   ],
   imports: [
     BrowserModule,

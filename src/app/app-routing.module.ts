@@ -41,7 +41,10 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       { path: '', component: HomeComponent },
-      { path: 'account', component: AccountComponent },
+      {
+        path: 'account',
+        component: AccountComponent
+      },
       { path: 'create-order', component: CreateOrderComponent },
       { path: 'order', component: OrderComponent },
       {
@@ -74,7 +77,7 @@ const routes: Routes = [
         { path: 'subscription', component: SubscriptionsComponent },
         { path: 'timeslot', component: TimeslotsComponent },
         { path: 'users', component: UserComponent }
-      ] }, 
+      ] },
     ]
   },
 
