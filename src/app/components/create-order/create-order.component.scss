@@ -561,8 +561,48 @@ input.s-bhd:focus {
 
 }
 
+.nav-tabs .nav-link {
+    color: #8f8f8f;
+    font-family: "Poppins, Medium";
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #E3E3E3;
+    width: 106px;
+    height: 56px;
+    border-radius: 0;
+    text-align: center;
+    padding: 15px;
+}
 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #288BE6;
+    font-family: "Poppins, Medium";
+    font-size: 29px;
+    font-weight: 500;
+    border: 1px solid #288BE6;
+    background: #EBEEF6;
+    width: 106px;
+    height: 56px;
+    border-radius: 0;
+    text-align: center;
+    padding: 6px;
+}
 
+.nav-tabs{
+    border-bottom: none;
+}
+
+.enter-percentage {
+    border-radius: 0;
+    color: #9A9B9F;
+    font-family: "Poppins, Medium";
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    width: 28rem;
+    right: 4rem;
+}
 
 
 
@@ -1152,7 +1192,7 @@ button.close {
 
 
 @media (min-width: 380px) {
-    .container-fluid {
-        height: 100vh;
-    }
+    // .container-fluid {
+    //     height: 100vh;
+    // }
 }

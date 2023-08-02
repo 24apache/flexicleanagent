@@ -364,6 +364,20 @@
                 </tbody>
             </table>
 
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pt-5 mb-5">
+                    <li class="page-item"><a class="pages-links" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-links" href="#">1</a></li>
+                    <li class="page-item"><a class="page-links" href="#">2</a></li>
+                    <li class="page-item"><a class="page-links" href="#">3</a></li>
+                    <li class="page-item"><a class="page-links" href="#">4</a></li>
+                    <li class="page-item"><a class="page-links" href="#">5</a></li>
+                    <li class="page-item"><a class="page-links" href="#">6</a></li>
+                    <li class="page-item"><a class="page-links" href="#">7</a></li>
+                    <li class="page-item"><a class="pages-links" href="#">Next</a></li>
+                </ul>
+            </nav>
+            
         </div>
 
     </div>
@@ -430,7 +444,11 @@
                             <select class="form-select text-gray-200 sm poppins-regular" id="validationCustom04"
                                 required>
                                 <option selected disabled value="">All</option>
-                                <option>...</option>
+                                <option>1</option>
+                                <option>1</option>
+                                <option>1</option>
+                                <option>1</option>
+                                <option>1</option>
                             </select>
                             <div class="invalid-feedback">
                                 Please select a valid state.
@@ -489,7 +507,7 @@
         <div class="modal-content">
 
             <div class="modal-header item-baseline modal-header-name">
-                <h4 class="modal-title" id="myModalLabel2">Update Status</h4>
+                <h4 class="modal-title" id="myModalLabel2">Payment Update</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                             <path d="M15.793 15.782L9.70583 9.69482" stroke="#130F26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -529,7 +547,7 @@
 
                     <div class="col-md-12 mt-2">
                         <h4 class="m-customer">payment info</h4>
-                        <div class="row">
+                        <div class="row align-items-baseline">
                             <div class="col-md-6 mt-2">
                                 <div class="row benefit">
                                     <div class="col-2">
@@ -539,7 +557,7 @@
                                         <div class="cash">Benefit</div>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="input-radio on" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
                             </div>
@@ -552,7 +570,7 @@
                                         <div class="cash">Credit card</div>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="input-radio off" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
                             </div>
@@ -565,7 +583,7 @@
                                         <div class="cash">Cash</div>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="input-radio off" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
                             </div>
@@ -578,7 +596,7 @@
                                         <div class="cash">Others</div>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="input-radio on" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
                             </div>
@@ -620,6 +638,7 @@
 
 
                 </form>
+
                 <div class="row mt-3 mb-5">
                     <div class="col-md-6 mt-3">
                         <div class="btn clear">Clear</div>

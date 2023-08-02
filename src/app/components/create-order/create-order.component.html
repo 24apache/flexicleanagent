@@ -1059,12 +1059,12 @@
 
 
     <!-- Modal - APPLY DISCOUNT -->
-    <div class="modal right fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+    <div class="modal right fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
         <div class="modal-dialog" style="max-width: 721px;" role="document">
             <div class="modal-content">
 
                 <div class="modal-header item-baseline modal-header-name">
-                    <h4 class="modal-title" id="myModalLabel4">Apply Discount</h4>
+                    <h4 class="modal-title" id="myModalLabel5">Apply Discount</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true"><img class="close-bttn" src="assets/images/close.png"
                                 alt="close"></span></button>
@@ -1072,103 +1072,33 @@
 
                 <div class="modal-body">
                     <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-12">
-                            <div class="s-header">Basic Info</div>
-                        </div>
-                        <div class="col-md-12 mt-2">
-                            <label for="validationCustom01" class="form-label h-filter">First Name</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom01"
-                                placeholder="First Name" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
                        
-                        <div class="col-md-12 mt-2">
-                            <label for="validationCustomUsername" class="form-label h-filter">Phone Number</label>
-                            <div class="input-group has-validation">
-                                <span class="input-group-number" id="inputGroupPrepend">+91</span>
-                                <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                    placeholder="Mobile Number" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
+                        <div class="col-md-5 mt-4">
+                            <ul ngbNav #nav="ngbNav" class="nav-tabs">
+                                <li ngbNavItem>
+                                    <a ngbNavLink><span class="percent-tab">%</span></a>
+                                    <ng-template ngbNavContent>
+                                        <input type="text" class="form-control input-text ht-53 enter-percentage" placeholder="Enter Percentage">
+                                    </ng-template>
+                                </li>
+                                <li ngbNavItem>
+                                    <a ngbNavLink><span class="bhd-tab">BHD</span></a>
+                                    <ng-template ngbNavContent>
+                                        <input type="text" class="form-control input-text ht-53 enter-percentage" placeholder="Enter BHD">
+                                    </ng-template>
+                                </li>
+                            </ul>
+                            
                         </div>
 
-                        <div class="col-12 mt-3">
-                            <div class="s-header">Address</div>
-                        </div>
-
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">DoorNo & Street</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="DoorNo & Street" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">Locality</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="Locality" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">Area</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="Area" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">City</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="City" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">State</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="State" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">Country</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="Country" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">Post Code</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="Post Code" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-12 mt-2">
-                            <label for="validationCustom02" class="form-label h-filter">Special Discount</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="Special Discount" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                        <div class="col-md-7 mt-4">
+                            <div [ngbNavOutlet]="nav"></div>
                         </div>
 
                     </form>
                     <div class="row mt-4">
                         <div class="col-md-12 mt-3 mb-3">
-                            <div class="btn add-customer-btn">Add Customer</div>
+                            <div class="btn add-customer-btn">Apply Discount</div>
                         </div>
                     </div>
                 </div>
