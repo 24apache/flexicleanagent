@@ -1,0 +1,131 @@
+.container-fluid{
+    background-color: #fff;
+}
+
+
+
+
+.subscription {
+    color: #3960A1;
+    font-size: 20px;
+    font-family: 'Poppins, SemiBold';
+}
+
+.new-user {
+    border-radius: 8px;
+    border: 2px solid #cdd7e7;
+    padding: 13px 20px 13px 20px;
+    font-family: 'Work-sans, Semibold';
+    color: #000;
+    font-size: 13.739px;
+}
+
+.filter {
+    border: 2px solid #cdd7e7;
+    padding: 13px 18px 13px 18px;
+    color: #1E4894;
+    font-family: "Work-sans, Semibold";
+    font-size: 13.739px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    // width: fit-content;
+}
+
+
+.sub-detail {
+    color: #898A93;
+    font-size: 17.25px;
+    font-family: 'Work-sans, SemiBold';
+}
+
+.sub-expire {
+    background: #EBEEF6;
+    padding: 20px;
+}
+
+.bhd {
+    color: #1E4894;
+    font-size: 24.74px;
+    font-family: 'Work-sans, Semibold';
+}
+
+.bhd-sub {
+    color: #898A93;
+    font-size: 14px;
+    font-family: 'Work-sans, Semibold';
+}
+
+.sub-cancel {
+    border-radius: 4px;
+    background: #FF8777;
+    font-family: 'Work-sans, Medium';
+    color: #FCFBFD;
+    font-size: 13.739px;
+    padding: 12px;
+    width: 167px;
+    height: 44px;
+}
+
+.primary {
+    color: #FF3F25;
+    font-size: 19px;
+    font-family: 'Work-sans, Medium';
+}
+
+.active {
+    border-radius: 3.5px;
+    background: #E3F0E9;
+    color: #00B79D;
+    font-size: 17.746px;
+    font-family: "Roboto, Medium";
+    padding: 4px;
+    width: 126px;
+    height: 35.493px;
+}
+
+.add-card {
+    color: #898A93;
+    font-size: 15px;
+    font-family: 'Work-sans, Medium';
+}
+
+.number {
+    font-family: 'Work-sans, Semibold';
+    color: #585858;
+    font-size: 14px;
+}
+
+.s-border {
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+}
+
+.table-header {
+    background: #EBEEF6;
+    color: #979AA5;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Work-sans, Regular';
+    font-weight: 600;
+}
+
+.w-15 {
+    width: 15px;
+}
+
+.invoice {
+    color: #585858;
+    font-size: 14px;
+    font-family: 'Work-sans, Medium';
+}
+
+.renewal{
+    color: #61d0c2;
+    font-size: 14px;
+    font-family: 'Work-sans, Regular';
+    font-weight: 600;
+}
+
+.scroll{
+    overflow: scroll;
+}
