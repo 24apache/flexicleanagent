@@ -29,6 +29,12 @@ import { LocationsComponent } from './components/settings/locations/locations.co
 import { SubscriptionsComponent } from './components/settings/subscriptions/subscriptions.component';
 import { UserComponent } from './components/settings/user/user.component';
 import { TimeslotsComponent } from './components/settings/timeslots/timeslots.component';
+import { CompanyDetailsComponent } from './components/account/company-details/company-details.component';
+import { CompanyAccountComponent } from './components/account/company-details/company-account/company-account.component';
+import { CompanyAddressComponent } from './components/account/company-details/company-address/company-address.component';
+import { CompanyServiceComponent } from './components/account/company-details/company-service/company-service.component';
+import { CompanyHourComponent } from './components/account/company-details/company-hour/company-hour.component';
+import { CompanyInfoComponent } from './components/account/company-details/company-info/company-info.component';
 
 
 
@@ -68,16 +74,28 @@ const routes: Routes = [
       { path: 'wallet', component: WalletComponent },
       { path: 'reports', component: ReportsComponent },
 
-      { path: 'settings',
-       component: SettingsComponent,
-      children: [
-        { path: '', component: CompanyComponent  },
-        { path: 'item-price', component: ItemspriceComponent },
-        { path: 'locations', component: LocationsComponent },
-        { path: 'subscription', component: SubscriptionsComponent },
-        { path: 'timeslot', component: TimeslotsComponent },
-        { path: 'users', component: UserComponent }
-      ] },
+      {
+        path: 'settings',
+        component: SettingsComponent,
+        children: [
+          {
+            path: 'company', // Change to a unique path for the CompanyComponent
+            component: CompanyComponent,
+            children: [
+              { path: '', component: CompanyInfoComponent },
+              { path: 'address', component: CompanyAddressComponent }, // Unique path for CompanyAddressComponent
+              { path: 'service', component: CompanyServiceComponent }, // Unique path for CompanyServiceComponent
+              { path: 'working-hours', component: CompanyHourComponent }, // Unique path for CompanyHourComponent
+              { path: 'account', component: CompanyAccountComponent } // Unique path for CompanyAccountComponent
+            ]
+          },
+          { path: 'item-price', component: ItemspriceComponent },
+          { path: 'locations', component: LocationsComponent },
+          { path: 'subscription', component: SubscriptionsComponent },
+          { path: 'timeslot', component: TimeslotsComponent },
+          { path: 'users', component: UserComponent }
+        ]
+      }
     ]
   },
 
