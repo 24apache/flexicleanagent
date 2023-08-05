@@ -363,16 +363,18 @@ button.close {
 .page-links {
   position: relative;
   display: block;
-  font-size: 15px;
+  // font-size: 15px;
   font-weight: 500;
   color: #303030;
   opacity: 0.6000000238418579;
   text-align: center;
   font-family: 'Roboto, Medium';
   text-decoration: none;
+  width: 37px;
+  height: 36px;
   background-color: transparent;
   /* border: 1px solid #dee2e6; */
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  // transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 
@@ -389,7 +391,7 @@ button.close {
   text-decoration: none;
   background-color: transparent;
   border: 1px solid #000000;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .page-item:not(:first-child) .page-links {
@@ -408,14 +410,16 @@ button.close {
   font-weight: 500;
   font-family: 'Roboto, Medium';
   background-color: #285198;
-  border-color: #285198;
+  // border-color: #285198;
   border-radius: 2rem;
-  padding: 4px 11px;
+  width: 37px;
+  height: 36px;
+  // padding: 4px 11px;
 }
 
 .pages-links:hover {
-  z-index: 2;
-  color: #303030;
+  // z-index: 2;
+  color: #285198;
   font-family: 'Roboto, Medium';
   font-size: 10px;
   background-color: #fff;
@@ -459,9 +463,6 @@ button.close {
   box-shadow: 0px 0px 0px 4px #285198;
   // background-color: #285198;
 }
-
-
-
 
 
 

@@ -53,6 +53,7 @@ import { CompanyAddressComponent } from './components/account/company-details/co
 import { CompanyServiceComponent } from './components/account/company-details/company-service/company-service.component';
 import { CompanyHourComponent } from './components/account/company-details/company-hour/company-hour.component';
 import { CompanyAccountComponent } from './components/account/company-details/company-account/company-account.component';
+import { OrdersPaymentComponent } from './components/orders/orders-list/orders-payment/orders-payment.component';
 
 
 @NgModule({
@@ -105,7 +106,8 @@ import { CompanyAccountComponent } from './components/account/company-details/co
     CompanyAddressComponent,
     CompanyServiceComponent,
     CompanyHourComponent,
-    CompanyAccountComponent
+    CompanyAccountComponent,
+    OrdersPaymentComponent
   ],
   imports: [
     BrowserModule,

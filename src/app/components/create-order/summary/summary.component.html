@@ -1,4 +1,3 @@
-
 <div class="container-fluid">
     <div class="row invoice-summary text-center">
         <div class="col-10">
@@ -391,97 +390,163 @@
                         </div>
                     </div>
                     <div class="row mb-4">
-                        <div class="col-md-6 mb-4">
-                            <div class="form">
-                                <button type="button" class="btn pay-now me-2" placement="bottom"
-                                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                                popoverTitle="Popover on bottom">
-                                <label class="paynow"><input type="radio" class="input-radio off mr-4" name="pilih"> Pay Now</label>
-                            </button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="form">
-                                <button type="button" class="btn me-2 pay-now" placement="bottom"
-                                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                                popoverTitle="Popover on bottom">
-                                <label class="paynow"><input type="radio" class="input-radio on mr-" name="pilih"> Pay on Delivery</label>
-                            </button>
-                        </div>
-        
-                    </div>
-
-                </div>
-
-                <div class="row mt-3 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2"
-                        viewBox="0 0 485 2" fill="none">
-                        <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
-                    </svg>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-12">
-                        <div class="row mt-3 align-items-center">
-                            <div class="col-md-6">
-                                <div class="amount-received">
-                                    Amount Received
+                        <div class="col">
+                            <div class="row" id="myGroup">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form">
+                                        <button type="button" class="btn pay-now me-2" data-toggle="collapse"
+                                            href="#collapseExample" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            <label class="paynow"><input type="radio" class="input-radio off mr-4" name="pilih">
+                                                Pay Now</label>
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form">
+                                        <button type="button" class="btn me-2 pay-now" data-toggle="collapse"
+                                            data-target="#collapseExample2" aria-expanded="false"
+                                            aria-controls="collapseExample2">
+                                            <label class="paynow"><input type="radio" class="input-radio on mr-2" name="pilih">
+                                                Pay on Delivery</label>
+                                        </button>
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="">
-                                <span class="r-bhd">BHD</span> &nbsp; <span class="btn enter">Enter</span>
+                            <div class="collapse" id="collapseExample" data-parent="#myGroup">
+                                <hr>
+                                <div class="card card-body">
+                                   <div class="row align-items-end">
+                                    <div class="col-1">
+                                        <input class="input-radios on" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    </div>
+                                    <div class="col-5">
+                                        <label class="paynow-method">Benefit</label>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <img src="assets/images/payment.png" alt="paynow">
+                                    </div>
+                                   </div>
+                                </div>
+
+                                <div class="card card-body mt-3">
+                                    <div class="row align-items-end">
+                                     <div class="col-1">
+                                         <input class="input-radios on" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                     </div>
+                                     <div class="col-5">
+                                         <label class="paynow-method">Credit card</label>
+                                     </div>
+                                     <div class="col-6 text-right">
+                                         <img src="assets/images/payment.png" alt="paynow">
+                                     </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="collapse" id="collapseExample2" data-parent="#myGroup">
+                                <hr>
+                                <div class="card card-body">
+                                    <div class="row align-items-end">
+                                     <div class="col-1">
+                                         <input class="input-radios on" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                     </div>
+                                     <div class="col-5">
+                                         <label class="paynow-method">Benefit</label>
+                                     </div>
+                                     <div class="col-6 text-right">
+                                         <img src="assets/images/payment.png" alt="paynow">
+                                     </div>
+                                    </div>
+                                 </div>
+ 
+                                 <div class="card card-body mt-3">
+                                     <div class="row align-items-end">
+                                      <div class="col-1">
+                                          <input class="input-radios on" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                      </div>
+                                      <div class="col-5">
+                                          <label class="paynow-method">Credit card</label>
+                                      </div>
+                                      <div class="col-6 text-right">
+                                          <img src="assets/images/payment.png" alt="paynow">
+                                      </div>
+                                     </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2" viewBox="0 0 485 2" fill="none">
+                            <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
+                        </svg>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="row mt-3 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="amount-received">
+                                        Amount Received
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <span class="r-bhd">BHD</span> &nbsp; <span class="btn enter">Enter</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="amount-received">
+                                        Balance Paid
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <span class="r-bhd">BHD</span> &nbsp; <span class="btn enter">Enter</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3 align-items-center">
-                            <div class="col-md-6">
-                                <div class="amount-received">
-                                    Balance Paid
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="">
-                                <span class="r-bhd">BHD</span> &nbsp; <span class="btn enter">Enter</span>
-                                </div>
+
+                    </div>
+
+                    <div class="row mt-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2" viewBox="0 0 485 2" fill="none">
+                            <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
+                        </svg>
+                    </div>
+
+                    <div class="row mt-3 mb-3">
+                        <div class="col-12 mb-3">
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="Add Aditional Info" rows="3"></textarea>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-3 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="485" height="2"
-                        viewBox="0 0 485 2" fill="none">
-                        <path d="M0 1L485 1.00004" stroke="#E5E5E5" />
-                    </svg>
-                </div>
-
-                <div class="row mt-3 mb-3">
-                    <div class="col-12 mb-3">
-                        <div class="mb-3">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Add Aditional Info" rows="3"></textarea>
-                          </div>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="row">
-                            <div class="col-md-6 text-right">
-                                <div class="btn pay">Paynow</div>
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-md-6 text-right">
+                                    <div class="btn pay">Paynow</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="btn pay">Discard</div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="btn pay">Discard</div>
-                            </div>
+
                         </div>
-
                     </div>
                 </div>
+
+
+
+
             </div>
-
-           
-
 
         </div>
 
     </div>
-
-</div>

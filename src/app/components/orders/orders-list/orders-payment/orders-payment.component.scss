@@ -1,0 +1,191 @@
+.payment-search {
+    border: transparent;
+    border-bottom: 1px solid #cecfd5;
+    border-radius: 0;
+    color: #4C4D52;
+    font-family: "Work-sans, Medium";
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.4;
+}
+
+
+
+
+.c-form {
+    padding: 1rem 1.25rem;
+}
+
+.c-form__fieldset {
+    border: none;
+    padding: 0;
+}
+
+//   .c-form__fieldset + .c-form__fieldset {
+//     margin-top: 2.5em;
+//   }
+
+.c-form__legend {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.c-form__group {
+    margin-top: 0.5em;
+}
+
+.c-form__group:first-of-type {
+    margin-top: 0;
+}
+
+.c-form__checkbox {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.c-form__checkbox:checked+.c-form__label .c-form__checkbox-tick {
+    stroke-dashoffset: 0;
+}
+
+// .c-form__checkbox:focus+.c-form__label .c-form__checkbox-square {
+//     stroke: #31cc89;
+// }
+
+.c-form__label {
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+}
+
+.c-form__label-text {
+    margin-left: 0.25em;
+    color: #4C4D52;
+    font-family: "Work-sans, Medium";
+    font-size: 18px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.c-form__checkbox-icon {
+    height: 2em;
+    width: 2em;
+    vertical-align: text-top;
+}
+
+.c-form__checkbox-square {
+    fill: none;
+    stroke: #cccccc;
+    stroke-width: 1;
+    transition: stroke 0.3s ease-in;
+}
+
+.c-form__checkbox-tick {
+    fill: none;
+    stroke: #141d49;
+    stroke-dasharray: 11;
+    /* this is the length of the line */
+    stroke-dashoffset: 11;
+    /* this is the length of the line */
+    stroke-width: 1.5;
+    transition: stroke-dashoffset 0.3s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ACCORDION
+
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.accordion-button:hover {
+    z-index: 2;
+}
+
+// .accordion-button:not(.collapsed) {
+//     color: #fff;
+//     background-color: #fff;
+//     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+// }
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3px 12px;
+    color: #9a9da5;
+    font-family: "Work-sans, Medium";
+    height: 53px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    background-color: #fff;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+// .accordion-button:not(.collapsed)::after {
+//     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+//     transform: rotate(-180deg);
+// }
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 0.8rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    font-size: 1rem;
+    // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    transition: transform .2s ease-in-out;
+}
+
+
+
+
+// .accordion-button:not(.collapsed) {
+//     color: #4C4D52;
+//     font-family: "Work-sans, Medium";
+//     height: 53px;
+//     font-size: 18px;
+//     font-weight: 500;
+//     background-color: #fff;
+//     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+// }
+
+div#ngb-accordion-item-1-collapse {
+    border: 1px solid #E5E5E5;
+    margin-top: 21px;
+}
+
+//   .accordion-body {
+//     padding: 1rem 1.25rem;
+//   }
