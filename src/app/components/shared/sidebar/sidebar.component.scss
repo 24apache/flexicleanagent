@@ -101,8 +101,9 @@ button:not(:disabled) {
 .accordion-item:last-of-type .accordion-collapse {
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
+    margin: 0;
 }
 
 .accordion-body {
-    padding: 1rem;
+    padding: 0rem;
 }

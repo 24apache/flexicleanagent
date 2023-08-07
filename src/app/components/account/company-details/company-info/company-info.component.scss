@@ -10,8 +10,14 @@
     padding: 0px 10px 0px 10px;
 }
 
+.borders {
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+}
+
 .file-upload-btn {
-    width: 100%;
+    width: 300px;
     height: 100px;
     margin: 0;
     border-radius: 6px;
@@ -19,12 +25,12 @@
     opacity: 0.5;
     color: #285198;
     font-size: 25px;
-    font-family: 'Poppins, SemiBold';
+    font-family: 'Work-sans, Medium';
     background: transparent;
     padding: 10px;
     transition: all 0.2s ease;
     outline: none;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -152,35 +158,49 @@
 }
 
 .tax-yes {
-    color: #4C4D52;
+    color: #c1c1c3;
     font-size: 18px;
     border-radius: 4px;
     font-family: 'Work-sans, Medium';
+    border: 1px solid #285198;
     padding: 12px 75px 12px 75px;
-    opacity: 0.4000000059604645;
+    // opacity: 0.4000000059604645;
+}
+
+.tax-no:hover {
+    color: #c1c1c3;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    font-family: 'Work-sans, Medium';
+    padding: 12px 78px 12px 79px;
+    // opacity: 0.4000000059604645;
 }
 
 .tax-no {
-    color: #4C4D52;
+    color: #c1c1c3;
     font-size: 18px;
     border-radius: 4px;
     font-family: 'Work-sans, Medium';
     padding: 12px 78px 12px 79px;
-    opacity: 0.4000000059604645;
+    border: 1px solid #e5e5e5;
+    // opacity: 0.4000000059604645;
 }
 
 .company-detail {
     font-size: 20px;
     color: #3960A1;
-    font-family: 'Work-sans, Semibold';
+    font-family: 'Work-sans, Medium';
+    font-weight: 600;
 }
 
 .company-input {
     height: 53px;
     border-radius: 4px;
     color: #4C4D52;
-    font-family: 'Work-sans, Regular';
+    font-family: 'Work-sans, Medium';
     font-size: 18px;
     opacity: 0.4000000059604645;
+    font-weight: 500;
 }
 

@@ -1,0 +1,213 @@
+.container-fluid {
+    background-color: #fff;
+}
+
+
+.h-2 {
+    height: 2.5rem;
+}
+
+.p-10 {
+    padding: 0px 10px 0px 10px;
+}
+
+.borders {
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+}
+
+.company {
+    color: #534D58;
+    font-size: 16px;
+    font-family: 'Work-sans, Medium';
+}
+
+.company-detail {
+    font-size: 20px;
+    color: #3960A1;
+    font-family: 'Work-sans, Medium';
+    font-weight: 600;
+}
+
+.clear {
+    border-radius: 4px;
+    border: 1.5px solid #285198;
+    background: #F3F5F9;
+    font-family: 'Work-sans, Medium';
+    color: #285198;
+    font-size: 20px;
+    width: inherit;
+    padding: 11px;
+}
+
+.save {
+    border-radius: 4px;
+    background: #285198;
+    color: #FCFBFD;
+    font-size: 20px;
+    font-family: 'Work-sans, Medium';
+    width: inherit;
+    padding: 11px;
+}
+
+
+.pos {
+    border-radius: 4px;
+    border: 1.5px solid #285198;
+    background: #F3F5F9;
+    font-family: 'Work-sans, Medium';
+    color: #285198;
+    font-size: 18px;
+    padding: 12px 74px;
+}
+
+.online {
+    border-radius: 4px;
+    border: 1.5px solid #285198;
+    background: #F3F5F9;
+    font-family: 'Work-sans, Medium';
+    color: #b7b8ba;
+    font-size: 18px;
+    padding: 16px 74px;
+    border: 1px solid #b7b8ba;
+    // opacity: 0.4;
+}
+
+
+.fees{
+    color: #4C4D52;
+    font-family: 'Work-sans, Medium';
+font-size: 18px;
+font-weight: 500;
+opacity: 0.4;
+}
+
+
+
+
+//TOOLTIP
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    // margin: 6rem;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 348px;
+    height: 75px;
+    color: #777;
+    font-family: "Work-sans, Medium";
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #F3F5F9;
+    border-radius: 4px;
+    padding: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 104%;
+    left: 150%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+// SWITCH
+
+
+input[type="checkbox"].toggle {
+    opacity: 0;
+    position: absolute;
+    left: -99999px;
+}
+
+input[type="checkbox"].toggle+label {
+    width: 93px;
+    height: 39px;
+    line-height: 37px;
+    background-color: #fff;
+    padding: 0px 0px 0px 10px;
+    border-radius: 50px;
+    border: 2px solid #1E4894;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    // -moz-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+    // -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+    // box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+input[type="checkbox"].toggle+label:before,
+input[type="checkbox"].toggle+label:hover:before {
+    content: " ";
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 28px;
+    height: 28px;
+    background: #1E4894;
+    z-index: 2;
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+}
+
+input[type="checkbox"].toggle+label .off,
+input[type="checkbox"].toggle+label .on {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="checkbox"].toggle+label .off {
+    margin-left: 46px;
+    display: inline-block;
+}
+
+input[type="checkbox"].toggle+label .on {
+    display: none;
+}
+
+input[type="checkbox"].toggle:checked+label .off {
+    display: none;
+}
+
+input[type="checkbox"].toggle:checked+label .on {
+    margin-right: 46px;
+    display: inline-block;
+}
+
+input[type="checkbox"].toggle:checked+label,
+input[type="checkbox"].toggle:focus:checked+label {
+    background-color: #fff;
+}
+
+input[type="checkbox"].toggle:checked+label:before,
+input[type="checkbox"].toggle:checked+label:hover:before,
+input[type="checkbox"].toggle:focus:checked+label:before,
+input[type="checkbox"].toggle:focus:checked+label:hover:before {
+    background-position: 0 0;
+    top: 4px;
+    left: 115%;
+    margin-left: -48px;
+}

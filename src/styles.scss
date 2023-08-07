@@ -10380,18 +10380,26 @@ html {
   
   .sidebar .nav-item .collapse .collapse-inner .collapse-item,
   .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
+    padding: 10px 20px;
+    margin: 0px;
+    font-family: "Work-sans, Medium";
+    font-size: 16px;
+    font-weight: 500;
+    color: #898A93;
     display: block;
-    color: #3a3b45;
     text-decoration: none;
-    border-radius: 0.35rem;
+    // border-radius: 0.35rem;
     white-space: nowrap;
   }
   
   .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover,
   .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
-    background-color: #eaecf4;
+    background-color: #ebeef6;
+    color: #1D4893;
+    font-family: "Work-sans, Medium";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
   }
   
   .sidebar .nav-item .collapse .collapse-inner .collapse-item:active,
@@ -10401,8 +10409,10 @@ html {
   
   .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
   .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-    color: #4e73df;
-    font-weight: 700;
+    color: #285198;
+    font-family: "Work-sans, Medium";
+    font-size: 14px;
+    font-weight: 600;
   }
   
   .sidebar #sidebarToggle {
