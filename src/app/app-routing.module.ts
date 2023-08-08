@@ -35,6 +35,9 @@ import { CompanyAddressComponent } from './components/account/company-details/co
 import { CompanyServiceComponent } from './components/account/company-details/company-service/company-service.component';
 import { CompanyHourComponent } from './components/account/company-details/company-hour/company-hour.component';
 import { CompanyInfoComponent } from './components/account/company-details/company-info/company-info.component';
+import { AllUsersComponent } from './components/settings/user/all-users/all-users.component';
+import { PermissionDetailsComponent } from './components/settings/user/permission-details/permission-details.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 
@@ -73,7 +76,7 @@ const routes: Routes = [
       },
       { path: 'wallet', component: WalletComponent },
       { path: 'reports', component: ReportsComponent },
-
+      { path: 'chating', component: ChatComponent },
       {
         path: 'settings',
         component: SettingsComponent,
@@ -93,7 +96,13 @@ const routes: Routes = [
           { path: 'locations', component: LocationsComponent },
           { path: 'subscription', component: SubscriptionsComponent },
           { path: 'timeslot', component: TimeslotsComponent },
-          { path: 'users', component: UserComponent }
+          {
+            path: 'users', component: UserComponent,
+            children: [
+              { path: '', component: AllUsersComponent },
+              { path: 'permission', component: PermissionDetailsComponent }
+            ]
+          }
         ]
       }
     ]

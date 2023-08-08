@@ -75,6 +75,14 @@
             <span>Reports</span>
         </a>
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" routerLink="chating">
+            <img class="chat" src="assets/images/chat.png" alt="chat"> &nbsp;
+            <span>Chating</span>
+        </a>
+    </li>
+
     <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="javascript:void(0);" routerLink="settings" data-target="#collapseOne"
         aria-expanded="true" aria-controls="collapseOne">
@@ -146,7 +154,23 @@
 
                 <a class="collapse-item" routerLink="settings/locations" href="#">LOCATION</a>
                 <a class="collapse-item" routerLink="settings/timeslot" href="#">TIMESLOT</a>
-                <a class="collapse-item" routerLink="settings/users" href="#">USERS</a>
+
+                <div ngbAccordion>
+                    <div ngbAccordionItem [collapsed]="true">
+                        <h2 ngbAccordionHeader>
+                            <button ngbAccordionButton>USERS</button>
+                        </h2>
+                        <div ngbAccordionCollapse>
+                            <div ngbAccordionBody>
+                                <ng-template>
+                                    <a class="collapse-item active" routerLink="settings/users" href="#">ALL USERS</a>
+                                    <a class="collapse-item" routerLink="settings/users/permission" href="#">PERMISSION DETAILS</a>
+                                </ng-template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <a class="collapse-item" routerLink="settings/subscription" href="#">MY SUBSCRIPTION</a>
                 <a class="collapse-item" routerLink="settings/item-price" href="#">ITEMS PRICING</a>
             </div>
@@ -159,6 +183,6 @@
             <span>Order</span>
         </a>
     </li> -->
-    <p class="p-5">version 1.9</p>
+    <p class="p-5">version 2.0</p>
 </ul>
 

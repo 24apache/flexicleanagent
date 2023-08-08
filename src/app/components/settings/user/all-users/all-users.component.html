@@ -1,0 +1,336 @@
+<div class="container-fluid p-5">
+
+
+    <div>
+        <div class="row mb-2 item-center">
+            <div class="col-md-4">
+                <img src="assets/images/search.svg" alt="search" class="search-icon"><input type="text"
+                    class="form-control worksans-regular h-52 fs-16 search-pading" value=""
+                    placeholder="Search for orders by order ID">
+            </div>
+            <div class="col-md-8 text-right">
+                <div class="btn new-user" data-toggle="modal"
+                data-target="#myModal2"> <img src="assets/images/add-payment.svg" alt="add">&nbsp; Add New User </div>
+                &nbsp; <div class="btn filter"> <img src="assets/images/filter.svg" alt="">&nbsp; Filter</div>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 item-center pt-4">
+            <div class="col-md-4">
+                <h4 class="users">Users/Drivers</h4>
+            </div>
+
+        </div>
+        <h4 class="all-customer">All Users</h4>
+        <div class="row mt-4 scroll">
+            <div class="col">
+                <table class="table border">
+
+                    <thead>
+                        <tr class="table-header">
+                            <th class="text-center" scope="col">name</th>
+                            <th scope="col">emailid</th>
+                            <th scope="col">user name</th>
+                            <th scope="col">role</th>
+                            <th scope="col">mobile</th>
+                            <th class="text-center" scope="col">status</th>
+                            <th class="text-center" scope="col">action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="t-body">
+                        <tr>
+                            <td scope="row"><img class="customer" src="assets/images/customer4.png" alt="user"> &nbsp; Zahra</td>
+                            <td>zahra@e.com</td>
+                            <td>Zahra5</td>
+                            <td>Admin</td>
+                            <td>34567788</td>
+                            <td class="text-center">
+                                <span class="t-progress">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                            </td>
+                            <td class="text-center">
+                                <div ngbDropdown>
+                                    <div class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                        <img src="assets/images/action.svg" alt="action">
+                                    </div>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem class="action-btn" >Edit</button>
+                                        <button ngbDropdownItem class="action-btn" >Delete</button>
+                                        <button ngbDropdownItem class="action-btn" >View</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img class="customer" src="assets/images/customer1.png" alt="user"> &nbsp; Ali Salman</td>
+                            <td>salman@e.com</td>
+                            <td>Salman12</td>
+                            <td>Admin</td>
+                            <td>12455875</td>
+                            <td class="text-center">
+                                <span class="t-progress">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                            </td>
+                            <td class="text-center">
+                                <div ngbDropdown>
+                                    <div class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                        <img src="assets/images/action.svg" alt="action">
+                                    </div>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem class="action-btn" >Edit</button>
+                                        <button ngbDropdownItem class="action-btn" >Delete</button>
+                                        <button ngbDropdownItem class="action-btn" >View</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img class="customer" src="assets/images/customer2.png" alt="user"> &nbsp; Sayed Mohamed Adnan</td>
+                            <td>sayed@e.com</td>
+                            <td>Sayed22</td>
+                            <td>Admin</td>
+                            <td>22448866</td>
+                            <td class="text-center">
+                                <span class="t-progress">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                            </td>
+                            <td class="text-center">
+                                <div ngbDropdown>
+                                    <div class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                        <img src="assets/images/action.svg" alt="action">
+                                    </div>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem class="action-btn" >Edit</button>
+                                        <button ngbDropdownItem class="action-btn" >Delete</button>
+                                        <button ngbDropdownItem class="action-btn" >View</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img class="customer" src="assets/images/customer3.png" alt="user"> &nbsp; Hamad Al Fardan</td>
+                            <td>hamad@e.com</td>
+                            <td>Hamad3</td>
+                            <td>Admin</td>
+                            <td>32548789</td>
+                            <td class="text-center">
+                                <span class="t-progress">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                            </td>
+                            <td class="text-center">
+                                <div ngbDropdown>
+                                    <div class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                        <img src="assets/images/action.svg" alt="action">
+                                    </div>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem class="action-btn" >Edit</button>
+                                        <button ngbDropdownItem class="action-btn" >Delete</button>
+                                        <button ngbDropdownItem class="action-btn" >View</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img class="customer" src="assets/images/customer1.png" alt="user"> &nbsp; Rashad Jamal Salem</td>
+                            <td>jamal@e.com</td>
+                            <td>Jamal20</td>
+                            <td>Admin</td>
+                            <td>21548788</td>
+                            <td class="text-center">
+                                <span class="t-progress">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                            </td>
+                            <td class="text-center">
+                                <div ngbDropdown>
+                                    <div class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                        <img src="assets/images/action.svg" alt="action">
+                                    </div>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem class="action-btn" >Edit</button>
+                                        <button ngbDropdownItem class="action-btn" >Delete</button>
+                                        <button ngbDropdownItem class="action-btn" >View</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img class="customer" src="assets/images/customer5.png" alt="user"> &nbsp; Amira</td>
+                            <td>amira@e.com</td>
+                            <td>Amira45</td>
+                            <td>Admin</td>
+                            <td>94564488</td>
+                            <td class="text-center">
+                                <span class="t-progress">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                            </td>
+                            <td class="text-center">
+                                <div ngbDropdown>
+                                    <div class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                        <img src="assets/images/action.svg" alt="action">
+                                    </div>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem class="action-btn" >Edit</button>
+                                        <button ngbDropdownItem class="action-btn" >Delete</button>
+                                        <button ngbDropdownItem class="action-btn" >View</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pt-4 mb-5">
+                        <li class="page-item"><a class="pages-links" >Previous</a></li>
+                        <li class="page-item"><a class="page-links" >1</a></li>
+                        <li class="page-item"><a class="page-links" >2</a></li>
+                        <li class="page-item"><a class="page-links" >3</a></li>
+                        <li class="page-item"><a class="page-links" >4</a></li>
+                        <li class="page-item"><a class="page-links" >5</a></li>
+                        <li class="page-item"><a class="page-links" >6</a></li>
+                        <li class="page-item"><a class="page-links" >7</a></li>
+                        <li class="page-item"><a class="pages-links" >Next</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal - ADD NEW USER -->
+<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" style="max-width: 721px;" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header item-baseline modal-header-name">
+                <h4 class="modal-title" id="myModalLabel2">Add New User</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"><img class="close-bttn" src="assets/images/close.png"
+                            alt="close"></span></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="row g-3 needs-validation" novalidate>
+                    
+                    <div class="col-md-12 mt-4">
+                        <label for="validationCustom01" class="form-label h-filter">NAME</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom01"
+                            placeholder="ENTER" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <label for="validationCustom02" class="form-label h-filter">EMAIL ID</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <label for="validationCustom02" class="form-label h-filter">USER NAME</label>
+                        <input type="text" class="form-control input-text ht-53" id="validationCustom02"
+                            placeholder="ENTER" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-12 mt-4">
+                        <label for="validationCustom02" class="form-label h-filter">MOBILE NUMBER</label>
+                        <div class="input-group mb-3">
+                            <span><select class="form-select select-number" id="validationDefault04" required>
+                                <option selected disabled value=""> +91</option>
+                                <option> +92</option>
+                            </select></span>
+                            <input type="text" class="form-control input-text ht-53" placeholder="ENTER" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                    
+                    <div class="col-md-12 mt-3">
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <label for="validationCustom02" class="form-label h-filter">ROLE</label>
+                                <select class="form-select select-category" id="validationDefault04" required>
+                                    <option selected disabled value="">Choose</option>
+                                    <option>Role 1</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <label for="validationCustom02" class="form-label h-filter">STATUS</label>
+                                <div class="mt-13">
+                                    <span class="status-active">ACTIVE</span>&nbsp; <span> <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mt-4">
+                        <label for="validationCustom02" class="form-label h-filter">PROFILE </label>
+                        <label for="validationCustom02" class="form-label file-size">1MB File size</label>
+                        <div class="mt-2 mb-4">
+                            <div class="file-upload-btn">
+                
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*">
+                                    <div class="drag-text">
+                                        <div class="upload"><img src="assets/images/uploading.svg" alt="upload"> Upload
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content">
+                                    <img class="file-upload-image" src="#" alt="your image">
+                                </div>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6 mt-3">
+                        <div class="btn clear">Clear</div>
+                    </div>
+                    <div class="col-md-6 mt-3 mb-3">
+                        <div class="btn save">Save</div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>

@@ -54,6 +54,9 @@ import { CompanyServiceComponent } from './components/account/company-details/co
 import { CompanyHourComponent } from './components/account/company-details/company-hour/company-hour.component';
 import { CompanyAccountComponent } from './components/account/company-details/company-account/company-account.component';
 import { OrdersPaymentComponent } from './components/orders/orders-list/orders-payment/orders-payment.component';
+import { AllUsersComponent } from './components/settings/user/all-users/all-users.component';
+import { PermissionDetailsComponent } from './components/settings/user/permission-details/permission-details.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 @NgModule({
@@ -107,7 +110,10 @@ import { OrdersPaymentComponent } from './components/orders/orders-list/orders-p
     CompanyServiceComponent,
     CompanyHourComponent,
     CompanyAccountComponent,
-    OrdersPaymentComponent
+    OrdersPaymentComponent,
+    AllUsersComponent,
+    PermissionDetailsComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

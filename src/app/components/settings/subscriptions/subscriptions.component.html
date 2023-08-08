@@ -5,7 +5,8 @@
             <h4 class="sub-detail mb-4">SUBSCRIPTION DETAILS</h4>
         </div>
         <div class="col-md-8 text-right">
-            <div class="btn new-user"> <img src="assets/images/add-payment.svg" alt="add-payment">&nbsp; Add New User </div>
+            <div class="btn new-user" data-toggle="modal"
+            data-target="#myModal2"> <img src="assets/images/add-payment.svg" alt="add-payment">&nbsp; Add Payment Method</div>
         </div>
     </div>
    
@@ -251,3 +252,92 @@
     
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAYMENT-METHOD -->
+
+
+<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" style="max-width: 721px;" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header item-baseline modal-header-name">
+                <h4 class="modal-title" id="myModalLabel2">Choose Payment method </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"><img class="close-bttn" src="assets/images/close.png"
+                            alt="close"></span></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="row g-3 needs-validation" novalidate>
+                
+                    <div class="col-md-12 mt-3">
+                        <div class="row choose-payment">
+                            <div class="col-md-2">
+                                <img class="pay" src="assets/images/payment.png" alt="payment">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="benifit">Benifit</div>
+                            </div>
+                            <div class="col-md-4 text-right mt-2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" class="input-radios off">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <div class="row choose-payment">
+                            <div class="col-md-2">
+                                <img class="pay" src="assets/images/payment.png" alt="payment">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="benifit">Card</div>
+                            </div>
+                            <div class="col-md-4 text-right mt-2">
+                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" class="input-radios on" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                
+            </div>
+
+            <div class="row mt-4 p-3">
+                <div class="col-md-6 mt-3">
+                    <div class="btn clear">Clear</div>
+                </div>
+                <div class="col-md-6 mt-3 mb-3">
+                    <div class="btn next-btn">Next</div>
+                </div>
+            </div>
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>
+
+
+
+
+
+
+
+
