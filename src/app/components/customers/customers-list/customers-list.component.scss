@@ -4,6 +4,18 @@
   background-color: #fff;
 }
 
+.padding{
+  padding: 2rem 3rem;
+}
+
+.search-for{
+  color: #46444F;
+  font-family: 'Poppins, Medium';
+  font-size: 23px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
 // #wrapper #content-wrapper {
 //   background-color: #fff;
 //   width: 100%;
@@ -14,6 +26,10 @@
 //   flex: 1 0 auto;
 //   background: #fff;
 // }
+
+.search-border{
+  border: 2px solid rgb(215, 223, 236);
+}
 
 .table-header {
   background: #EBEEF6;

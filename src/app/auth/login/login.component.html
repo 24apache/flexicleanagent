@@ -1,54 +1,57 @@
-<div class="bg-gradient-primary">
 
-    <div class="container">
+    <div class="container-fluid">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
-            <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="col-xl-12 col-lg-12 col-md-9">
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card o-hidden border-0 o-hidden">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
 
-                            <div class="col-lg-6">
-                                <div class="p-5">
+                            <div class="col-lg-6 hg-100">
+                                <div class="padding">
                                     <div class="text-center">
-                                        <img class="mb-4 pb-3" src="assets/images/logo.png" alt="logo">
+                                        <img class="flexi mb-4 pb-3" src="assets/images/logo.png" alt="logo">
                                         <h1 class="text-black h2 mb-2 text-left poppins-semibold">Welcome Back</h1>
                                         <h4 class="p-welcome h4 mb-4 text-left">Welcome back! Please enter your details
                                         </h4>
                                     </div>
                                     <form [formGroup]="exform" class="user">
                                         <div class="form-group">
-                                            <label class="text-black poppins-medium">Email</label>
+                                            <label class="login-head">Email</label>
                                             <input formControlName="email" type="email" class="form-control form-control-user poppins-regular"
                                             
                                                 placeholder="" >
-                                                <small *ngIf="exform.get('email')?.invalid && exform.get('email')?.touched" class="text-danger">
+                                                <small *ngIf="exform.get('email')?.invalid && exform.get('email')?.touched" class="valid-text">
                                                     Valid Email Required
                                                 </small>
                                         </div>
                                         <div class="form-group">
-                                            <label class="text-black poppins-medium">Password</label>
+                                            <label class="login-head">Password</label>
+                                            <!-- <img class="invalid" *ngIf="exform.get('password')?.invalid && exform.get('password')?.touched" src="assets/images/in-valid.svg" alt="invalid"> -->
                                             <input formControlName="password" type="password"
                                                 class="form-control form-control-user poppins-regular"
-                                                 placeholder="">
-                                                 <small *ngIf="exform.get('password')?.invalid && exform.get('password')?.touched" class="text-danger">
+                                                 placeholder=""> 
+                                                 <small *ngIf="exform.get('password')?.invalid && exform.get('password')?.touched" class="valid-text">
                                                     Valid Password Required
                                                 </small>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6 custom-control custom-checkbox small text-center">
-                                                    <input type="checkbox" class="custom-control-input"
-                                                        id="customCheck">
-                                                    <label class="custom-control-label poppins-regular"
-                                                        for="customCheck">Remember for 30 days</label>
+                                            <div class="row mt-4 mb-3">
+                                                
+                                                <div class="col-md-7">
+                                                    <div class="form-group1">
+                                                        <input type="checkbox" id="days">
+                                                        <label for="days" class="remember"> &nbsp; Remember for 30 days</label>
+                                                      </div>
                                                 </div>
-                                                <div class="col-md-6 text-center">
-                                                    <a class="small poppins-regular f-password"
+                                                <!-- <label class="custom-control-label poppins-regular"
+                                                        for="customCheck">Remember for 30 days</label> -->
+                                                <div class="col-md-5 text-right">
+                                                    <a class="f-password"
                                                         href="javascript:void(0);" routerLink="/forgot-password">Forgot
                                                         Password?</a>
                                                 </div>
@@ -73,4 +76,4 @@
 
     </div>
 
-</div>
+

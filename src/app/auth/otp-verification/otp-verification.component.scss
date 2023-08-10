@@ -19,12 +19,34 @@
     font-family: "Poppins, Light";
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f3f5f9;
+}
+
+img.flexi {
+  width: 127px;
+  height: 97px;
+}
+
+.padding {
+  padding: 4rem 9rem 1rem 9rem;
+}
+
+.hg-100 {
+  height: 100vh;
+}
 
 .bg-verify-image {
     background: url("~src/assets/images/auth.png") no-repeat;
     background-position: center;
     background-size: 25rem;
     background-color: rgba(243, 245, 249, 1);
+    height: 100vh;
 }
 
 .btn-login {
@@ -77,9 +99,48 @@
 
 
   .verifyed{
-    margin-top: 5rem;
+    color: #1C2330;
+font-family: 'Poppins, Medium';
+font-size: 40.024px;
+font-style: normal;
+font-weight: 600;
+margin-top: 5rem;
   }
 
   .verifyed-1{
     margin-bottom: 8rem;
+    padding: 12px 3px;
+color: #FFF;
+font-family: 'Poppins, Medium';
+font-size: 16.48px;
+font-weight: 500;
+  }
+
+
+.setup-profile{
+  color: #9A9DA5;
+font-family:'Poppins, Medium';
+font-size: 21.48px;
+font-style: normal;
+font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 992px) {
+
+    .container-fluid {
+      background-color: #fff;
+    }
+  
+    .padding {
+      padding: 5rem;
+    }
   }
