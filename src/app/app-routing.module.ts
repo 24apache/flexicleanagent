@@ -38,6 +38,11 @@ import { CompanyInfoComponent } from './components/account/company-details/compa
 import { AllUsersComponent } from './components/settings/user/all-users/all-users.component';
 import { PermissionDetailsComponent } from './components/settings/user/permission-details/permission-details.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { PartnerPageComponent } from './auth/partner-page/partner-page.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { CompanySignupComponent } from './auth/company-signup/company-signup.component';
+import { PreviewPaymentComponent } from './auth/preview-payment/preview-payment.component';
+import { PreviewDetailComponent } from './auth/preview-detail/preview-detail.component';
 
 
 
@@ -111,6 +116,11 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'otp-verification', component: OtpVerificationComponent },
+  { path: 'partner', component: PartnerPageComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'signup-company', component: CompanySignupComponent },
+  { path: 'preview-payment', component: PreviewPaymentComponent },
+  { path: 'preview-detail', component: PreviewDetailComponent },
   { path: 'invoice', component: CustomerInvoceComponent },
   { path: 'order-detail', component: OrderDetailComponent },
   { path: 'summary-detail', component: SummaryComponent }

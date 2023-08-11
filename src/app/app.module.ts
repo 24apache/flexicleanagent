@@ -57,6 +57,11 @@ import { OrdersPaymentComponent } from './components/orders/orders-list/orders-p
 import { AllUsersComponent } from './components/settings/user/all-users/all-users.component';
 import { PermissionDetailsComponent } from './components/settings/user/permission-details/permission-details.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { PartnerPageComponent } from './auth/partner-page/partner-page.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { PreviewPaymentComponent } from './auth/preview-payment/preview-payment.component';
+import { PreviewDetailComponent } from './auth/preview-detail/preview-detail.component';
+import { CompanySignupComponent } from './auth/company-signup/company-signup.component';
 
 
 @NgModule({
@@ -113,7 +118,13 @@ import { ChatComponent } from './components/chat/chat.component';
     OrdersPaymentComponent,
     AllUsersComponent,
     PermissionDetailsComponent,
-    ChatComponent
+    ChatComponent,
+    PartnerPageComponent,
+    SignupComponent,
+    PartnerPageComponent,
+    PreviewPaymentComponent,
+    PreviewDetailComponent,
+    CompanySignupComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,347 @@
+.container-fluid {
+    width: fit-content;
+  }
+
+.logo {
+    width: 91px;
+    height: 69px;
+}
+
+.login-partner {
+    border-radius: 4px;
+    border: 1px solid #1E4894;
+    padding: 15px 29px;
+    color: #1E4894;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.connect {
+    padding: 196px 59px 516px 59px;
+    background: url("~src/assets/images/auth.svg") no-repeat;
+    background-position: right;
+    //   background-size: 25rem;
+    background-color: #EFF5FF;
+    //   height: 100vh;
+}
+
+.download-app {
+    border-radius: 4px;
+    background: #1E4894;
+    color: #FFF;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 29px;
+}
+
+.connect-customer {
+    color: #3F4154;
+    font-family: 'Poppins, Medium';
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.agent-head {
+    text-align: center;
+    color: #303E51;
+    font-family: 'Poppins, Medium';
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.feature-head {
+    color: #1E4894;
+    font-family: 'Poppins, Medium';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-para {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins, Medium';
+    font-size: 14px;
+    opacity: 0.6;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+img.feature {
+    width: 80px;
+    height: 80px;
+}
+
+.bussines-f {
+    border-radius: 6px;
+    // opacity: 0.5;
+    background: #f7faff;
+    padding: 2rem;
+}
+
+.b-feature {
+    padding: 6rem 5rem;
+}
+
+.partner-solution {
+    background: #EFF5FF;
+    display: inline-flex;
+    padding: 86px 70px 31px 70px;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 94px;
+}
+
+.solution-head {
+    color: #1E4894;
+    font-family: 'Poppins, Medium';
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.solution-para {
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 38px;
+    opacity: 0.6;
+}
+
+.help {
+    padding: 20px 36px;
+    border-radius: 7px;
+    border: 3px solid #c5c6fb;
+    /* opacity: 0.5; */
+    background: #ecf2ff;
+}
+
+.help-head {
+    color: #1E4894;
+    font-family: 'Poppins, Medium';
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.help-para {
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33px;
+    opacity: 0.6;
+}
+
+.grow {
+    padding: 0rem 5rem;
+}
+
+.notification {
+    padding: 2rem 5rem;
+    gap: 4rem;
+}
+
+.next-level {
+    background: url("~src/assets/images/next-level.svg"), url("~src/assets/images/next-level2.svg");
+    background-repeat: no-repeat;
+    background-color: #ECF3FF;
+    padding: 5rem 4rem;
+    background-position: 10% 0%, 90% 100%;
+    border-radius: 10px;
+}
+
+.ready {
+    color: #060606;
+    font-family: 'Poppins, Medium';
+    font-size: 30px;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 0%;
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 79.621px;
+    color: #b9bdca;
+    font-family: 'Poppins, Medium';
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.request-demo {
+    color: #FFF;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #000;
+    padding: 16px 20px;
+    position: absolute;
+    right: 28px;
+    top: 10px;
+}
+
+.request-demo:hover {
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 2px solid #000;
+    background: #fff;
+    padding: 16px 20px;
+    position: absolute;
+    right: 5%;
+    top: 12%;
+}
+
+.p-75{
+    padding: 75px;
+}
+
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+
+.footer{
+    background: #1E4894;
+}
+
+.f-logo{
+    width: 91px;
+height: 68px;
+}
+
+.f-list{
+    color: #FFF;
+font-family: 'Roboto, Medium';
+font-size: 17px;
+font-weight: 500;
+}
+
+.f-rights{
+    color: #FFF;
+    font-family: 'Roboto, Medium';
+font-size: 17px;
+font-weight: 500;
+}
+
+.line{
+    opacity: 0.5;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+//SOCIAL MEDIA
+
+.svg-inline--fa {
+    vertical-align: -0.200em;
+  }
+  
+  .rounded-social-buttons {
+    text-align: center;
+  }
+  
+  .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid #18bfff;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #1E4894;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+  
+  .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+  .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+    font-size: 25px;
+  }
+  
+  .rounded-social-buttons .social-button.facebook {
+    background: #fff;
+  }
+  
+  .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #55acee;
+    background: #fff;
+    border-color: #18bfff;
+  }
+  
+  .rounded-social-buttons .social-button.twitter {
+    background: #fff;
+  }
+  
+  .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fff;
+    border-color: #18bfff;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin {
+    background: #fff;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #55acee;
+    background: #fff;
+    border-color: #18bfff;
+  }
+  
+  .rounded-social-buttons .social-button.youtube {
+    background: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.instagram {
+    background: #125688;
+  }
+  
+  .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+  }
+
+
+@media(min-width: 992px){
+    .order-lg-1{
+        order: 1;
+    }
+    .order-lg-2{
+        order: 2;
+    }
+}
+

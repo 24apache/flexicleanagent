@@ -41,7 +41,7 @@ img.flexi {
 }
 
 .bg-login-image {
-  background: url("~src/assets/images/auth.png") no-repeat;
+  background: url("~src/assets/images/auth.svg") no-repeat;
   background-position: center;
   background-size: 25rem;
   background-color: rgba(243, 245, 249, 1);
@@ -127,8 +127,9 @@ font-weight: 500;
 
 .form-control.ng-touched.ng-invalid {
   border: 1.5px solid red;
-  // background: url("~src/assets/images/in-valid.svg") no-repeat 27rem 13px;
-    // background-size: 18px;
+  background: url("~src/assets/images/in-valid.svg") no-repeat;
+  background-size: 18px;
+  background-position: 98% 50%;
 }
 
 // .invalid{
@@ -141,8 +142,9 @@ font-weight: 500;
 
 .form-control.ng-touched.ng-valid {
   border: 1.5px solid rgb(2, 165, 2);
-  background: url("~src/assets/images/valid.svg") no-repeat 27rem 13px;
-    background-size: 18px;
+  background: url("~src/assets/images/valid.svg") no-repeat;
+  background-size: 18px;
+  background-position: 98% 50%; 
 }
 
 
