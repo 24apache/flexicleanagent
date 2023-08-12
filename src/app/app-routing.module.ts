@@ -49,7 +49,7 @@ import { PreviewDetailComponent } from './auth/preview-detail/preview-detail.com
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/partner', pathMatch: 'full' },
   {
     path: 'dashboard',
     component: DashboardComponent,

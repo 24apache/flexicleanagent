@@ -1,1 +1,122 @@
-<p>signup works!</p>
+<div class="container-fluid">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+        <div class="col-xl-12 col-lg-12 col-md-9 pr-sm-0">
+
+            <div class="card o-hidden border-0 o-hidden">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+
+                        <!-- bg-image -->
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image hg-100"></div>
+
+                        <!-- signup -->
+                        <div class="col-lg-6">
+                            <div class="padding">
+                                <div class="text-center">
+                                    <img class="flexi mb-4 pb-3" src="assets/images/logo.svg" alt="logo">
+                                    <h1 class="text-black h2 mb-3 text-left poppins-semibold">Signup </h1>
+                                    <h4 class="p-welcome h4 mb-4 text-left">Login as a partner! Please enter your
+                                        details
+                                    </h4>
+                                </div>
+                                <form [formGroup]="exform" class="user">
+                                    <div class="form-group">
+                                        <label class="login-head">Email ID</label>
+                                        <input formControlName="email" type="email"
+                                            class="form-control form-control-user poppins-medium"
+                                            placeholder="Enter Your Email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="login-head">Mobile Number</label>
+                                        <div class="input-group mb-3">
+                                            <span><select class="form-select select-number" id="validationDefault04"
+                                                    required>
+                                                    <option selected disabled value=""> +91</option>
+                                                    <option> +92</option>
+                                                </select></span>
+                                            <input type="text" class="form-control form-control-user poppins-medium"
+                                                placeholder="Enter" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="login-head">Password</label>
+
+                                        <input formControlName="password" type="password"
+                                            class="form-control form-control-user poppins-medium" placeholder="Enter">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="login-head">Confirm Password</label>
+                                        <input formControlName="password" type="password"
+                                            class="form-control form-control-user poppins-medium" placeholder="Enter">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row mt-4 mb-2">
+
+                                            <div class="col-md-6">
+                                                <label class="login-head">Service</label>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group1">
+                                                            <input type="checkbox" id="days">
+                                                            <label for="days" class="remember"> &nbsp; POS</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group2">
+                                                            <input type="checkbox" id="days1">
+                                                            <label for="days1" class="remember"> &nbsp; Online</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row mt-2 mb-4">
+                                            <div class="col-md-10">
+                                                <div class="row align-items-center">
+                                                    <div class="col login-head">
+                                                        M Logistic Support
+                                                    </div>
+                                                    <div class="col tooltip-container" placement="bottom">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <div class="tooltip">Commission percentage
+                                                            will vary if enabled
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);"
+                                        routerLink="/signup-company">SUBMIT</button>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

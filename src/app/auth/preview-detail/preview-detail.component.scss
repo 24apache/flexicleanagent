@@ -1,0 +1,287 @@
+.poppins-bold {
+    font-family: "Poppins, Bold";
+}
+
+.poppins-semibold {
+    font-family: "Poppins, SemiBold";
+}
+
+.poppins-medium {
+    font-family: "Poppins, Medium";
+}
+
+.poppins-regular {
+    font-family: "Poppins, Regular";
+}
+
+.poppins-light {
+    font-family: "Poppins, Light";
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f3f5f9;
+    height: 100vh;
+}
+
+img.flexi {
+    width: 127px;
+    height: 97px;
+}
+
+.company-information{
+    border-radius: 15px;
+background: #FFF;
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.padding-40{
+    padding: 0px 40px;
+}
+
+
+.line {
+    border: 1px solid #D7DFEC;
+    ;
+}
+
+.padding {
+    padding: 4rem 2rem 1rem 2rem;
+}
+
+.hg-100 {
+    height: 100vh;
+}
+
+.form-control {
+    border-radius: 7.063px;
+    border: 2.354px solid #E5E5E7;
+}
+
+.bg-login-image {
+    background: url("~src/assets/images/auth.svg") no-repeat;
+    background-position: center;
+    background-size: 25rem;
+    background-color: rgba(243, 245, 249, 1);
+    height: auto;
+}
+
+.btn-login {
+    color: #fff;
+    background-color: #1E4893;
+    border-color: #9A9DA5;
+    font-family: "Poppins, Medium";
+    padding: 13px;
+}
+
+.btn-login:hover {
+    color: #1E4893;
+    background-color: #fff;
+    border-color: #1E4893;
+    font-family: "Poppins, Medium";
+}
+
+.btn-login:focus,
+.btn-login.focus {
+    color: #fff;
+    background-color: #1E4893;
+    border-color: #1E4893;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+form.user .btn-user {
+    font-size: 16.48px;
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+    font-family: "Poppins, Medium";
+}
+
+
+.btn-login.disabled,
+.btn-login:disabled {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #9A9DA5;
+    font-family: "Poppins, Medium";
+}
+
+.btn-login:not(:disabled):not(.disabled):active,
+.btn-login:not(:disabled):not(.disabled).active,
+.show>.btn-login.dropdown-toggle {
+    color: #9A9DA5;
+    background-color: #2d4373;
+    border-color: #dfdfdf;
+    font-family: "Poppins, Medium";
+}
+
+.btn-login:not(:disabled):not(.disabled):active:focus,
+.btn-login:not(:disabled):not(.disabled).active:focus,
+.show>.btn-login.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+
+.p-welcome {
+    color: #9A9DA5;
+    font-family: 'Poppins, Medium';
+    font-size: 18.835px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.f-password {
+    color: #7E56DA;
+    font-family: 'Poppins, Medium';
+    font-size: 14.126px;
+    font-weight: 500;
+}
+
+.valid-text {
+    font-family: 'work-sans, Medium';
+    font-size: 13px;
+    color: red;
+    font-weight: 500;
+}
+
+.form-control.ng-touched.ng-invalid {
+    border: 1.5px solid red;
+    background: url("~src/assets/images/in-valid.svg") no-repeat;
+    background-size: 18px;
+    background-position: 98% 50%;
+}
+
+// .invalid{
+//   width: 21px;
+//     height: 21px;
+//     position: absolute;
+//     bottom: 16.7rem;
+//     right: 10.5rem;
+// }
+
+.form-control.ng-touched.ng-valid {
+    border: 1.5px solid rgb(2, 165, 2);
+    background: url("~src/assets/images/valid.svg") no-repeat;
+    background-size: 18px;
+    background-position: 98% 50%;
+}
+
+
+.detail-head {
+    color: #1E4893;
+    font-family: 'Poppins, Medium';
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.preview-para {
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.renew-month {
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 16px;
+    opacity: 0.4;
+    font-weight: 500;
+}
+
+.bhd{
+    color: #000;
+    font-family: 'Poppins, Medium';
+font-size: 27.33px;
+font-weight: 600;
+}
+
+.tick {
+    background-color: #4BBB55;
+    border-radius: 2rem;
+    padding: 6px 4px 5px 5px;
+}
+
+.service-charge{
+    color: #000;
+font-family: 'Poppins, Medium';
+font-size: 16px;
+opacity: 0.8;
+font-weight: 500;
+}
+
+
+.charge{
+    color: #777;
+font-family: 'Work-sans, Medium';
+font-size: 15px;
+font-weight: 500;
+border: 1px solid rgba(16, 29, 36, 0.06);
+background-color: #F3F5F9;
+padding: 5px 20px;
+text-align: center;
+margin: 0px 8px;
+}
+
+
+
+
+//TOOLTIP
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    // margin: 6rem;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 240px;
+    height: 75px;
+    color: #777;
+    font-family: "Work-sans, Medium";
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #F3F5F9;
+    border-radius: 4px;
+    padding: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 104%;
+    left: 80%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .container-fluid {
+        background-color: #fff;
+    }
+
+    .padding {
+        padding: 5rem;
+    }
+}
