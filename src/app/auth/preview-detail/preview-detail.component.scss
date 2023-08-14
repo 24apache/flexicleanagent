@@ -76,7 +76,7 @@ box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #1E4893;
     border-color: #9A9DA5;
     font-family: "Poppins, Medium";
-    padding: 13px;
+    padding: 16px;
 }
 
 .btn-login:hover {
@@ -243,8 +243,7 @@ margin: 0px 8px;
 
 .tooltip {
     visibility: hidden;
-    width: 240px;
-    height: 75px;
+    width: max-content;
     color: #777;
     font-family: "Work-sans, Medium";
     font-size: 15px;
@@ -254,8 +253,8 @@ margin: 0px 8px;
     padding: 16px;
     position: absolute;
     z-index: 4;
-    top: 104%;
-    left: 80%;
+    top: 85%;
+    left: 145%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;

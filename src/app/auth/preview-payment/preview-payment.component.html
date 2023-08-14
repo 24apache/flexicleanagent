@@ -21,7 +21,7 @@
                                     <img class="flexi mb-4 pb-3" src="assets/images/logo.svg" alt="logo">
                                     <h1 class="text-black h2 mb-3 text-left poppins-semibold">Payment Deatils</h1>
                                 </div>
-                                <form [formGroup]="exform" class="user">
+                                <form class="user">
 
                                     <div class="row credit-p">
                                         <div class="col-lg-6">
@@ -86,9 +86,8 @@
                                             placeholder="Enter">
                                     </div>
 
-                                    <button class="btn btn-login btn-user btn-block mt-5 mb-5"
-                                        href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                        (click)="openModal()">PAY NOW</button>
+                                    <div class="btn btn-login btn-user btn-block mt-5 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        (click)="openModal()">PAY NOW</div>
                                 </form>
 
                             </div>
@@ -114,7 +113,6 @@
 
 
 
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -122,8 +120,9 @@
 
             <div class="modal-body-verify">
                 <div class="sucessfully"><img src="assets/images/sucessfully.png" alt="add-user"></div>
-                <div class="text-center mt-4">
-                    <div class="btn save" data-bs-dismiss="modal" (click)="doSomething()">Ok</div> &nbsp;
+                <h4 class="created">Profile Created! Continue to App</h4>
+                <div class="text-center">
+                    <div class="btn save" data-bs-dismiss="modal" (click)="doSomething()">CONTINUE</div> &nbsp;
                 </div>
             </div>
         </div>
