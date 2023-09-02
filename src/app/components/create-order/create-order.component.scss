@@ -14,7 +14,7 @@ select.select-category {
     // background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 16px 12px;
-    border: 2px solid rgb(215 223 236);
+    border: 2px solid rgb(172 187 218);
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: none;
@@ -34,9 +34,10 @@ select.select-category {
     color: #8d909d;
     background-color: #fff;
     background-clip: padding-box;
-    border: 2px solid rgb(215 223 236);
+    border: 2px solid rgb(172 187 218);
     border-radius: 0.35rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    opacity: 0.5;
 }
 
 select.select-category:hover,
@@ -51,7 +52,7 @@ select.select-category:focus {
 }
 
 .search-border {
-    border: 2px solid rgb(215 223 236);
+    border: 2px solid rgb(172 187 218);
 }
 
 .item-end {
@@ -116,6 +117,7 @@ select.select-category:focus {
     font-family: 'Work-sans, Regular';
     font-size: 16px;
     height: 52px;
+    opacity: 0.5;
 }
 
 img.user {
@@ -220,12 +222,16 @@ img.user {
 .add-customer-btn {
     border-radius: 4px;
     background: #285198;
-    color: #FCFBFD;
-    font-size: 20px;
-    font-family: "Work-sans, Medium";
+    color: #FFF;
+    font-family: "Poppins, Medium";
+    font-size: 34.418px;
+    font-weight: 500;
     width: inherit;
-    padding: 11px;
+    padding: 26px 27px;
+
+
 }
+
 
 img.close-bttn {
     width: 23.5px;
@@ -255,6 +261,7 @@ img.close-bttn {
     font-size: 16px;
     font-family: 'Work-sans, Medium';
     padding: 0px 0px 0px 30px;
+    opacity: 0.5;
 }
 
 
@@ -624,6 +631,33 @@ input.s-bhd:focus {
     right: 4rem;
 }
 
+
+.amazing {
+    padding: 25px;
+    width: 653.951px;
+    color: #000;
+    font-family: "Poppins, Medium";
+    font-size: 28.345px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 4.049px;
+    border: 2.025px solid #49C665;
+    background: #E0F8E7;
+}
+
+.basket {
+    // background: url("~src/assets/images/bg-green.svg") no-repeat;
+    background: #49C665;
+    border-radius: 2rem;
+    aspect-ratio: 1/1;
+    position: relative;
+    left: 24px;
+}
+
+img.a-tick {
+    width: 31.382px;
+    height: 21.258px;
+}
 
 
 
@@ -1214,8 +1248,18 @@ button.close {
 
 
 
-@media (min-width: 380px) {
-    // .container-fluid {
-    //     height: 100vh;
-    // }
-}
+
+
+/* MOBILE SCREEN */
+
+
+
+// @media (min-width: 380px) {
+//     .container-fluid {
+//         height: 100vh;
+//     }
+// }
+
+
+
+@media only screen and (max-width: 992px) {}

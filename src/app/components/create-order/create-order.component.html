@@ -739,15 +739,27 @@
                         </div>
 
                     </form>
-                    <div class="row mt-4 add-padding">
-                        <div class="col mt-3 mb-3">
-                            <div class="btn add-customer-btn" (click)="changeSuccessMessage()">Add to Basket ({{
+                    <div class="row mt-4">
+                        <div class="col-12 mt-3 mb-3">
+                            <div class="btn add-customer-btn" (click)="show = !show">Add to Basket ({{
                                 someValue }})</div>
                         </div>
-
-                        <ngb-alert #selfClosingAlert *ngIf="successMessage" type="success"
-                            (closed)="successMessage = ''">{{ successMessage }}
-                        </ngb-alert>
+ 
+                        <div class="col-12 mt-3 mb-3" *ngIf="show">
+                            <div class="btn amazing"> 
+                                <div class="row align-items-center">
+                                    <div class="col-1 basket">
+                                        <img class="a-tick" src="assets/images/tick.svg" alt="tick">
+                                    </div>
+                                    <div class="col-10">
+                                        Amazing ! Added to Basket 
+                                    </div>
+                                    <div class="col-1">
+                                        <img class="close-bttn" src="assets/images/closes.svg" alt="close">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

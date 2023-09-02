@@ -2,8 +2,39 @@
   padding: 10px;
 }
 
+.renewal-payment {
+  margin: 0;
+  border-radius: 15px;
+  border: 2px dashed #96a9cd;
+  padding: 15px 0px;
+  font-size: 24px;
+  font-family: 'Work-sans, Medium';
+  color: #797a7c;
+}
+
+.circle {
+  width: 51px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #e5edfa;
+}
+
+.payment-pending{
+  margin-left: 2rem;
+}
+
+.view-more {
+  border-radius: 4px;
+  background: #CED7E7;
+  color: #2B5298;
+  font-family: 'Work-sans, Medium';
+  font-size: 11px;
+  padding: 6px 18px;
+  font-weight: 600;
+}
+
 .total-order {
-  border: 2px solid #395EA1;
+  border: 2px solid #96a9cd;
   border-style: dashed;
   border-radius: 20px;
   padding: 24px;
@@ -21,22 +52,22 @@
   background-color: #fff;
 }
 
-.today-s{
+.today-s {
   color: #000;
-font-family: "Poppins, Medium";
-font-size: 20px;
-padding: 0px 0px 5px 0px;
-font-weight: 600;
+  font-family: "Poppins, Medium";
+  font-size: 20px;
+  padding: 0px 0px 5px 0px;
+  font-weight: 600;
 }
 
-img.user{
+img.user {
   width: 42px;
   height: 42px;
   border-radius: 42px;
 }
 
 .pickup {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
   padding: 16px;
   background: #fff;
@@ -50,13 +81,14 @@ img.user{
   font-family: 'Work-sans, Medium';
   text-align: left;
   font-size: 18px;
+  margin: 20px 0px;
 }
 
 .new-orders {
   background-color: #fff;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
-  padding: 12px;
+  padding: 17px;
   font-family: 'Poppins, Medium';
   color: #000;
   text-align: center;
@@ -79,7 +111,7 @@ img.user{
 }
 
 .status-code {
-  border: 2px dashed #395EA1;
+  border: 2px dashed #96a9cd;
   padding: 16px;
   border-radius: 20px;
   color: #2B5298;
@@ -104,14 +136,14 @@ img.user{
 
 .order-check {
   background-color: #F3F5F9;
-  padding: 20px;
+  padding: 25px 16px 70px 16px;
 
 }
 
 .check-status {
   background-color: #fff;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-  padding: 17px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
   border-radius: 20px;
 }
 
@@ -132,7 +164,7 @@ img.user{
   padding: 8px 4px 8px 4px;
   color: #2B5298;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 13.739px;
   font-family: 'Work-sans, Medium';
 }
 
@@ -153,9 +185,23 @@ img.user{
   height: 49px;
 }
 
-.detail-change{
+.detail-change {
   color: #000;
-font-family: 'Poppins, Medium';
-font-size: 13.739px;
-font-weight: 500;
+  font-family: 'Poppins, Semibold';
+  font-size: 13.739px;
+  font-weight: 500;
+}
+
+
+
+
+/* MOBILE SCREEN */
+
+@media only screen and (max-width: 992px) {
+  
+  .payment-pending {
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 20px;
+}
 }

@@ -84,7 +84,9 @@ select.select-category {
     width: 194px;
     height: 49px;
     text-align: center;
-    padding: 0.375rem 0.75rem;
+    padding: 2px 10px;
+    word-spacing: 42px;
+    text-indent: -8px;
     font-weight: 600;
     line-height: 1.5;
     color: #262626;
@@ -124,8 +126,9 @@ select.select-category:focus {
 .switch {
     position: relative;
     display: inline-block;
-    width: 55px;
-    height: 24px;
+    width: 73px;
+    height: 34px;
+    margin-bottom: 0;
 }
 
 .switch input {
@@ -149,10 +152,10 @@ select.select-category:focus {
 .slider:before {
     position: absolute;
     content: "";
-    height: 18px;
-    width: 19px;
-    left: 6px;
-    bottom: 3px;
+    height: 26px;
+    width: 27px;
+    left: 12px;
+    bottom: 4px;
     background-color: white;
     transition: 0.4s;
 }

@@ -6384,23 +6384,23 @@
   }
   
   .border {
-    border: 1px solid rgba(215, 223, 236, 1) !important;
+    border: 1px solid rgb(218 220 224) !important;
   }
   
   .border-top {
-    border-top: 1px solid rgba(215, 223, 236, 1) !important;
+    border-top: 1px solid rgb(218 220 224) !important;
   }
   
   .border-right {
-    border-right: 1.5px solid rgba(215, 223, 236, 1) !important;
+    border-right: 1.5px solid rgb(218 220 224) !important;
   }
   
   .border-bottom {
-    border-bottom: 1.5px solid rgba(215, 223, 236, 1) !important;
+    border-bottom: 1px solid rgb(218 220 224) !important;
   }
   
   .border-left {
-    border-left: 1px solid rgba(215, 223, 236, 1) !important;
+    border-left: 1px solid rgb(218 220 224) !important;
   }
   
   .border-0 {
@@ -10179,12 +10179,15 @@ html {
   .topbar .navbar-search {
     width: 25rem;
   }
-  
-  .topbar .navbar-search input {
-    font-size: 0.85rem;
-    /* height: auto; */
-    width: 22rem;
-    padding: 3px 3px 3px 30px;
+
+.topbar .navbar-search input {
+  // font-size: 0.85rem;
+  /* height: auto; */
+  font-family: 'Work-sans, Medium';
+  font-size: 13.739px;
+  font-weight: 500;
+  width: 22rem;
+  padding: 3px 3px 3px 30px;
 }
   
   .topbar .topbar-divider {
