@@ -1,16 +1,15 @@
-
-.wallet-bank{
+.wallet-bank {
   position: relative;
   bottom: 5rem;
   padding: 0px 22px;
 }
 
-.wallet-filter{
+.wallet-filter {
   position: relative;
   bottom: 3rem;
 }
 
-.wallet-table{
+.wallet-table {
   position: relative;
   bottom: 1rem;
 }
@@ -83,6 +82,10 @@
   bottom: 20px;
 }
 
+// table{
+//   border-collapse: inherit;
+// }
+
 
 .table-header {
   background: #EBEEF6;
@@ -91,6 +94,11 @@
   text-transform: uppercase;
   font-family: 'Work-sans, Medium';
   font-weight: 600;
+}
+
+#transaction-head tr{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .t-body {
@@ -106,13 +114,24 @@
 
 
 .filter {
-  border: 2px solid #1E4894;
-  padding: 13px 19px 13px 19px;
+  border-radius: 8.597px;
+  border: 2.149px solid #d7dfec;
+  padding: 7px 18px 7px 18px;
   color: rgb(30, 72, 148);
   font-family: "Work-sans, Medium";
-  font-size: 14.7px;
-  border-radius: 8px;
+  font-size: 14.765px;
+  font-weight: 500;
   margin-right: 1rem;
+}
+
+img.img-filter {
+  width: 17.194px;
+  height: 15.475px;
+}
+
+img.img-download {
+  width: 19.881px;
+  height: 18.244px;
 }
 
 .pickup {
@@ -245,17 +264,16 @@ img.close-bttn {
 .pages-links {
   position: relative;
   display: block;
-  // width: 5rem;
-  padding: 0.6rem 2.8rem;
+  padding: 0.7rem 2.5rem;
   font-size: 10px;
   font-weight: 500;
   text-align: center;
-  font-family: 'Roboto, Medium';
+  font-family: "Roboto, Medium";
   color: #303030;
   text-decoration: none;
-  background-color: transparent;
-  border: 1px solid #000000;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border: 0.5px solid rgba(5, 5, 5, 0.50);
+  background: rgba(255, 255, 255, 0.20);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .page-item:not(:first-child) .page-links {
@@ -303,25 +321,25 @@ img.close-bttn {
 
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
-    position: fixed;
-    margin: auto;
-    /* width: 320px; */
-    height: 100%;
-    -webkit-transform: translate3d(0%, 0, 0);
-    -ms-transform: translate3d(0%, 0, 0);
-    -o-transform: translate3d(0%, 0, 0);
-    transform: translate3d(0%, 0, 0);
+  position: fixed;
+  margin: auto;
+  /* width: 320px; */
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
 }
 
 .modal.left .modal-content,
 .modal.right .modal-content {
-    height: 100%;
-    // overflow-y: auto;
+  height: 100%;
+  // overflow-y: auto;
 }
 
 .modal-body {
-    // max-height: calc(100vh - 200px);
-    overflow-y: auto;
+  // max-height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
 // .modal.left .modal-body,
@@ -332,39 +350,39 @@ img.close-bttn {
 
 /*Right*/
 .modal.right.fade .modal-dialog {
-    right: -320px;
-    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-    transition: opacity 0.3s linear, right 0.3s ease-out;
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
 }
 
 .modal.right.fade.show .modal-dialog {
-    right: 0;
+  right: 0;
 }
 
 
 
 .demo {
-    padding-top: 60px;
-    padding-bottom: 110px;
+  padding-top: 60px;
+  padding-bottom: 110px;
 }
 
 .btn-demo {
-    margin: 15px;
-    padding: 10px 15px;
-    border-radius: 0;
-    font-size: 16px;
-    background-color: #FFFFFF;
+  margin: 15px;
+  padding: 10px 15px;
+  border-radius: 0;
+  font-size: 16px;
+  background-color: #FFFFFF;
 }
 
 .btn-demo:focus {
-    outline: 0;
+  outline: 0;
 }
 
 button.close {
-    background: transparent;
-    border: transparent;
+  background: transparent;
+  border: transparent;
 }
 
 
@@ -383,7 +401,8 @@ button.close {
 
 
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px) {
+
   // .container-fluid{
   //     height: 100vh;
   // }

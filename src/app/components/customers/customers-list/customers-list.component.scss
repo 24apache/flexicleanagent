@@ -28,7 +28,7 @@
 // }
 
 .search-border{
-  border: 2px solid rgb(215, 223, 236);
+  border: 2px solid rgb(172, 187, 218);
 }
 
 .table-header {
@@ -48,12 +48,17 @@
 
 .filter {
   border: 2px solid #1E4894;
-  padding: 13px 19px 13px 19px;
+  padding: 14px 18px 14px 18px;
   color: rgb(30, 72, 148);
   font-family: "Work-sans, Medium";
-  font-size: 14.7px;
+  font-size: 13.739px;
   border-radius: 8px;
   margin-right: 1rem;
+}
+
+img.img-filter{
+  width: 16px;
+height: 14.4px;
 }
 
 
@@ -85,7 +90,9 @@
 
 .search-pading {
   padding: 3px 3px 3px 41px;
-  color: #5A555D;
+    color: #5A555D;
+    opacity: 0.5;
+    width: 468px;
 }
 
 .h-52 {
@@ -147,18 +154,18 @@
 .pages-links {
   position: relative;
   display: block;
-  // width: 5rem;
-  padding: 0.6rem 2.8rem;
+  padding: 0.7rem 2.5rem;
   font-size: 10px;
   font-weight: 500;
   text-align: center;
-  font-family: 'Roboto, Medium';
+  font-family: "Roboto, Medium";
   color: #303030;
   text-decoration: none;
-  background-color: transparent;
-  border: 1px solid #000000;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border: 0.5px solid rgba(5, 5, 5, 0.50);
+  background: rgba(255, 255, 255, 0.20);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 
 .page-item:not(:first-child) .page-links {
   margin-left: 1rem;
@@ -193,7 +200,12 @@
 }
 
 
-
+.all-order {
+  font-size: 18px;
+  font-family: "Poppins, Medium";
+  color: #6B6D75;
+  font-weight: 500;
+}
 
 
 

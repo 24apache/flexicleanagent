@@ -66,22 +66,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-3 text-center">
-                    <div class="btn manage-address" [routerLink]="'../manage-address'"> <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22"
-                            viewBox="0 0 19 22" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12.4578 9.10687C12.4578 7.60171 11.2381 6.38208 9.73407 6.38208C8.2289 6.38208 7.00928 7.60171 7.00928 9.10687C7.00928 10.6109 8.2289 11.8306 9.73407 11.8306C11.2381 11.8306 12.4578 10.6109 12.4578 9.10687Z"
-                                stroke="white" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.73321 20.5479C8.42724 20.5479 1.56104 14.9886 1.56104 9.17503C1.56104 4.62375 5.21925 0.93335 9.73321 0.93335C14.2472 0.93335 17.9065 4.62375 17.9065 9.17503C17.9065 14.9886 11.0392 20.5479 9.73321 20.5479Z"
-                                stroke="white" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg> &nbsp; Manage Address </div>
+                    <div class="btn manage-address" [routerLink]="'../manage-address'"> <img class="location-w" src="assets/images/w-location.svg" alt="location"> &nbsp; Manage Address </div>
                 </div>
                 <div class="col-lg-3 mb-3 text-center">
-                    <div class="btn edit-profile" [routerLink]="'../profile-update'"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path d="M12.7109 20.0075H20.6141" stroke="#1E4894" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6572 1.86608C12.5024 0.855928 14.0218 0.707804 15.0529 1.53584C15.11 1.58076 16.9417 3.00372 16.9417 3.00372C18.0744 3.68849 18.4264 5.14422 17.7262 6.25515C17.689 6.31464 7.33325 19.2682 7.33325 19.2682C6.98872 19.698 6.46573 19.9517 5.90679 19.9578L1.94098 20.0076L1.04743 16.2256C0.922264 15.6938 1.04743 15.1353 1.39196 14.7055L11.6572 1.86608Z" stroke="#1E4894" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.74023 4.27051L15.6815 8.8332" stroke="#1E4894" stroke-width="1.63454" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>Edit Profile </div>
+                    <div class="btn edit-profile" [routerLink]="'../profile-update'"> <img class="location-w" src="assets/images/edit.svg" alt="location"> &nbsp;  Edit Profile </div>
                 </div>
             </div>
         </div>
@@ -132,14 +120,26 @@
                                             <div class="t-progress btn" [routerLink]="'../pickup'">Pickup</div>
                                         </td>
                                         <td class="text-center">
-                                            <a href="#" [routerLink]="'/invoice'"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.323 8.162C13.323 9.908 11.907 11.323 10.161 11.323C8.415 11.323 7 9.908 7 8.162C7 6.415 8.415 5 10.161 5C11.907 5 13.323 6.415 13.323 8.162Z" stroke="#2F569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z" stroke="#2F569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg></a>
+                                            <a href="#" [routerLink]="'/invoice'"><img src="assets/images/invoice.svg" alt="invoice"></a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination pt-4 mb-5">
+                                    <li class="page-item"><a class="pages-links" >Previous</a></li>
+                                    <li class="page-item"><a class="page-links" >1</a></li>
+                                    <li class="page-item"><a class="page-links" >2</a></li>
+                                    <li class="page-item"><a class="page-links" >3</a></li>
+                                    <li class="page-item"><a class="page-links" >4</a></li>
+                                    <li class="page-item"><a class="page-links" >5</a></li>
+                                    <li class="page-item"><a class="page-links" >6</a></li>
+                                    <li class="page-item"><a class="page-links" >7</a></li>
+                                    <li class="page-item"><a class="pages-links" >Next</a></li>
+                                </ul>
+                            </nav>
+
                         </div>
                     </div>
                 </ng-template>
@@ -184,30 +184,33 @@
                                             <div class="t-progress">Pickup</div>
                                         </td>
                                         <td class="text-center">
-                                            <a href="#" [routerLink]="'/invoice'"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.323 8.162C13.323 9.908 11.907 11.323 10.161 11.323C8.415 11.323 7 9.908 7 8.162C7 6.415 8.415 5 10.161 5C11.907 5 13.323 6.415 13.323 8.162Z" stroke="#2F569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z" stroke="#2F569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg></a>
+                                            <a href="#" [routerLink]="'/invoice'"><img src="assets/images/invoice.svg" alt="invoice"></a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination pt-4 mb-5">
+                                    <li class="page-item"><a class="pages-links" >Previous</a></li>
+                                    <li class="page-item"><a class="page-links" >1</a></li>
+                                    <li class="page-item"><a class="page-links" >2</a></li>
+                                    <li class="page-item"><a class="page-links" >3</a></li>
+                                    <li class="page-item"><a class="page-links" >4</a></li>
+                                    <li class="page-item"><a class="page-links" >5</a></li>
+                                    <li class="page-item"><a class="page-links" >6</a></li>
+                                    <li class="page-item"><a class="page-links" >7</a></li>
+                                    <li class="page-item"><a class="pages-links" >Next</a></li>
+                                </ul>
+                            </nav>
+
                         </div>
                     </div>
                 </ng-template>
               </li>
               
               <li ngbNavItem class="filter-download">
-                <div class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                    <path d="M8.86537 16.452H0.814453" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.457 4.06724H20.5079" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.81649 3.99799C6.81649 2.34243 5.4644 1 3.79692 1C2.12944 1 0.777344 2.34243 0.777344 3.99799C0.777344 5.65355 2.12944 6.99598 3.79692 6.99598C5.4644 6.99598 6.81649 5.65355 6.81649 3.99799Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2218 16.4013C21.2218 14.7458 19.8707 13.4033 18.2032 13.4033C16.5347 13.4033 15.1826 14.7458 15.1826 16.4013C15.1826 18.0569 16.5347 19.3993 18.2032 19.3993C19.8707 19.3993 21.2218 18.0569 21.2218 16.4013Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg> </div> <div class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                    <path d="M12.9998 16.6208L12.9998 1" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16.7832 12.8232L13.0003 16.6217L9.21737 12.8232" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19.0104 7.13965H20.2208C22.8608 7.13965 25 9.27889 25 11.9202L25 18.2562C25 20.8897 22.8659 23.0238 20.2324 23.0238L5.78054 23.0238C3.14054 23.0238 1 20.8832 1 18.2432L1 11.9059C1 9.2737 3.13535 7.13965 5.76757 7.13965H6.98962" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg> </div>
+                <div class="btn"> <img class="filter-two" src="assets/images/filter-two.svg" alt="filter"> </div> <div class="btn"> <img class="download-two" src="assets/images/download.svg" alt="download"> </div>
               </li>
             </ul>
             <div [ngbNavOutlet]="nav"></div>
