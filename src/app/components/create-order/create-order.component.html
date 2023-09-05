@@ -6,11 +6,11 @@
             <div class="row item-end">
                 <div class="col-md-4 mb-3 mt-3">
                     <label class="p-text-gray poppins-medium mb-3"> Search for Items</label>
-                    <input type="text" class="form-control search-border w-auto p-search" placeholder="Search by Item name">
+                    <input type="text" class="form-control search-border p-search" placeholder="Search by Item name">
                 </div>
                 <div class="col-md-5 mb-3 mt-3">
                     <label for="validationDefault04" class="form-label p-text-gray poppins-medium mb-3">Category</label>
-                    <select class="form-select select-category" id="validationDefault04" required>
+                    <select class="form-select select-all" id="validationDefault04" required>
                         <option selected disabled value="">All </option>
                         <option>products....</option>
                     </select>
@@ -607,8 +607,8 @@
                         </div>
                         <div class="col-md-12 mt-3">
                             <label for="validationCustom02" class="form-label h-filter mb-3">Special Discount</label>
-                            <input type="text" class="form-control input-text ht-53" id="validationCustom02"
-                                placeholder="Special Discount" required>
+                            <input type="text" class="form-control input-text ht-53" id="validationCustom02" required>
+                            <div class="special-percent">%</div>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -620,7 +620,7 @@
                             <div class="btn clear">Clear</div>
                         </div>
                         <div class="col-md-6 mt-3 mb-3">
-                            <div class="btn add-customer-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            <div class="btn customer-add-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 (click)="openModal()">Add Customer</div>
                         </div>
                     </div>
@@ -921,7 +921,7 @@
                             <div class="btn clear">Clear</div>
                         </div>
                         <div class="col-md-6 mt-3 mb-3">
-                            <div class="btn add-customer-btn">Add New Product</div>
+                            <div class="btn customer-add-btn">Add New Product</div>
                         </div>
                     </div>
                 </div>
