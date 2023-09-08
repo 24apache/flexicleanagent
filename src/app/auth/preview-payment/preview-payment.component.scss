@@ -18,6 +18,10 @@
     font-family: "Poppins, Light";
 }
 
+.justify-content{
+    justify-content: end;
+}
+
 .container-fluid {
     width: 100%;
     padding-right: 0.75rem;
@@ -315,13 +319,52 @@ height: 12px;
 
 
 
-@media (max-width: 992px) {
+/* Mobile Size Media Queries */
 
+@media only screen and (max-width:768px) {
     .container-fluid {
-        background-color: #fff;
+      background-color: #fff;
+    }
+  
+    .padding {
+      padding: 2rem;
     }
 
-    .padding {
-        padding: 5rem;
+    .justify-content{
+        justify-content: start;
     }
-}
+
+  }
+  
+  
+  
+  
+  
+  // Tablet Size Media Queries 
+  
+  @media (min-width:768px) and (max-width:1024px) {
+  
+    .padding {
+        padding: 3rem;
+    }
+
+    .justify-content{
+        justify-content: start;
+    }
+
+  
+  }
+  
+  
+  
+  
+  // Nest Hub Size Media Queries 
+  
+  @media (min-width:1024px) and (max-width:1280px) {
+  
+    .padding {
+        padding: 2rem;
+    }
+
+  
+  }

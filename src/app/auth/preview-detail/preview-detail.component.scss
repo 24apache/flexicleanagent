@@ -274,13 +274,64 @@ margin: 0px 8px;
 
 
 
-@media (max-width: 992px) {
+/* Mobile Size Media Queries */
 
+@media only screen and (max-width:768px) {
     .container-fluid {
-        background-color: #fff;
+      background-color: #fff;
+    }
+  
+    .padding {
+      padding: 2rem;
     }
 
-    .padding {
-        padding: 5rem;
+    .padding-40 {
+        padding: 0px 30px;
     }
-}
+
+    .service-percent{
+        width: 42rem;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  // Tablet Size Media Queries 
+  
+  @media (min-width:768px) and (max-width:1024px) {
+  
+    .padding {
+        padding: 3rem;
+        // height: 100vh;
+    }
+
+    .service-percent{
+        width: 45rem;
+    }
+  
+  }
+  
+  
+  
+  
+  // Nest Hub Size Media Queries 
+  
+  @media (min-width:1024px) and (max-width:1280px) {
+  
+    .padding {
+        padding: 2rem;
+        // height: auto;
+    }
+
+    .service-percent{
+        width: 45rem;
+    }
+
+    .sub-bhd{
+        width: 43rem;
+    }
+  
+  }

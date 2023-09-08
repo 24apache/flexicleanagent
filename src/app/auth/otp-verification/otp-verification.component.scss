@@ -134,13 +134,46 @@ font-weight: 500;
 
 
 
-  @media (max-width: 992px) {
 
-    .container-fluid {
-      background-color: #fff;
-    }
-  
-    .padding {
-      padding: 5rem;
-    }
+
+
+
+ /* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+    background-color: #fff;
   }
+
+  .padding {
+    padding: 1rem;
+  }
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {
+
+  .padding {
+    padding: 2rem;
+  }
+
+}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+  .padding {
+    padding: 1rem;
+  }
+
+}
