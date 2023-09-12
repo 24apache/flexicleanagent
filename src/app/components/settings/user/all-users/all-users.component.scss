@@ -39,14 +39,20 @@
 
 .filter {
     border: 2px solid #1E4894;
-    padding: 13px 18px 13px 18px;
+    padding: 14px 18px 14px 18px;
     color: #1E4894;
-    font-family: "Work-sans, Semibold";
+    font-family: "Work-sans, Medium";
     font-size: 13.739px;
     border-radius: 8px;
     margin-right: 1rem;
     // width: fit-content;
 }
+
+  
+  img.img-filter {
+    width: 16px;
+    height: 14.4px;
+  }
 
 
 .t-progress {
@@ -63,9 +69,9 @@
     font-family: "Work-sans, Medium";
 }
 
-.scroll {
-    overflow: auto;
-}
+// .scroll {
+//     overflow: auto;
+// }
 
 .h-2 {
     height: 2.5rem;

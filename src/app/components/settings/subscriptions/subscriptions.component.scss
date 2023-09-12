@@ -22,15 +22,20 @@
 }
 
 .filter {
-  border: 2px solid #cdd7e7;
-  padding: 13px 18px 13px 18px;
+  border: 2px solid #D7DFEC;
+  padding: 14px 18px 14px 18px;
   color: #1E4894;
-  font-family: "Work-sans, Semibold";
+  font-family: "Work-sans, Medium";
   font-size: 13.739px;
   border-radius: 8px;
   margin-right: 1rem;
-  // width: fit-content;
 }
+
+img.img-filter {
+  width: 16px;
+  height: 14.4px;
+}
+
 
 img.img-detail {
   width: 24px;
@@ -139,9 +144,9 @@ img.img-detail {
   opacity: 0.5;
 }
 
-.scroll {
-  overflow: scroll;
-}
+// .scroll {
+//   overflow: scroll;
+// }
 
 .choose-payment {
   border-radius: 8.244px;
@@ -417,7 +422,6 @@ img.close-bttn {
   background-color: #fff;
   border-color: #285198;
 }
-
 
 
 

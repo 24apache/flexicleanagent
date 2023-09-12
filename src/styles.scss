@@ -327,10 +327,14 @@
     overflow: hidden;
     vertical-align: middle;
   }
-  
+
   table {
     border-collapse: collapse;
-  }
+    border-style: hidden;
+    box-shadow: rgb(227, 230, 240) 0px 0px 0px 1px, rgb(218, 220, 224) 0px 0px 0px 0px;
+    border-radius: 4px;
+}
+  
   
   caption {
     padding-top: 0.75rem;
@@ -1379,6 +1383,7 @@
   .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #e3e6f0;
+    border-radius: 2px 2px 0px 0px;
   }
   
   .table tbody + tbody {

@@ -136,6 +136,44 @@
 }
 
 
+.search-icon {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 20.746px;
+    height: 21.737px;
+    color: rgb(172, 170, 174);
+}
+
+.search-pading {
+    padding: 3px 3px 3px 41px;
+    color: #5A555D;
+    opacity: 0.5;
+    width: 468px;
+}
+
+.filter {
+    border: 2px solid #1E4894;
+    padding: 14px 18px 14px 18px;
+    color: rgb(30, 72, 148);
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    border-radius: 8px;
+    // margin-right: 1rem;
+}
+
+.search-border {
+    border: 2px solid rgb(172, 187, 218);
+}
+
+.h-52 {
+    height: 52px;
+}
+
+img.img-filter {
+    width: 16px;
+    height: 14.4px;
+}
 
 
 
