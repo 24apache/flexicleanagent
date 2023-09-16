@@ -14,6 +14,11 @@
     padding: 21px;
 }
 
+img.close-btn {
+    width: 23.5px;
+    height: 23.5px;
+}
+
 .invoice-card {
     width: 821px;
     padding: 0px 0px 47px 30px;
@@ -64,11 +69,12 @@
     border-left: 1px solid #D7DFEC;
 }
 
-img.user{
+img.user {
     width: 49px;
     height: 49px;
     border-radius: 49px;
 }
+
 .check-outline {
     // width: 483px;
     height: 39px;
@@ -272,14 +278,14 @@ span.enter {
 }
 
 
-.paynow-method{
+.paynow-method {
     color: #585858;
     font-family: "Work-sans, Medium";
-font-size: 13px;
-font-weight: 500;
+    font-size: 13px;
+    font-weight: 500;
 }
 
-.card-body{
+.card-body {
     padding: 16px;
 }
 
@@ -636,9 +642,9 @@ button:not(:disabled) {
     position: absolute;
     left: -9999px;
 }
-[type="radio1"]:checked + label,
-[type="radio1"]:not(:checked) + label
-{
+
+[type="radio1"]:checked+label,
+[type="radio1"]:not(:checked)+label {
     position: relative;
     padding-left: 28px;
     cursor: pointer;
@@ -646,8 +652,9 @@ button:not(:disabled) {
     display: inline-block;
     color: #666;
 }
-[type="radio1"]:checked + label:before,
-[type="radio1"]:not(:checked) + label:before {
+
+[type="radio1"]:checked+label:before,
+[type="radio1"]:not(:checked)+label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -658,8 +665,9 @@ button:not(:disabled) {
     border-radius: 100%;
     background: #fff;
 }
-[type="radio1"]:checked + label:after,
-[type="radio1"]:not(:checked) + label:after {
+
+[type="radio1"]:checked+label:after,
+[type="radio1"]:not(:checked)+label:after {
     content: '';
     width: 12px;
     height: 12px;
@@ -671,12 +679,14 @@ button:not(:disabled) {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-[type="radio1"]:not(:checked) + label:after {
+
+[type="radio1"]:not(:checked)+label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
-[type="radio1"]:checked + label:after {
+
+[type="radio1"]:checked+label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -693,25 +703,134 @@ button:not(:disabled) {
     width: 18.4px;
     height: 18.4px;
     margin-right: 7px;
-  
+
     border: 4px solid #fff;
     background-clip: border-box;
     border-radius: 50%;
     appearance: none;
     transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .form label {
+}
+
+.form label {
     display: flex;
     margin: 10px 15px;
-  }
-  
-  .input-radios.on:checked {
+}
+
+.input-radios.on:checked {
     box-shadow: 0px 0px 0px 4px #285198;
     // background-color: #285198;
-  }
-  
-  .input-radios.off:checked {
+}
+
+.input-radios.off:checked {
     box-shadow: 0px 0px 0px 4px #285198;
     // background-color: #285198;
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+        background-color: #fff;
+    }
+
+
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+    .agent-w {
+        width: inherit;
+        padding: 0px 15px 0px 40px;
+    }
+
+    
+    input[type=date] {
+        display: block;
+        position: relative;
+        padding: 6px 40px 7px 12px;
+        font-family: "Poppins, Medium";
+        color: #9A9B9F;
+        font-size: 12px;
+        border: 2px solid #E3E3E3;
+        background: url('~src/assets/images/calendars.png') no-repeat;
+        background-position: 7.8rem;
+    }
+
+    .time-form {
+        padding: 7px 16px 8px 14px;
+        border: 2px solid #E3E3E3;
+        font-family: "Poppins, Medium";
+        color: #9A9B9F;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    input[type=checkbox].toggle   + label{
+        width: 90px;
+        height: 39px;
+        line-height: 37px;
+        background-color: #fff;
+        padding: 0px 0px 0px 10px;
+        border-radius: 50px;
+        border: 2px solid #1E4894;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.25s ease-in;
+    }
+
+    .product-w{
+        width: 20rem;
+    }
+
+    .summary-bhd {
+        color: #000;
+        font-family: "Poppins, Medium";
+        font-size: 16px;
+        font-weight: 600;
+        width: max-content;
+    }
+
+    .form label{
+        display: flex;
+        margin: 10px 12px;
+    }
+    
+    .bhdEnter-w{
+        width: max-content;
+    }
+
+}
