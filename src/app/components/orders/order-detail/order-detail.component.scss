@@ -9,6 +9,16 @@ img.user {
     border-radius: 49px;
 }
 
+img.phoneA {
+    width: 19px;
+    height: 19px;
+}
+
+img.envelopeA {
+    width: 19px;
+    height: 19px;
+}
+
 .invoice-summary {
     color: #000;
     font-family: "Poppins, Medium";
@@ -597,3 +607,100 @@ button.close {
     background: transparent;
     border: transparent;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+        background-color: #fff;
+    }
+
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries  ( Zoom in 125)
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+
+    .track-status {
+        color: #1E4894;
+        font-family: "Poppins, Medium";
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        right: 40px;
+        width: 10rem;
+    }
+
+    .order-booked {
+        padding: 9px 20px;
+        width: 185px;
+        height: 42px;
+        background: #d2daea;
+        color: #1E4894;
+        font-family: "Poppins, Medium";
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 0px;
+    }
+
+    .order-update {
+        padding: 9px 20px;
+        width: 185px;
+        height: 42px;
+        background: #1E4894;
+        color: #FFF;
+        font-family: "Poppins, Medium";
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    .orderDetail-p {
+        padding: 1rem;
+    }
+
+}
+
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {}
