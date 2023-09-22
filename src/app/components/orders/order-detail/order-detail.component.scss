@@ -703,4 +703,20 @@ button.close {
 
 //Zoom in 110 //
 
-@media (min-width:1280px) and (max-width:1480px) {}
+@media (min-width:1280px) and (max-width:1480px) {
+
+    .track-status {
+        color: #1E4894;
+        font-family: "Poppins, Medium";
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .p-delivery {
+        color: #000;
+        font-family: "Work-sans, Medium";
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
