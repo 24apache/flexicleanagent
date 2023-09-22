@@ -96,7 +96,7 @@
   font-weight: 600;
 }
 
-#transaction-head tr{
+#transaction-head tr {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -414,3 +414,101 @@ button.close {
     align-items: center;
   }
 }
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+    background-color: #fff;
+  }
+
+  .scroll {
+    overflow-x: auto;
+  }
+
+  .wallet {
+    position: relative;
+    left: 7rem;
+  }
+
+  .filter {
+    border-radius: 8.597px;
+    border: 2.149px solid #d7dfec;
+    padding: 8px 11px 8px 11px;
+    color: #000;
+    font-family: "Work-sans, Medium";
+    font-size: 14.765px;
+    font-weight: 500;
+    margin-right: 1rem;
+  }
+
+  .wallet-filter {
+    position: relative;
+    bottom: 2rem;
+}
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+  .add-bank {
+    border-radius: 4px;
+    background: #1D4893;
+    color: #FFF;
+    padding: 8px 9px;
+    font-family: "Work-sans, Medium";
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .review {
+    color: #898A93;
+    font-family: "Work-sans, Medium";
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .n-rating {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  .bhd {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+}
+
+}
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {}

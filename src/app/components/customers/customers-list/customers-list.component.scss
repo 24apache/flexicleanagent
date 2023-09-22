@@ -8,6 +8,10 @@
   padding: 2rem 3rem;
 }
 
+.customer-text{
+  text-align: right;
+}
+
 .search-for{
   color: #46444F;
   font-family: 'Poppins, Medium';
@@ -225,4 +229,92 @@ height: 14.4px;
     justify-content: end;
     align-items: center;
   }
+}
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+    background-color: #fff;
+  }
+
+  .scroll{
+      overflow-x: scroll;
+  }
+
+  .t-progress {
+    border-radius: 2rem;
+    background: #E3F0E9;
+    font-family: "Work-sans, Medium";
+    color: #00B79D;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 1px 5px 1px;
+    width: 7rem;
+}
+
+.search-pading {
+  padding: 3px 3px 3px 41px;
+  color: #5A555D;
+  opacity: 0.5;
+  width: inherit;
+}
+
+.customer-text{
+  text-align: start;
+}
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+  .t-progress {
+      border-radius: 2rem;
+      background: #E3F0E9;
+      font-family: "Work-sans, Medium";
+      color: #00B79D;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px 1px 5px 1px;
+      width: 7rem;
+  }
+
+  .table-header {
+      background: #EBEEF6;
+      color: #979AA5;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: "Work-sans, Medium";
+      font-weight: 600;
+      text-align: center;
+  }
+
+
+}
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {
+
+
 }

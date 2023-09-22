@@ -33,3 +33,14 @@
     font-weight: 500;
     background-color: transparent;
 }
+
+
+
+@media only screen and (max-width:768px) {
+  
+    .wallet-tab {
+        position: relative;
+        top: 15.5rem;
+    }
+  
+  }

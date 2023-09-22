@@ -2,6 +2,10 @@
     background: #fff;
 }
 
+.pad-5{
+    padding: 3rem !important;
+}
+
 .customer-details {
     border-radius: 10px;
     border: 2.185px dashed #9caed0;
@@ -338,3 +342,134 @@ img.download-two {
         margin-left: 51rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+      background-color: #fff;
+    }
+
+    .scroll{
+        overflow-x: auto;
+    }
+
+    .customer-details {
+        border-radius: 10px;
+        border: 2.185px dashed #9caed0;
+        align-items: center;
+        padding: 35px 0px 25px 15px;
+        width: 22rem;
+    }
+
+    .pad-5{
+        padding: 0.5rem !important;
+    }
+
+  
+  }
+  
+  
+  
+  
+  
+  // Tablet Size Media Queries 
+  
+  @media (min-width:768px) and (max-width:1024px) {}
+  
+  
+  
+  
+  // Nest Hub Size Media Queries 
+  
+  @media (min-width:1024px) and (max-width:1280px) {
+  
+    .manage-address {
+        border-radius: 6.538px;
+        background: #1E4894;
+        color: #FFF;
+        font-family: "Poppins, Medium";
+        font-size: 19.331px;
+        padding: 6px 12px;
+        font-weight: 500;
+    }
+
+    .filter-download {
+        margin-left: 41rem;
+    }
+
+    .d-customer {
+        color: #666;
+        font-family: "Work-sans, Medium";
+        font-size: 20.225px;
+        font-weight: 500;
+    }
+
+    .n-customer {
+        color: #000;
+        font-family: "Work-sans, Medium";
+        font-size: 30.523px;
+        font-weight: 600;
+    }
+  
+  }
+  
+  
+  //Zoom in 110 //
+  
+  @media (min-width:1280px) and (max-width:1480px) {
+
+  
+    .customer-details {
+        border-radius: 10px;
+        border: 2.185px dashed #9caed0;
+        align-items: center;
+        padding: 35px 0px 25px 15px;
+        width: 19rem;
+    }
+
+
+    .manage-address {
+        border-radius: 6.538px;
+        background: #1E4894;
+        color: #FFF;
+        font-family: "Poppins, Medium";
+        font-size: 19.331px;
+        padding: 6px 15px;
+        font-weight: 500;
+    }
+
+    .filter-download {
+        margin-left: 43rem;
+    }
+
+    .d-customer {
+        color: #666;
+        font-family: "Work-sans, Medium";
+        font-size: 22.225px;
+        font-weight: 500;
+    }
+
+    .n-customer {
+        color: #000;
+        font-family: "Work-sans, Medium";
+        font-size: 38.523px;
+        font-weight: 600;
+    }
+
+  }

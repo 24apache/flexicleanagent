@@ -536,3 +536,63 @@ input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+      background-color: #fff;
+    }
+
+  
+  }
+  
+  
+  
+  
+  
+  // Tablet Size Media Queries 
+  
+  @media (min-width:768px) and (max-width:1024px) {}
+  
+  
+  
+  
+  // Nest Hub Size Media Queries 
+  
+  @media (min-width:1024px) and (max-width:1280px) {
+  
+    .invoice-pad{
+        padding: 2rem;
+    }
+  
+  }
+  
+  
+  //Zoom in 110 //
+  
+  @media (min-width:1280px) and (max-width:1480px) {
+
+
+
+  }

@@ -97,3 +97,84 @@ img.profile {
     font-style: normal;
     font-weight: 500;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+      background-color: #fff;
+    }
+
+    .update {
+        padding: 11px 120px;
+        border-radius: 4px;
+        background: #285198;
+        color: #FCFBFD;
+        font-family: "Work-sans, Medium";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        width: inherit;
+    }
+
+    .clear {
+        border-radius: 4px;
+        border: 1px solid #285198;
+        background: #F3F5F9;
+        padding: 11px 125px;
+        color: #285198;
+        font-family: "Work-sans, Medium";
+        font-size: 20px;
+        font-weight: 500;
+        width: inherit;
+    }
+
+  
+  }
+  
+  
+  
+  
+  
+  // Tablet Size Media Queries 
+  
+  @media (min-width:768px) and (max-width:1024px) {}
+  
+  
+  
+  
+  // Nest Hub Size Media Queries 
+  
+  @media (min-width:1024px) and (max-width:1280px) {
+  
+
+  
+  }
+  
+  
+  //Zoom in 110 //
+  
+  @media (min-width:1280px) and (max-width:1480px) {
+
+
+
+  }
