@@ -648,6 +648,14 @@ button.close {
 
 
 
+
+
+
+
+
+
+
+
 @media (min-width: 1024px) {
 
   // .container-fluid{
@@ -660,4 +668,140 @@ button.close {
     justify-content: end;
     align-items: center;
   }
+}
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+
+  .scroll{
+    overflow-x: scroll;
+  }
+
+  .p-border {
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+    background: #FFF;
+    padding: 45px 65px;
+    margin: 0px 10px 0px 5px;
+}
+
+.p-border:hover {
+  border-radius: 4px;
+  border: 2px solid #288BE6;
+  padding: 45px 65px;
+  margin: 0px 10px 0px 5px;
+  background: url('~src/assets/images/add-product.svg') #fff no-repeat;
+  background-position: 13.5rem 1rem;
+}
+
+.t-mwidth{
+  width: max-content;
+}
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+  .p-border {
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+    background: #FFF;
+    padding: 20px 25px;
+    margin: 0px 10px 0px 5px;
+}
+
+.p-border:hover {
+  border-radius: 4px;
+  border: 2px solid #288BE6;
+  padding: 20px 25px;
+  margin: 0px 10px 0px 5px;
+  background: url('~src/assets/images/add-product.svg') #fff no-repeat;
+  background-position: 10rem 0.5rem;
+}
+
+.subscription {
+  color: #3960A1;
+  font-family: "Work-sans, Medium";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 8px;
+}
+
+.sub-detail {
+  color: #5A555D;
+  font-family: "Work-sans, Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+}
+
+
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {
+
+
+  .p-border {
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+    background: #FFF;
+    padding: 35px 40px;
+    margin: 0px 10px 0px 5px;
+}
+
+.p-border:hover {
+  border-radius: 4px;
+  border: 2px solid #288BE6;
+  padding: 35px 40px;
+  margin: 0px 10px 0px 5px;
+  background: url('~src/assets/images/add-product.svg') #fff no-repeat;
+  background-position: 11.5rem 1rem;
+}
+
+.subscription {
+  color: #3960A1;
+  font-family: "Work-sans, Medium";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.sub-detail {
+  color: #5A555D;
+  font-family: "Work-sans, Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+
 }

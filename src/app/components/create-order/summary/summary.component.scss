@@ -834,3 +834,35 @@ button:not(:disabled) {
     }
 
 }
+
+
+
+
+  //Zoom in 110 //
+
+  @media (min-width:1280px) and (max-width:1480px) {
+
+    input[type=date] {
+        display: block;
+        position: relative;
+        padding: 8px 70px 7px 11px;
+        font-family: "Poppins, Medium";
+        color: #9A9B9F;
+        font-size: 15px;
+        border: 1px solid #E3E3E3;
+        background: url('~src/assets/images/calendars.png') no-repeat;
+        background-position: 11rem;
+        cursor: pointer;
+    }
+
+    .time-form {
+        padding: 8px 28px 9px 28px;
+        border: 1px solid #E3E3E3;
+        font-family: "Poppins, Medium";
+        color: #9A9B9F;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+  }
+

@@ -448,3 +448,77 @@ img.close-bttn {
     align-items: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+      background-color: #fff;
+  }
+
+  .scroll{
+    overflow-x: scroll;
+  }
+
+  table.t-mwidth{
+    width: max-content;
+  }
+
+  .s-border {
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+}
+
+.benifit{
+  color: #252D38;
+  font-family: "Poppins, Medium";
+  font-size: 28.855px;
+  font-weight: 500;
+  padding-left: 48px;
+}
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+
+}
+
+
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {
+
+
+}

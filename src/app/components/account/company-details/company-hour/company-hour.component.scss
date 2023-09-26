@@ -182,3 +182,75 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+        background-color: #fff;
+    }
+
+
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {
+
+}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+.plus-delete{
+    padding: initial;
+}
+
+.days {
+    color: #9D9EA6;
+    font-family: "Work-sans, Medium";
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    left: 1rem;
+}
+}
+
+
+
+
+  //Zoom in 110 //
+
+  @media (min-width:1280px) and (max-width:1480px) {
+
+    .plus-delete{
+        padding: initial;
+    }
+
+  }
+

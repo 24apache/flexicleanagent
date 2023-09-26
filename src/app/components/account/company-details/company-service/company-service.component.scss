@@ -211,3 +211,147 @@ input[type="checkbox"].toggle:focus:checked+label:hover:before {
     left: 115%;
     margin-left: -48px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+    .container-fluid {
+        background-color: #fff;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        width: 197px;
+        height: 75px;
+        color: #777;
+        font-family: "Work-sans, Medium";
+        font-size: 12px;
+        font-weight: 500;
+        background-color: #F3F5F9;
+        border-radius: 4px;
+        padding: 16px;
+        position: absolute;
+        z-index: 4;
+        top: 87%;
+        left: 67%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+    .pos {
+        border-radius: 4px;
+        border: 1.5px solid #285198;
+        background: #F3F5F9;
+        font-family: "Work-sans, Medium";
+        color: #285198;
+        font-size: 18px;
+        padding: 12px 57px;
+    }
+
+    .online {
+        border-radius: 4px;
+        border: 1.5px solid #285198;
+        background: #F3F5F9;
+        font-family: "Work-sans, Medium";
+        color: #b7b8ba;
+        font-size: 18px;
+        padding: 16px 47px;
+        border: 1px solid #b7b8ba;
+    }
+
+    .company {
+        color: #534D58;
+        font-size: 14px;
+        font-family: "Work-sans, Medium";
+        width: max-content;
+    }
+
+    .fees {
+        color: #4C4D52;
+        font-family: "Work-sans, Medium";
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.4;
+    }
+}
+
+
+
+
+  //Zoom in 110 //
+
+  @media (min-width:1280px) and (max-width:1480px) {
+
+    .online {
+        border-radius: 4px;
+        border: 1.5px solid #285198;
+        background: #F3F5F9;
+        font-family: "Work-sans, Medium";
+        color: #b7b8ba;
+        font-size: 18px;
+        padding: 16px 65px;
+        border: 1px solid #b7b8ba;
+    }
+
+    .company {
+        color: #534D58;
+        font-size: 16px;
+        font-family: "Work-sans, Medium";
+        width: max-content;
+    }
+
+  }
+

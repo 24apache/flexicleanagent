@@ -172,3 +172,87 @@ font-weight: 600;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MOBILE SCREEN */
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+      background-color: #fff;
+  }
+
+  .clear {
+    font-family: "Work-sans, Medium";
+    color: #285198;
+    font-size: 20px;
+    padding: 11px;
+    width: inherit;
+    height: 53px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    background: #F3F5F9;
+}
+
+.save {
+  border-radius: 4px;
+  background: #285198;
+  color: #FCFBFD;
+  font-size: 20px;
+  padding: 11px;
+  width: inherit;
+  height: 53px;
+  font-family: "Work-sans, Medium";
+}
+
+.time-center{
+  text-align: center;
+}
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
+
+}
+
+
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {
+
+
+}
+
