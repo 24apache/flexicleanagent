@@ -1,5 +1,3 @@
-
-
 .container-fluid{
   background-color: #fff;
 }
@@ -203,6 +201,17 @@ height: 14.4px;
   border-color: #285198;
 }
 
+.page-links.active {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Roboto, Medium';
+  background-color: #1953b8;
+  border-radius: 2rem;
+  width: 37px;
+  height: 36px;
+}
+
 
 .all-order {
   font-size: 18px;
@@ -276,14 +285,14 @@ height: 14.4px;
 
 
 
-// Tablet Size Media Queries 
+// Tablet Size Media Queries
 
 @media (min-width:768px) and (max-width:1024px) {}
 
 
 
 
-// Nest Hub Size Media Queries 
+// Nest Hub Size Media Queries
 
 @media (min-width:1024px) and (max-width:1280px) {
 
