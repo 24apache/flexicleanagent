@@ -127,16 +127,12 @@
                             </table>
 
                             <nav aria-label="Page navigation example">
-                                <ul class="pagination pt-4 mb-5">
-                                    <li class="page-item"><a class="pages-links" >Previous</a></li>
-                                    <li class="page-item"><a class="page-links" >1</a></li>
-                                    <li class="page-item"><a class="page-links" >2</a></li>
-                                    <li class="page-item"><a class="page-links" >3</a></li>
-                                    <li class="page-item"><a class="page-links" >4</a></li>
-                                    <li class="page-item"><a class="page-links" >5</a></li>
-                                    <li class="page-item"><a class="page-links" >6</a></li>
-                                    <li class="page-item"><a class="page-links" >7</a></li>
-                                    <li class="page-item"><a class="pages-links" >Next</a></li>
+                                <ul class="pagination btn pt-5 mb-5">
+                                  <li class="page-item"><a class="pages-links" (click)="previousPage()">Previous</a></li>
+                                  <li class="page-item" *ngFor="let page of [1, 2, 3, 4, 5, 6, 7]; let i = index" (click)="activePage = i+1">
+                                    <a class="page-links" [ngClass]="{'active': activePage === i+1}" >{{i+1}}</a>
+                                  </li>
+                                  <li class="page-item"><a class="pages-links" (click)="nextPage()">Next</a></li>
                                 </ul>
                             </nav>
 
@@ -191,16 +187,12 @@
                             </table>
 
                             <nav aria-label="Page navigation example">
-                                <ul class="pagination pt-4 mb-5">
-                                    <li class="page-item"><a class="pages-links" >Previous</a></li>
-                                    <li class="page-item"><a class="page-links" >1</a></li>
-                                    <li class="page-item"><a class="page-links" >2</a></li>
-                                    <li class="page-item"><a class="page-links" >3</a></li>
-                                    <li class="page-item"><a class="page-links" >4</a></li>
-                                    <li class="page-item"><a class="page-links" >5</a></li>
-                                    <li class="page-item"><a class="page-links" >6</a></li>
-                                    <li class="page-item"><a class="page-links" >7</a></li>
-                                    <li class="page-item"><a class="pages-links" >Next</a></li>
+                                <ul class="pagination btn pt-5 mb-5">
+                                  <li class="page-item"><a class="pages-links" (click)="previousPages()">Previous</a></li>
+                                  <li class="page-item" *ngFor="let page of [1, 2, 3, 4, 5, 6, 7]; let i = index" (click)="activePages = i+1">
+                                    <a class="page-links" [ngClass]="{'active': activePages === i+1}" >{{i+1}}</a>
+                                  </li>
+                                  <li class="page-item"><a class="pages-links" (click)="nextPages()">Next</a></li>
                                 </ul>
                             </nav>
 

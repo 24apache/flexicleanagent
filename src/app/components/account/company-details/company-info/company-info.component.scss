@@ -167,7 +167,9 @@
     // opacity: 0.4000000059604645;
 }
 
-.tax-no:hover {
+
+
+button.tax-no:hover {
     color: #c1c1c3;
     font-size: 18px;
     border-radius: 4px;
@@ -177,15 +179,29 @@
     // opacity: 0.4000000059604645;
 }
 
-.tax-no {
+button.tax-no.active {
+    color: #c1c1c3;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    font-family: 'Work-sans, Medium';
+    padding: 12px 78px 12px 79px;
+    // opacity: 0.4000000059604645;
+}
+
+button.tax-no {
     color: #c1c1c3;
     font-size: 18px;
     border-radius: 4px;
     font-family: 'Work-sans, Medium';
     padding: 12px 78px 12px 79px;
     border: 1px solid #e5e5e5;
+    margin-right: 5.5rem;
     // opacity: 0.4000000059604645;
 }
+
+
+
 
 .company-detail {
     font-size: 20px;
@@ -279,6 +295,11 @@
         position: relative;
         left: 4rem;
         bottom: 2rem;
+    }
+
+    .tax-flex{
+        align-items: inherit;
+        flex-direction: column;
     }
 
 }

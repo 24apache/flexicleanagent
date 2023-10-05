@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class CompanyInfoComponent {
 
+
+
+  onButtonGroupClick($event: { target: any; srcElement: any; }){
+    let clickedElement = $event.target || $event.srcElement;
+    debugger;
+    if( clickedElement.nodeName === "BUTTON" ) {
+  
+      let isCertainButtonAlreadyActive = clickedElement.parentElement.querySelector(".active");
+      // if a Button already has Class: .active
+      if( isCertainButtonAlreadyActive ) {
+        isCertainButtonAlreadyActive.classList.remove("active");
+      }
+  
+      clickedElement.className += " active";
+    }
+  
+  }
+
 }

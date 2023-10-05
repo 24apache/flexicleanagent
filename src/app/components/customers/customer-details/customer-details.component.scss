@@ -2,7 +2,7 @@
     background: #fff;
 }
 
-.pad-5{
+.pad-5 {
     padding: 3rem !important;
 }
 
@@ -318,7 +318,16 @@ img.download-two {
     font-weight: 500;
 }
 
-
+.page-links.active {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto, Medium';
+    background-color: rgba(40, 81, 152, 1);
+    border-radius: 2rem;
+    width: 37px;
+    height: 36px;
+  }
 
 
 
@@ -362,10 +371,10 @@ img.download-two {
 
 @media only screen and (max-width:768px) {
     .container-fluid {
-      background-color: #fff;
+        background-color: #fff;
     }
 
-    .scroll{
+    .scroll {
         overflow-x: auto;
     }
 
@@ -377,28 +386,28 @@ img.download-two {
         width: 22rem;
     }
 
-    .pad-5{
+    .pad-5 {
         padding: 0.5rem !important;
     }
 
-  
-  }
-  
-  
-  
-  
-  
-  // Tablet Size Media Queries 
-  
-  @media (min-width:768px) and (max-width:1024px) {}
-  
-  
-  
-  
-  // Nest Hub Size Media Queries 
-  
-  @media (min-width:1024px) and (max-width:1280px) {
-  
+
+}
+
+
+
+
+
+// Tablet Size Media Queries 
+
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+
+
+// Nest Hub Size Media Queries 
+
+@media (min-width:1024px) and (max-width:1280px) {
+
     .manage-address {
         border-radius: 6.538px;
         background: #1E4894;
@@ -426,15 +435,15 @@ img.download-two {
         font-size: 30.523px;
         font-weight: 600;
     }
-  
-  }
-  
-  
-  //Zoom in 110 //
-  
-  @media (min-width:1280px) and (max-width:1480px) {
 
-  
+}
+
+
+//Zoom in 110 //
+
+@media (min-width:1280px) and (max-width:1480px) {
+
+
     .customer-details {
         border-radius: 10px;
         border: 2.185px dashed #9caed0;
@@ -472,4 +481,4 @@ img.download-two {
         font-weight: 600;
     }
 
-  }
+}

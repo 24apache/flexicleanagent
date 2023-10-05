@@ -23,4 +23,22 @@ export class PayoutComponent {
   doSomething(){
     this.formModal.hide();
   }
+
+
+
+  //PAGINATION
+
+  activePage: number = 1;
+
+  nextPage() {
+    if (this.activePage < 7) {
+      this.activePage++;
+    }
+  }
+
+  previousPage() {
+    if (this.activePage > 1) {
+      this.activePage--;
+    }
+  }
 }

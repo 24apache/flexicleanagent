@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ItemspriceComponent {
 
+  activePage: number = 1;
+
+  nextPage() {
+    if (this.activePage < 7) {
+      this.activePage++;
+    }
+  }
+
+  previousPage() {
+    if (this.activePage > 1) {
+      this.activePage--;
+    }
+  }
+  
 }

@@ -177,8 +177,16 @@
       border-color: #285198;
     }
 
-
-
+    .page-links.active {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: 'Roboto, Medium';
+      background-color: rgba(40, 81, 152, 1);
+      border-radius: 2rem;
+      width: 37px;
+      height: 36px;
+    }
 
 
 
