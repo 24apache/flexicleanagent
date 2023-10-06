@@ -247,10 +247,10 @@ img.download-two {
 .page-links {
     position: relative;
     display: block;
-    // font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: #303030;
-    opacity: 0.6000000238418579;
+    // opacity: 0.6000000238418579;
     text-align: center;
     font-family: 'Roboto, Medium';
     text-decoration: none;
@@ -290,7 +290,7 @@ img.download-two {
 .page-links:hover {
     // z-index: 2;
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Roboto, Medium';
     background-color: #285198;
@@ -320,7 +320,7 @@ img.download-two {
 
 .page-links.active {
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Roboto, Medium';
     background-color: rgba(40, 81, 152, 1);
