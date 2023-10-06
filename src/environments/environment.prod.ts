@@ -1,0 +1,7 @@
+export const environment = {
+    production: true,
+    appVersion: 'v1.0.0',
+    USERDATA_KEY: 'agentauthf649fc9a5f55',
+    mainApiUrl: 'https://dull-red-clam-ring.cyclic.app/api',
+    apiUrl: 'http://localhost:9010/api',
+};
