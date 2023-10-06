@@ -93,9 +93,10 @@
 }
 
 .t-body {
-  color: #4C4D52;
-  font-size: 17px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 12.9px;
   font-family: "Work-sans, Medium";
+  font-weight: 500;
 }
 
 
@@ -383,7 +384,7 @@
     background-color: #fff;
   }
 
-  .scroll{
+  .scroll {
     overflow-x: auto;
   }
 
@@ -391,87 +392,87 @@
     /* padding: 0px 15px; */
     position: relative;
     left: 7rem;
-}
+  }
 
-.bank-no {
-  color: #1E4894;
-  text-align: center;
-  font-family: "Work-sans, Medium";
-  opacity: 0.8999999762;
-  font-size: 15.9px;
-  font-weight: 600;
-}
+  .bank-no {
+    color: #1E4894;
+    text-align: center;
+    font-family: "Work-sans, Medium";
+    opacity: 0.8999999762;
+    font-size: 15.9px;
+    font-weight: 600;
+  }
 
 
 
-// Modal //
+  // Modal //
 
-.modal-body {
-  position: relative;
-  flex: 1 1 auto;
-  padding: 2rem !important;
-}
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 2rem !important;
+  }
 
-.amount-enter {
-  width: 292px;
-  height: 64px;
-  border: 1px solid #6b6b6b;
-  font-family: "Poppins, Medium";
-  font-size: 18px;
-  font-weight: 500;
-  padding: 2px 77px 2px 10px;
-}
+  .amount-enter {
+    width: 292px;
+    height: 64px;
+    border: 1px solid #6b6b6b;
+    font-family: "Poppins, Medium";
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px 77px 2px 10px;
+  }
 
-.account-para {
-  color: #000;
-  text-align: center;
-  font-family: "Poppins, Medium";
-  font-size: 19px;
-  font-weight: 500;
-  opacity: 0.400000006;
-}
+  .account-para {
+    color: #000;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 0.400000006;
+  }
 
-.account-verify {
-  color: #000;
-  text-align: center;
-  font-family: "Poppins, Medium";
-  font-size: 29.53px;
-  font-weight: 600;
-}
+  .account-verify {
+    color: #000;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 29.53px;
+    font-weight: 600;
+  }
 
-.modal-bhd {
-  position: absolute;
-  color: #285198;
-  font-family: "Poppins, Medium";
-  font-size: 23px;
-  font-weight: 500;
-  right: 3rem;
-  bottom: 7.6rem;
-}
+  .modal-bhd {
+    position: absolute;
+    color: #285198;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+    right: 3rem;
+    bottom: 7.6rem;
+  }
 
-.discard {
-  width: 135px;
-  height: 44px;
-  border-radius: 4px;
-  border: 1px solid #285198;
-  color: #285198;
-  font-family: "Work-sans, Medium";
-  font-size: 13.739px;
-  font-weight: 500;
-  padding: 12px;
-}
+  .discard {
+    width: 135px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    color: #285198;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+  }
 
-.save {
-  width: 135px;
-  height: 44px;
-  border-radius: 4px;
-  background: #285198;
-  color: #FCFBFD;
-  font-family: "Work-sans, Medium";
-  font-size: 13.739px;
-  font-weight: 500;
-  padding: 12px;
-}
+  .save {
+    width: 135px;
+    height: 44px;
+    border-radius: 4px;
+    background: #285198;
+    color: #FCFBFD;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+  }
 
 
 }
@@ -498,40 +499,36 @@
     opacity: 0.8999999762;
     font-size: 15.9px;
     font-weight: 600;
-}
+  }
 
-.bhd {
-  color: #1E4894;
-  font-family: "Work-sans, Medium";
-  font-size: 25px;
-  font-weight: 600;
-  position: relative;
-  bottom: 20px;
-}
+  .bhd {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+  }
 
-.n-rating {
-  color: #1E4894;
-  font-family: "Work-sans, Medium";
-  font-size: 45px;
-  font-weight: 600;
-}
+  .n-rating {
+    color: #1E4894;
+    font-family: "Work-sans, Medium";
+    font-size: 45px;
+    font-weight: 600;
+  }
 
-.bank-no {
-  color: #1E4894;
-  text-align: center;
-  font-family: "Work-sans, Medium";
-  opacity: 0.8999999762;
-  font-size: 14.9px;
-  font-weight: 600;
-}
+  .bank-no {
+    color: #1E4894;
+    text-align: center;
+    font-family: "Work-sans, Medium";
+    opacity: 0.8999999762;
+    font-size: 14.9px;
+    font-weight: 600;
+  }
 
 }
 
 
 //Zoom in 110 //
 
-@media (min-width:1280px) and (max-width:1480px) {
-
-
-
-}
+@media (min-width:1280px) and (max-width:1480px) {}

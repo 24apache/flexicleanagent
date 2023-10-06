@@ -102,9 +102,10 @@
 }
 
 .t-body {
-  color: #4C4D52;
-  font-size: 17px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 12.9px;
   font-family: "Work-sans, Medium";
+  font-weight: 500;
 }
 
 
@@ -465,7 +466,7 @@ button.close {
   .wallet-filter {
     position: relative;
     bottom: 2rem;
-}
+  }
 
 }
 
@@ -515,7 +516,7 @@ button.close {
     font-weight: 600;
     position: relative;
     bottom: 20px;
-}
+  }
 
 }
 
