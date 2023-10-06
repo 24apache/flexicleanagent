@@ -15,7 +15,7 @@ export class UserService {
 
     register(record: any): Observable<apiResponse> {
         return this.http
-          .post<apiResponse>(`${API_ENDPOINT}`, record)
+          .post<apiResponse>(`${API_ENDPOINT}/register`, record)
           .pipe(
             catchError((errorResponse: HttpErrorResponse) => {
               const customError: apiResponse = errorResponse.error;

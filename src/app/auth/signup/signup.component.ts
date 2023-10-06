@@ -55,11 +55,12 @@ export class SignupComponent implements OnInit {
         (response: apiResponse) => {
           this.isLoading = false;
           this.isSuccess = true;
-          // Handle success response
+          console.log(response);
         },
         (error: apiResponse) => {
           this.isLoading = false;
           this.isSuccess = false;
+          console.log(error);
           this.resMessage = error.message;
           if (error && error.success == false && error.message === 'Validation Errors') {
             // Handle specific validation error
