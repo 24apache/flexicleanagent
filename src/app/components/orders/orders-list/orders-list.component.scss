@@ -418,7 +418,7 @@ button.close {
   display: flex;
   padding-left: 0;
   list-style: none;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -570,7 +570,7 @@ button.close {
     display: flex;
     padding-left: 0;
     list-style: none;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
 }

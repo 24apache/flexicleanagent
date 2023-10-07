@@ -221,7 +221,7 @@ img.download-two {
     display: flex;
     padding-left: 0;
     list-style: none;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -343,7 +343,7 @@ img.download-two {
         display: flex;
         padding-left: 0;
         list-style: none;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
     }
 
