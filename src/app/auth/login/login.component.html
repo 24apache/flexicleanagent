@@ -1,79 +1,57 @@
-
-    <div class="container-fluid">
-
-        <!-- Outer Row -->
-        <div class="row justify-content-center">
-
-            <div class="col-xl-12 col-lg-12 col-md-9">
-
-                <div class="card o-hidden border-0 o-hidden">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
-                        <div class="row">
-
-                            <div class="col-lg-6 hg-100">
-                                <div class="padding">
-                                    <div class="text-center">
-                                        <img class="flexi mb-4 pb-3" src="assets/images/logo.svg" alt="logo">
-                                        <h1 class="text-black h2 mb-2 text-left poppins-semibold">Welcome Back</h1>
-                                        <h4 class="p-welcome h4 mb-4 text-left">Welcome back! Please enter your details
-                                        </h4>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 col-md-9">
+            <div class="card o-hidden border-0 o-hidden">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-6 hg-100">
+                            <div class="padding">
+                                <div class="text-center">
+                                    <img class="flexi mb-4 pb-3" src="assets/images/logo.svg" alt="logo" />
+                                    <h1 class="text-black h2 mb-2 text-left poppins-semibold">
+                                        Welcome Back
+                                    </h1>
+                                    <h4 class="p-welcome h4 mb-4 text-left">
+                                        Welcome back! Please enter your details
+                                    </h4>
+                                </div>
+                                <ng-container *ngIf="hasError">
+                                    <div class="mb-lg-15 alert alert-danger">
+                                        <div class="alert-text font-weight-bold">The login details are incorrect</div>
                                     </div>
-                                    <form [formGroup]="exform" class="user">
-                                        <div class="form-group">
-                                            <label class="login-head">Email</label>
-                                            <input formControlName="email" type="email" class="form-control form-control-user poppins-regular"
-                                            
-                                                placeholder="" >
-                                                <small *ngIf="exform.get('email')?.invalid && exform.get('email')?.touched" class="valid-text">
-                                                    Valid Email Required
-                                                </small>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="login-head">Password</label>
-                                            <!-- <img class="invalid" *ngIf="exform.get('password')?.invalid && exform.get('password')?.touched" src="assets/images/in-valid.svg" alt="invalid"> -->
-                                            <input formControlName="password" type="password"
-                                                class="form-control form-control-user poppins-regular"
-                                                 placeholder=""> 
-                                                 <small *ngIf="exform.get('password')?.invalid && exform.get('password')?.touched" class="valid-text">
-                                                    Valid Password Required
-                                                </small>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row l-forgot mt-4 mb-3">
-                                                
-                                                <div class="col-md-7">
-                                                    <div class="form-group1">
-                                                        <input type="checkbox" id="days">
-                                                        <label for="days" class="remember"> &nbsp; Remember for 30 days</label>
-                                                      </div>
-                                                </div>
-                                                <!-- <label class="custom-control-label poppins-regular"
-                                                        for="customCheck">Remember for 30 days</label> -->
-                                                <div class="col-md-5 text-aligning">
-                                                    <a class="f-password"
-                                                        href="javascript:void(0);" routerLink="/forgot-password">Forgot
-                                                        Password?</a>
+                                </ng-container>
+                                <form class="user" [formGroup]="loginForm" novalidate="novalidate" (ngSubmit)="submit()">
+                                    <div class="form-group">
+                                        <label class="login-head">Email</label>
+                                        <input formControlName="email" type="email" class="form-control form-control-user poppins-regular" placeholder="" />
+                                        <small *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="valid-text">Valid Email Required</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="login-head">Password</label>
+                                        <input formControlName="password" type="password" class="form-control form-control-user poppins-regular" placeholder="" />
+                                        <small *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="valid-text">Valid Password Required</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row l-forgot mt-4 mb-3">
+                                            <div class="col-md-7">
+                                                <div class="form-group1">
+                                                    <input type="checkbox" id="days" />
+                                                    <label for="days" class="remember">&nbsp; Remember for 30 days</label>
                                                 </div>
                                             </div>
-
+                                            <div class="col-md-5 text-aligning">
+                                                <a class="f-password" href="javascript:void(0);" routerLink="/forgot-password">Forgot Password?</a>
+                                            </div>
                                         </div>
-                                        <button [disabled]="exform.invalid" class="btn btn-login btn-user btn-block" href="javascript:void(0);"  routerLink="/dashboard">SIGNIN</button>
-                                    </form>
-
-                                </div>
+                                    </div>
+                                    <button [disabled]="loginForm.invalid" class="btn btn-login btn-user btn-block" href="javascript:void(0);">SIGNIN</button>
+                                </form>
                             </div>
-
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-
                         </div>
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-
+</div>
