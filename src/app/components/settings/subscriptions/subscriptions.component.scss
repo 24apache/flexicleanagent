@@ -18,7 +18,7 @@
   font-weight: 500;
   border-radius: 8px;
   background: #285198;
-  padding: 14px 43px;
+  padding: 14px 20px;
 }
 
 .filter {
@@ -190,14 +190,120 @@ img.pay {
 }
 
 
+.h-filter {
+  color: #534D58;
+  font-size: 20px;
+  font-family: "Work-sans, Medium";
+  font-weight: 500;
+}
+
+.input-card {
+  color: #4C4D52;
+  font-size: 16px;
+  font-family: "Work-sans, Medium";
+  opacity: 0.4;
+  border: 1px solid #a0a4ab;
+  background: url("~src/assets/images/card1.svg") no-repeat;
+  background-position: 16px;
+  background-size: 1.3rem;
+  padding: 5px 52px;
+}
+
+.input-month {
+  color: #4C4D52;
+  font-size: 16px;
+  font-family: "Work-sans, Medium";
+  opacity: 0.4;
+  border: 1px solid #a0a4ab;
+  background: url("~src/assets/images/cardMonth.svg") no-repeat;
+  background-position: 16px;
+  background-size: 1.3rem;
+  padding: 5px 52px;
+}
+
+.input-cvv {
+  color: #4C4D52;
+  font-size: 16px;
+  font-family: "Work-sans, Medium";
+  opacity: 0.4;
+  border: 1px solid #a0a4ab;
+  background: url("~src/assets/images/cardCvv.svg") no-repeat;
+  background-position: 16px;
+  background-size: 1.3rem;
+  padding: 5px 52px;
+}
+
+.ht-53 {
+  height: 53px;
+}
+
+.mastercard {
+  width: 51px;
+  height: 31px;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.7rem;
+}
 
 
 
 
 
+.form-group1 {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group1 input {
+  padding: 0;
+  width: 16.48px;
+  height: 16.48px;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group1 label {
+  position: relative;
+  cursor: pointer;
+}
 
 
+.form-group1 label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 2.354px;
+  border: 1.177px solid #000;
+  opacity: 0.2;
+  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
 
+.form-group1 input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #1E4893;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.default-payment {
+  color: #4C4D52;
+  font-family: "Work-sans, Medium";
+  font-size: 20px;
+  font-weight: 500;
+}
 
 
 
@@ -205,13 +311,13 @@ img.pay {
 
 //PAYNOW-RADIO BUTTON-2
 
-.input-radios {
-  box-shadow: 0px 0px 0px 2px #93a8cb;
-  font-size: 3em;
-  width: 37.099px;
-  height: 37.099px;
-  margin-right: 7px;
 
+.input-radio {
+  box-shadow: 0px 0px 0px 2px #cccccc;
+  font-size: 3em;
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
   border: 4px solid #fff;
   background-clip: border-box;
   border-radius: 50%;
@@ -224,15 +330,72 @@ img.pay {
   margin: 10px 15px;
 }
 
-.input-radios.on:checked {
-  box-shadow: 0px 0px 0px 6px #285198;
-  // background-color: #285198;
+.input-radio.on:checked {
+  box-shadow: 0px 0px 0px 3px #285198;
+  background-color: #285198;
 }
 
-.input-radios.off:checked {
-  box-shadow: 0px 0px 0px 6px #285198;
-  // background-color: #285198;
+.input-radio.off:checked {
+  box-shadow: 0px 0px 0px 3px #285198;
+  background-color: #285198;
 }
+
+[type=radio1]:checked,
+[type=radio1]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=radio1]:checked+label,
+[type=radio1]:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+[type=radio1]:checked+label:before,
+[type=radio1]:not(:checked)+label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type=radio1]:checked+label:after,
+[type=radio1]:not(:checked)+label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #F87DA9;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type=radio1]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type=radio1]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
 
 
 
@@ -324,6 +487,80 @@ img.close-bttn {
   align-items: baseline;
 }
 
+
+
+
+
+
+/* MODAL-POPUP */
+
+.modal-content-verify {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 829px;
+  height: 468px;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  // border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  outline: 0;
+  right: 10rem;
+}
+
+.modal-body-verify {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 4rem;
+}
+
+
+.created{
+  color: #000;
+  font-family: 'Poppins, Medium';
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 4px;
+  }
+
+
+.save {
+  width: 167px;
+  height: 44px;
+  border-radius: 4px;
+  background: #285198;
+  color: #FCFBFD;
+  font-family: "Work-sans, Medium";
+  font-size: 13.739px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.discard {
+  width: 167px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #285198;
+  color: #285198;
+  font-family: "Work-sans, Medium";
+  font-size: 13.739px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.input-bhd {
+  color: #285198;
+  font-family: "Poppins, Medium";
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.sucessfully {
+  text-align: center;
+  padding: 0.5rem 7rem;
+}
 
 
 
@@ -479,14 +716,14 @@ img.close-bttn {
 
 @media only screen and (max-width:768px) {
   .container-fluid {
-      background-color: #fff;
+    background-color: #fff;
   }
 
-  .scroll{
+  .scroll {
     overflow-x: scroll;
   }
 
-  table.t-mwidth{
+  table.t-mwidth {
     width: max-content;
   }
 
@@ -494,15 +731,15 @@ img.close-bttn {
     text-align: center;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
-}
+  }
 
-.benifit{
-  color: #252D38;
-  font-family: "Poppins, Medium";
-  font-size: 28.855px;
-  font-weight: 500;
-  padding-left: 48px;
-}
+  .benifit {
+    color: #252D38;
+    font-family: "Poppins, Medium";
+    font-size: 28.855px;
+    font-weight: 500;
+    padding-left: 48px;
+  }
 
 }
 
@@ -519,17 +756,11 @@ img.close-bttn {
 
 // Nest Hub Size Media Queries 
 
-@media (min-width:1024px) and (max-width:1280px) {
-
-
-}
+@media (min-width:1024px) and (max-width:1280px) {}
 
 
 
 
 //Zoom in 110 //
 
-@media (min-width:1280px) and (max-width:1480px) {
-
-
-}
+@media (min-width:1280px) and (max-width:1480px) {}
