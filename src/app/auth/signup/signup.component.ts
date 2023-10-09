@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { UserService } from "src/app/services/user.service";
 import { apiResponse } from "src/app/utils/common.util";
 
@@ -19,7 +20,7 @@ export class SignupComponent implements OnInit {
   isSuccess = false;
   resMessage?: string;
 
-  constructor(private fb: FormBuilder, private userServ: UserService) {}
+  constructor(private fb: FormBuilder, private router: Router, private userServ: UserService) {}
 
   ngOnInit() {
     this.exform = this.fb.group(
@@ -53,17 +54,17 @@ export class SignupComponent implements OnInit {
 
       this.userServ.register(record).subscribe(
         (response: apiResponse) => {
+          console.log(response);
           this.isLoading = false;
           this.isSuccess = true;
-          console.log(response);
+          this.router.navigateByUrl('signup-company');
         },
         (error: apiResponse) => {
+          console.log(error);
           this.isLoading = false;
           this.isSuccess = false;
-          console.log(error);
           this.resMessage = error.message;
           if (error && error.success == false && error.message === 'Validation Errors') {
-            // Handle specific validation error
             this.resMessage = error.errors.invalid;
           }
         }

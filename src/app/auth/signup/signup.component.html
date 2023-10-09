@@ -13,7 +13,8 @@
                                     <h4 class="p-welcome h4 mb-4 text-left">Login as a partner! Please enter your details</h4>
                                 </div>
                                 <form [formGroup]="exform" class="user">
-                                    <div *ngIf="resMessage" class="text-danger">{{resMessage}}</div>
+                                  <div *ngIf="resMessage" class="text-danger">{{resMessage}}</div>
+                                  <br />
                                     <div class="form-group">
                                         <label class="login-head">Email ID</label>
                                         <input formControlName="email" type="email" class="form-control form-control-user poppins-medium"  placeholder="Enter Your Email">
@@ -74,7 +75,7 @@
                                                     </div>
                                                     <div class="col tooltip-container" placement="bottom">
                                                         <label class="switch">
-                                                            <input type="checkbox" checked>
+                                                            <input type="checkbox" id="mLogistic" formControlName="mLogistic" checked>
                                                             <span class="slider round"></span>
                                                         </label>
                                                         <div class="tooltip">Commission percentage will vary if enabled
@@ -84,7 +85,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button (click)="register()" class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);">SUBMIT</button>
+                                    <button [disabled]="this.isLoading" (click)="register()" class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);">SUBMIT</button>
                                 </form>
                             </div>
                         </div>
