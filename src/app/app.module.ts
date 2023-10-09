@@ -1,5 +1,5 @@
 import { HttpClientModule } from "@angular/common/http";
-import { NgModule } from "@angular/core";
+import { APP_INITIALIZER, NgModule } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -62,6 +62,16 @@ import { SubHeaderComponent } from "./components/shared/sub-header/sub-header.co
 import { PayoutComponent } from "./components/wallet/payout/payout.component";
 import { TransactionComponent } from "./components/wallet/transaction/transaction.component";
 import { WalletComponent } from "./components/wallet/wallet.component";
+import { UserService } from "./services/user.service";
+
+function appInitializer(userService: UserService) {
+  return () => {
+    return new Promise((resolve) => {
+      //@ts-ignore
+      userService.getUserByToken().subscribe().add(resolve);
+    });
+  };
+}
 
 @NgModule({
   declarations: [
@@ -132,7 +142,14 @@ import { WalletComponent } from "./components/wallet/wallet.component";
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: appInitializer,
+      multi: true,
+      deps: [UserService],
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
