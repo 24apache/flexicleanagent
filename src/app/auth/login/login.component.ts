@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   ) {
     this.isLoading$ = this.userService.isLoading$ || new Observable<boolean>();
     if (this.userService.currentUserValue) {
+      console.log(this.userService.currentUserValue);
       this.router.navigate(['/dashboard']);
     }
   }

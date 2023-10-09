@@ -18,7 +18,7 @@
                     <span><img class="search" src="assets/images/search.svg" alt="search"> <input type="text" class="form-control bg-light border-0 small" placeholder="Search customer Name , Order No" aria-label="Search"
                     aria-describedby="basic-addon2"></span>
                 </div>
-                
+
             </div>
             <!-- <div class="input-group mb-3">
                 <span id="basic-addon1"> <i class="fas fa-search fa-sm"></i>
@@ -109,7 +109,6 @@
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="userDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <!-- <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span> -->
                     <img class="img-profile rounded-circle" alt="admin" src="assets/images/customer3.png">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -121,8 +120,7 @@
                         <i class="fas fa-cogs fa-sm fa-fw mr-2 "></i>
                         Settings
                     </a>
-                    <!-- <div class="dropdown-divider"></div> -->
-                    <a class="dropdown-item" href="javascript:void(0);" routerLink="/login">
+                    <a class="dropdown-item" href="javascript:void(0);" (click)="logout()">
                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2"></i>
                         Logout
                     </a>

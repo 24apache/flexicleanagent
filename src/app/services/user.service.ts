@@ -61,7 +61,8 @@ export class UserService implements OnDestroy {
 
   logout() {
     localStorage.removeItem(this.authLocalStorageToken);
-    this.router.navigate(['/auth/login'], {
+    this.currentUserSubject?.next(undefined);
+    this.router.navigate(['/login'], {
       queryParams: {},
     });
   }

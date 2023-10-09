@@ -47,6 +47,11 @@ export class AuthHTTPService {
     });
     return this.http.get<UserModel>(`${API_ENDPOINT}/me`, {
       headers: httpHeaders,
-    });
+    }).pipe(
+      map((authUserInfo: UserModel) => {
+        const user = new UserModel();
+        return Object.assign(user, authUserInfo);
+      })
+    );
   }
 }

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
+import { UserService } from "src/app/services/user.service";
 
 @Component({
   selector: 'app-sub-header',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class SubHeaderComponent {
 
+  constructor(private userService: UserService, private router: Router) {}
+
+  logout() {
+    this.userService.logout();
+  }
 }
