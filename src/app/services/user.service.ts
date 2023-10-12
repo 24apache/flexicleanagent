@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable, OnDestroy } from "@angular/core";
 import { Router } from "@angular/router";
-import { BehaviorSubject, Observable, Subscription, catchError, finalize, map, of, switchMap, throwError } from "rxjs";
+import { BehaviorSubject, Observable, Subscription, catchError, finalize, map, of, switchMap, tap, throwError } from "rxjs";
 import { environment } from "src/environments/environment";
 import { AuthModel } from "../models/auth.model";
 import { UserModel } from "../models/user.model";
@@ -89,6 +89,13 @@ export class UserService implements OnDestroy {
 
   register(record: any): Observable<apiResponse> {
     return this.http.post<apiResponse>(`${API_ENDPOINT}/register`, record).pipe(
+      tap((authResInfo: any) => {
+        const auth = new AuthModel();
+        auth.authToken = authResInfo.data.accessToken;
+        auth.refreshToken = authResInfo.data.accessToken;
+        auth.expiresIn = new Date(Date.now() + 100 * 24 * 60 * 60 * 1000);
+        this.setAuthFromLocalStorage(auth);
+      }),
       catchError((errorResponse: HttpErrorResponse) => {
         const customError: apiResponse = errorResponse.error;
         return throwError(customError);
