@@ -20,8 +20,8 @@ const API_ENDPOINT = `${environment.apiUrl}`;
 @Injectable({
 	providedIn: 'root',
 })
-export class CommonService {
-	headers: HttpHeaders;
+export class CommonAPIUtil {
+	headers!: HttpHeaders;
 
 	constructor(private http: HttpClient) {
 		const authToken = getAuthToken();

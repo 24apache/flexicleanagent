@@ -80,4 +80,8 @@ export class CompanySignupComponent implements OnInit {
             }
         );
     }
+
+	back(){
+		this.router.navigate(["/signup"]);
+	}
 }
