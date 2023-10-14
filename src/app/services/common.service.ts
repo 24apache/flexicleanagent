@@ -7,50 +7,49 @@ import { apiResponse } from "../utils/common.util";
 const API_ENDPOINT = `${environment.apiUrl}/master`;
 
 @Injectable({
-  providedIn: 'root',
+	providedIn: 'root',
 })
 export class CommonService implements OnDestroy {
-  // private fields
-  private unsubscribe: Subscription[] = [];
+	// private fields
+	private unsubscribe: Subscription[] = [];
 
-  // public fields
-  isLoading$: Observable<boolean> | undefined;
-  isLoadingSubject: BehaviorSubject<boolean> | undefined;
+	// public fields
+	isLoading$: Observable<boolean> | undefined;
+	isLoadingSubject: BehaviorSubject<boolean> | undefined;
 
+	constructor(private http: HttpClient) {
+		this.isLoadingSubject = new BehaviorSubject<boolean>(false);
+		this.isLoading$ = this.isLoadingSubject.asObservable();
+	}
 
-  constructor(private http: HttpClient) {
-    this.isLoadingSubject = new BehaviorSubject<boolean>(false);
-    this.isLoading$ = this.isLoadingSubject.asObservable();
-  }
+	countries(): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
 
-  countries(): Observable<apiResponse> {
-    return this.http.get<apiResponse>(`${API_ENDPOINT}/countries`).pipe(
-      catchError((errorResponse: HttpErrorResponse) => {
-        const customError: apiResponse = errorResponse.error;
-        return throwError(customError);
-      })
-    );
-  }
+	cities(countryId: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${countryId}/cities`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
 
-  cities(countryId: string): Observable<apiResponse> {
-    return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${countryId}/cities`).pipe(
-      catchError((errorResponse: HttpErrorResponse) => {
-        const customError: apiResponse = errorResponse.error;
-        return throwError(customError);
-      })
-    );
-  }
+	areas(cityId: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/cities/${cityId}/areas`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
 
-  areas(cityId: string): Observable<apiResponse> {
-    return this.http.get<apiResponse>(`${API_ENDPOINT}/cities/${cityId}/areas`).pipe(
-      catchError((errorResponse: HttpErrorResponse) => {
-        const customError: apiResponse = errorResponse.error;
-        return throwError(customError);
-      })
-    );
-  }
-
-  ngOnDestroy() {
-    this.unsubscribe.forEach((sb) => sb.unsubscribe());
-  }
+	ngOnDestroy() {
+		this.unsubscribe.forEach((sb) => sb.unsubscribe());
+	}
 }

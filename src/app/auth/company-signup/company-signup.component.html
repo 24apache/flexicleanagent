@@ -63,7 +63,7 @@
                                         <input formControlName="zipcode" type="text" class="form-control form-control-user poppins-medium" placeholder="Zip Code" required>
                                     </div>
 
-                                    <button class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);" routerLink="/preview-detail">Preview Deatils</button>
+                                    <button [disabled]="this.isLoading" (click)="registerCompany()" class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);">Preview Deatils</button>
                                 </form>
 
                             </div>

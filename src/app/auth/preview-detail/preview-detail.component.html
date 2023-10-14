@@ -1,18 +1,13 @@
 <div class="container-fluid">
-
     <!-- Outer Row -->
     <div class="row justify-content-center">
-
         <div class="col-xl-12 col-lg-12 col-md-9 pr-sm-0">
-
             <div class="card o-hidden border-0 o-hidden">
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="row">
-
                         <!-- bg-image -->
                         <div class="col-lg-6 d-none d-lg-block bg-login-image hg-100"></div>
-
                         <!-- signup -->
                         <div class="col-lg-6">
                             <div class="padding">
@@ -21,7 +16,6 @@
                                 </div>
                                 <div class="row company-information">
                                     <div class="col-12 p-0">
-
                                         <div class="row">
                                             <div class="col-12 padding-40">
                                                 <h4 class="detail-head mt-4 mb-3">Company Information</h4>
@@ -30,15 +24,16 @@
                                                         <img src="assets/images/location.svg" alt="location">
                                                     </div>
                                                     <div class="col-8">
-                                                        <p class="preview-para">Akshya Nagar 1st Block 1st Cross,
+                                                        <p class="preview-para">
+                                                            {{currentUser?.area}},
                                                             Rammurthy nagar,
-                                                            Bangalore-560016</p>
+                                                            Bangalore-560016
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <hr class="line">
-
                                         <div class="row">
                                             <div class="col-12 padding-40">
                                                 <h4 class="detail-head mt-3 mb-4">Contact Details</h4>
@@ -49,7 +44,7 @@
                                                                 <img src="assets/images/phone.svg" alt="phone">
                                                             </div>
                                                             <div class="col-8">
-                                                                <p class="preview-para">+9588495545</p>
+                                                                <p class="preview-para">+95{{currentUser?.mobile}}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -59,7 +54,7 @@
                                                                 <img src="assets/images/mail.svg" alt="mail">
                                                             </div>
                                                             <div class="col-10">
-                                                                <p class="preview-para">fabona1333@aramask.com</p>
+                                                                <p class="preview-para">{{currentUser?.email}}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -67,27 +62,26 @@
                                             </div>
                                         </div>
                                         <hr class="line">
-
                                         <div class="row">
                                             <div class="col-12 padding-40">
                                                 <h4 class="detail-head mb-3 mt-3">Service</h4>
-                                                <div class="row service-percent mt-3 mb-3">
+                                                <div *ngIf="currentUser?.pos" class="row service-percent mt-3 mb-3">
                                                     <div class="col-2">
-                                                        <div class="service-charge">POS &nbsp; <img
-                                                                src="assets/images/tick.svg" alt="tick" class="tick">
+                                                        <div class="service-charge">POS &nbsp;
+                                                            <img src="assets/images/tick.svg" alt="tick" class="tick">
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="charge">5 % Charge</div>
                                                     </div>
                                                 </div>
-                                                <div class="row service-percent mt-3 mb-3">
+                                                <div *ngIf="currentUser?.online" class="row service-percent mt-3 mb-3">
                                                     <div class="col-10">
                                                         <div class="row">
                                                             <div class="col-3">
-                                                                <div class="service-charge">Online &nbsp; <img
-                                                                        src="assets/images/tick.svg" alt="tick"
-                                                                        class="tick"></div>
+                                                                <div class="service-charge">Online &nbsp;
+                                                                    <img src="assets/images/tick.svg" alt="tick" class="tick">
+                                                                </div>
                                                             </div>
                                                             <div class="col-4">
                                                                 <div class="charge">5 % Charge</div>
@@ -95,10 +89,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row service-percent mt-3 mb-3">
+                                                <div *ngIf="currentUser?.mLogistic" class="row service-percent mt-3 mb-3">
                                                     <div class="col-3">
-                                                        <div class="service-charge">M Logistics &nbsp; <img
-                                                                src="assets/images/tick.svg" alt="tick" class="tick">
+                                                        <div class="service-charge">M Logistics &nbsp;
+                                                            <img src="assets/images/tick.svg" alt="tick" class="tick">
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -108,7 +102,6 @@
                                             </div>
                                         </div>
                                         <hr class="line">
-
                                         <div class="row">
                                             <div class="col-12 padding-40">
                                                 <h4 class="detail-head mt-3 mb-3">Subscription Amount</h4>
@@ -123,29 +116,18 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-
                                 <div class="row justify-content-center">
                                     <div class="col-10">
-                                        <button class="btn btn-login btn-user btn-block mt-5 mb-3"
-                                            href="javascript:void(0);" routerLink="/preview-payment">CONTINUE</button>
+                                        <button class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);" routerLink="/preview-payment">CONTINUE</button>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>
