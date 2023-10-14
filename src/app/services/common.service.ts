@@ -32,6 +32,24 @@ export class CommonService implements OnDestroy {
     );
   }
 
+  cities(countryId: string): Observable<apiResponse> {
+    return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${countryId}/cities`).pipe(
+      catchError((errorResponse: HttpErrorResponse) => {
+        const customError: apiResponse = errorResponse.error;
+        return throwError(customError);
+      })
+    );
+  }
+
+  areas(cityId: string): Observable<apiResponse> {
+    return this.http.get<apiResponse>(`${API_ENDPOINT}/cities/${cityId}/areas`).pipe(
+      catchError((errorResponse: HttpErrorResponse) => {
+        const customError: apiResponse = errorResponse.error;
+        return throwError(customError);
+      })
+    );
+  }
+
   ngOnDestroy() {
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }

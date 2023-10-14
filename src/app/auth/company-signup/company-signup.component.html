@@ -22,76 +22,55 @@
                                     <h4 class="p-welcome h4 mb-4 text-left">Enter Company Details</h4>
                                 </div>
                                 <form [formGroup]="exform" class="user">
+                                  <div *ngIf="resMessage" class="text-danger">{{resMessage}}</div>
+                                  <br />
                                     <div class="form-group">
                                         <label class="login-head">Company name</label>
-                                        <input type="text" class="form-control form-control-user poppins-medium"
-                                            placeholder="Enter">
+                                        <input type="text" formControlName="companyName" class="form-control form-control-user poppins-medium" placeholder="Company Name" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="login-head">Owner name</label>
-
-                                        <input type="text" class="form-control form-control-user poppins-medium"
-                                            placeholder="First & last name">
+                                        <input type="text" formControlName="ownerName" class="form-control form-control-user poppins-medium" placeholder="First & last name" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="login-head">Country</label>
-
-                                        <select class="form-select select-category" id="validationCustom04" required>
-                                            <option selected disabled value="">Select</option>
-                                            <option>...</option>
+                                        <select formControlName="country" class="form-select select-category" id="validationCustom04" (change)="getCities()" required>
+                                          <option selected disabled value="">Select Country</option>
+                                          <option *ngFor="let country of countries" [value]="country.id">{{ country.title }}</option>
                                         </select>
-                                        <div class="invalid-feedback">
-                                            Please select a valid state.
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="login-head">City</label>
-
-                                        <select class="form-select select-category" id="validationCustom04" required>
-                                            <option selected disabled value="">Select</option>
-                                            <option>...</option>
+                                        <select formControlName="city" class="form-select select-category" id="validationCustom04" (change)="getAreas()" required>
+                                            <option selected disabled value="">Select City</option>
+                                            <option *ngFor="let city of cities" [value]="city.id">{{ city.title }}</option>
                                         </select>
-                                        <div class="invalid-feedback">
-                                            Please select a valid state.
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="login-head">Area</label>
-
-                                        <select class="form-select select-category" id="validationCustom04" required>
-                                            <option selected disabled value="">Select</option>
-                                            <option>...</option>
+                                        <select formControlName="area" class="form-select select-category" id="validationCustom04" required>
+                                          <option selected disabled value="">Select Area</option>
+                                            <option *ngFor="let area of areas" [value]="area.id">{{ area.title }}</option>
                                         </select>
-                                        <div class="invalid-feedback">
-                                            Please select a valid state.
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="login-head">Zip code</label>
-                                        <input type="text" class="form-control form-control-user poppins-medium"
-                                            placeholder="Enter">
+                                        <input formControlName="zipcode" type="text" class="form-control form-control-user poppins-medium" placeholder="Zip Code" required>
                                     </div>
 
                                     <button class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);" routerLink="/preview-detail">Preview Deatils</button>
-                                    <button class="btn btn-primary btn-user btn-block mt-5 mb-3" onclick="back()">BACK</button>
                                 </form>
 
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>

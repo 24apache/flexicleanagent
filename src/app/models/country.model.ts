@@ -6,8 +6,6 @@ export class Country {
   icon!: string;
   currency!: Currency;
   status!: number;
-  createdAt!: string;
-  updatedAt!: string;
   id!: string;
 }
 

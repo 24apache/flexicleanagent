@@ -1,5 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { Area } from "src/app/models/area.model";
+import { City } from "src/app/models/city.model";
+import { Country } from "src/app/models/country.model";
+import { CommonService } from "src/app/services/common.service";
 import { UserService } from "src/app/services/user.service";
 import { apiResponse } from "src/app/utils/common.util";
 
@@ -20,18 +24,27 @@ export class CompanySignupComponent implements OnInit {
   isLoading = false;
   isSuccess = false;
   resMessage?: string;
+  countries!: Country[];
+  cities!: City[];
+  areas!: Area[];
 
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    private userServ: UserService
+    private userServ: UserService,
+    private commonServ: CommonService
   ) {}
 
     ngOnInit() {
         this.getUserInfo();
-        this.exform = new FormGroup({
-            email: new FormControl(null, [Validators.required, Validators.email]),
-            password: new FormControl(null, [Validators.required, Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$')]),
+        this.getCountries();
+        this.exform = this.fb.group({
+            companyName: ['', [Validators.required, Validators.minLength(6)]],
+            ownerName: ['', [Validators.required, Validators.minLength(6)]],
+            country: ['', [Validators.required]],
+            city: ['', [Validators.required]],
+            area: ['', [Validators.required]],
+            zipcode: ['', [Validators.required]],
         });
     }
 
@@ -81,7 +94,55 @@ export class CompanySignupComponent implements OnInit {
         );
     }
 
-	back(){
-		this.router.navigate(["/signup"]);
-	}
+    getCountries() {
+        this.commonServ.countries().subscribe(
+          (response: apiResponse) => {
+            this.countries = response.data;
+            console.log(this.countries);
+          },
+          (error: apiResponse) => {
+            console.log(error);
+            this.resMessage = error.message;
+            if (error && error.success == false && error.message === 'Validation Errors') {
+              this.resMessage = error.errors.invalid;
+            }
+          }
+        );
+    }
+
+    getCities(){
+        const countryId = this.exform.get('country')?.value;
+        this.commonServ.cities(countryId).subscribe(
+            (response: apiResponse) => {
+              this.cities = response.data;
+            },
+            (error: apiResponse) => {
+              console.log(error);
+              this.resMessage = error.message;
+              if (error && error.success == false && error.message === 'Validation Errors') {
+                this.resMessage = error.errors.invalid;
+              }
+            }
+          );
+    }
+
+    getAreas(){
+        const cityId = this.exform.get('city')?.value;
+        this.commonServ.areas(cityId).subscribe(
+            (response: apiResponse) => {
+              this.areas = response.data;
+            },
+            (error: apiResponse) => {
+              console.log(error);
+              this.resMessage = error.message;
+              if (error && error.success == false && error.message === 'Validation Errors') {
+                this.resMessage = error.errors.invalid;
+              }
+            }
+          );
+    }
+
+	  back(){
+		    this.router.navigate(["/signup"]);
+	  }
 }
