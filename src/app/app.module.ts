@@ -63,6 +63,7 @@ import { PayoutComponent } from "./components/wallet/payout/payout.component";
 import { TransactionComponent } from "./components/wallet/transaction/transaction.component";
 import { WalletComponent } from "./components/wallet/wallet.component";
 import { UserService } from "./services/user.service";
+import { AlertComponent } from './alert/alert.component';
 
 function appInitializer(userService: UserService) {
   return () => {
@@ -133,7 +134,8 @@ function appInitializer(userService: UserService) {
     PartnerPageComponent,
     PreviewPaymentComponent,
     PreviewDetailComponent,
-    CompanySignupComponent
+    CompanySignupComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,

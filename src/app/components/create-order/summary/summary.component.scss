@@ -741,6 +741,103 @@ button:not(:disabled) {
 
 
 
+
+
+
+/* MODAL-POPUP */
+
+.modal-content-verify {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 829px;
+    height: 468px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    // border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    outline: 0;
+    right: 10rem;
+  }
+  
+  .modal-body-verify {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 4rem;
+  }
+  
+  
+  .created{
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 4px;
+    }
+  
+  
+  .save {
+    width: 167px;
+    height: 44px;
+    border-radius: 4px;
+    background: #285198;
+    color: #FCFBFD;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+  }
+  
+  .discard {
+    width: 167px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid #285198;
+    color: #285198;
+    font-family: "Work-sans, Medium";
+    font-size: 13.739px;
+    font-weight: 500;
+    padding: 12px;
+  }
+  
+  .input-bhd {
+    color: #285198;
+    font-family: "Poppins, Medium";
+    font-size: 23px;
+    font-weight: 500;
+  }
+  
+  .sucessfully {
+    text-align: center;
+    padding: 1rem 10rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MOBILE SCREEN */
 
 

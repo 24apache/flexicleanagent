@@ -621,7 +621,7 @@
                         </div>
                         <div class="col-md-6 mt-3 mb-3">
                             <div class="btn customer-add-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                (click)="openModal()">Add Customer</div>
+                                (click)="openModal()" data-dismiss="modal" aria-label="Close">Add Customer</div>
                         </div>
                     </div>
                 </div>
@@ -754,7 +754,7 @@
                                     <div class="col-10">
                                         Amazing ! Added to Basket 
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-1" (click)="show = !show">
                                         <img class="close-bttn" src="assets/images/closes.svg" alt="close">
                                     </div>
                                 </div>
@@ -995,6 +995,7 @@
 
             <div class="modal-body-verify">
                 <div class="sucessfully"><img src="assets/images/sucessfully.png" alt="add-user"></div>
+                <h4 class="created">Customer added Sucessfully</h4>
                 <div class="text-center mt-4">
                     <div class="btn save" data-bs-dismiss="modal" (click)="doSomething()">Ok</div> &nbsp;
                 </div>

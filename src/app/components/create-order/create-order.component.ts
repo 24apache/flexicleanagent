@@ -13,23 +13,25 @@ declare var window: any;
 })
 export class CreateOrderComponent {
 
-  //MODAL
+
+//MODAL
   
-  formModal: any;
+formModal: any;
 
-  ngOnInits(): void{
-    this.formModal = new window.bootstrap.Modal(
-      document.getElementById("exampleModal")
-    )
-  }
+ngOnInit(): void{
+  this.formModal = new window.bootstrap.Modal(
+    document.getElementById("exampleModal")
+  )
+}
 
-  openModal(){
-    this.formModal.show();
-  }
+openModal(){
+  this.formModal.show();
+}
 
-  doSomething(){
-    this.formModal.hide();
-  }
+doSomething(){
+  this.formModal.hide();
+}
+
 
 
 

@@ -456,7 +456,8 @@
                         <div class="col-12 mt-3">
                             <div class="row">
                                 <div class="col-md-6 text-right">
-                                    <div class="btn pay">Paynow</div>
+                                    <div class="btn pay" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    (click)="openModal()" >Paynow</div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="btn pay">Discard</div>
@@ -467,11 +468,37 @@
                     </div>
                 </div>
 
-
-
-
             </div>
 
         </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content-verify">
+
+            <div class="modal-body-verify">
+                <div class="sucessfully"><img src="assets/images/orderSucessfully.svg" alt="orderSucessfully"></div>
+                <h4 class="created">Order Created successfully</h4>
+                <div class="text-center">
+                    <div class="btn save" data-bs-dismiss="modal" (click)="doSomething()">OK</div> &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

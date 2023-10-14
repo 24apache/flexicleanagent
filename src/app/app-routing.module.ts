@@ -44,6 +44,7 @@ import { PermissionDetailsComponent } from "./components/settings/user/permissio
 import { UserComponent } from "./components/settings/user/user.component";
 import { WalletComponent } from "./components/wallet/wallet.component";
 import { AuthGuard } from "./services/auth.guard";
+import { AlertComponent } from "./alert/alert.component";
 
 const routes: Routes = [
 
@@ -54,6 +55,7 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       { path: '', component: HomeComponent },
+      { path: 'alert', component: AlertComponent },
       {
         path: 'account',
         component: AccountComponent

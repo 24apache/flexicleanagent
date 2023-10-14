@@ -1,0 +1,39 @@
+.container-fluid {
+    background-color: #fff;
+}
+
+
+.orderbucket {
+    background: #eff5ff;
+    width: 51px;
+    height: 51px;
+    // opacity: 0.2;
+    border-radius: 3rem;
+    padding: 12px;
+}
+
+.alertborder {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.orderid {
+    color: #666;
+    font-family: "work-sans, Medium";
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    right: 10px;
+    margin-bottom: 0px;
+}
+
+.closealert {
+    background: #fcf0e2;
+    /* opacity: 0.2; */
+    width: 44px;
+    height: 44px;
+    border-radius: 2rem;
+    padding: 9px;
+    text-align: -webkit-center;
+}

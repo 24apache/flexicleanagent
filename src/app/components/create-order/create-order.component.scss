@@ -1269,7 +1269,7 @@ button.close {
     display: flex;
     flex-direction: column;
     width: 832px;
-    height: 419px;
+    height: 447px;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -1332,6 +1332,15 @@ button.close {
     padding: 0.5rem 10rem;
 }
 
+
+.created{
+    color: #000;
+    font-family: 'Poppins, Medium';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 4px;
+    }
 
 
 

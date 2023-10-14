@@ -3439,7 +3439,7 @@
     min-height: 1.5rem;
     padding-left: 1.5rem;
     -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
   
   .custom-control-inline {
@@ -10191,8 +10191,8 @@ html {
   font-family: 'Work-sans, Medium';
   font-size: 13.739px;
   font-weight: 500;
-  width: 22rem;
-  padding: 3px 3px 3px 30px;
+  width: 70rem;
+  padding: 3px 3px 3px 50px;
 }
   
   .topbar .topbar-divider {
@@ -10829,3 +10829,36 @@ html {
   
   
   
+  /* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+    background-color: #fff;
+  }
+
+  .topbar .navbar-search input {
+    // font-size: 0.85rem;
+    /* height: auto; */
+    font-family: 'Work-sans, Medium';
+    font-size: 13.739px;
+    font-weight: 500;
+    width: 20rem;
+    padding: 3px 3px 3px 50px;
+  }
+
+}
+
+  
+  // Tablet Size Media Queries 
+  
+  @media (min-width:1024px) and (max-width:1280px) {
+    .topbar .navbar-search input {
+      // font-size: 0.85rem;
+      /* height: auto; */
+      font-family: 'Work-sans, Medium';
+      font-size: 13.739px;
+      font-weight: 500;
+      width: 47rem;
+      padding: 3px 3px 3px 50px;
+    }
+  }
