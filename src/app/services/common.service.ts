@@ -31,6 +31,15 @@ export class CommonService implements OnDestroy {
 		);
 	}
 
+	country(id: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${id}`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
+
 	cities(countryId: string): Observable<apiResponse> {
 		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${countryId}/cities`).pipe(
 			catchError((errorResponse: HttpErrorResponse) => {
@@ -40,8 +49,26 @@ export class CommonService implements OnDestroy {
 		);
 	}
 
+	city(id: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/cities/${id}`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
+
 	areas(cityId: string): Observable<apiResponse> {
 		return this.http.get<apiResponse>(`${API_ENDPOINT}/cities/${cityId}/areas`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
+
+	area(id: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/areas/${id}`).pipe(
 			catchError((errorResponse: HttpErrorResponse) => {
 				const customError: apiResponse = errorResponse.error;
 				return throwError(customError);

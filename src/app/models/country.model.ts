@@ -11,4 +11,6 @@ export class Country {
 
 export class Currency {
   title!: string;
+  code!: string;
+  symbol!: string;
 }
