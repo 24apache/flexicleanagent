@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Area } from "src/app/models/area.model";
 import { City } from "src/app/models/city.model";
-import { Country } from "src/app/models/country.model";
+import { Country, CountryOne, Currency } from "src/app/models/country.model";
 import { CommonService } from "src/app/services/common.service";
 import { UserService, UserType } from "src/app/services/user.service";
 import { apiResponse } from "src/app/utils/common.util";
@@ -17,7 +17,8 @@ export class PreviewDetailComponent implements OnInit {
 	isLoading = false;
 	isSuccess = false;
 	resMessage?: string;
-	country?: Country;
+	currency?: Currency;
+	country?: CountryOne;
 	city?: City;
 	area?: Area;
 
@@ -54,10 +55,28 @@ export class PreviewDetailComponent implements OnInit {
 		);
 	}
 
+	getCurrency(cityId: string) {
+		this.commonServ.currency(cityId).subscribe(
+			(response: apiResponse) => {
+				this.city = response.data;
+			},
+			(error: apiResponse) => {
+				console.log(error);
+				this.resMessage = error.message;
+				if (error && error.success == false && error.message === 'Validation Errors') {
+					this.resMessage = error.errors.invalid;
+				}
+			}
+		);
+	}
+
 	getCountry(countryId: string) {
 		this.commonServ.country(countryId).subscribe(
 			(response: apiResponse) => {
 				this.country = response.data;
+				if(this.country?.currency){
+					this.getCurrency(this.country?.currency);
+				}
 			},
 			(error: apiResponse) => {
 				console.log(error);
