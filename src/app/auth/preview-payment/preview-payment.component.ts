@@ -34,6 +34,7 @@ export class PreviewPaymentComponent implements OnInit {
 	}
 
     onCardTypeChange() {
+		// (ngModelChange)="onCardTypeChange()"
         console.log('Selected card type:', this.selectedCardType);
         this.exform.get("cardType")?.setValue(this.selectedCardType);
     }
