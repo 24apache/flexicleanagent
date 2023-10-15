@@ -25,13 +25,9 @@ export class PreviewDetailComponent implements OnInit {
 	country?: CountryOne;
 	city?: City;
 	area?: Area;
-	subscriptionCharge?: number = 3.0;
 
 	constructor(private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 	ngOnInit(): void {
-		// this.getAppSettings();
-		// this.getCommissions();
-		// this.getUserInfo();
 		forkJoin({
 			userInfo: this.userServ.getUserByToken(),
 			appSettings: this.commonServ.appSettings(),
@@ -95,34 +91,6 @@ export class PreviewDetailComponent implements OnInit {
 				if (error && error.success == false && error.message === 'Validation Errors') {
 					this.resMessage = error.errors.invalid;
 				}
-			}
-		);
-	}
-
-	getUserInfo() {
-		this.userServ.getUserByToken().subscribe(
-			(response) => {
-				this.currentUser = response;
-				let country: string;
-				let city: string;
-				let area: string;
-				if (this.currentUser?.country) {
-					country = this.currentUser?.country;
-					this.getCountry(country);
-				}
-				if (this.currentUser?.city) {
-					city = this.currentUser?.city;
-					this.getCity(city);
-				}
-				if (this.currentUser?.area) {
-					area = this.currentUser?.area;
-					this.getArea(area);
-				}
-				this.getTotalSubscriptionCharge();
-			},
-			(error) => {
-				console.log(error);
-				this.resMessage = error.message;
 			}
 		);
 	}
