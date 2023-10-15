@@ -56,12 +56,21 @@
 
                                     <div class="form-group">
                                         <label class="login-head">Card Number</label>
-                                        <input type="text" formControlName="cardNumber" class="form-control form-control-user poppins-medium" placeholder="Enter Your Email">
+                                        <input type="text" formControlName="cardNumber" class="form-control form-control-user poppins-medium" placeholder="Enter Your Card Number">
+										<div *ngIf="exform.get('cardNumber')?.invalid && exform.get('cardNumber')?.errors && (exform.get('cardNumber')?.dirty || exform.get('cardNumber')?.touched)">
+											<small class="text-danger" *ngIf="exform.get('cardNumber')?.hasError('required')">This field is required.</small>
+											<small class="text-danger" *ngIf="exform.get('cardNumber')?.hasError('minlength')">
+												The minimum length for this field is 10 digits.
+											</small>
+											<small class="text-danger" *ngIf="exform.get('cardNumber')?.hasError('maxlength')">
+												The maximum length for this field is 15 digits.
+											</small>
+										</div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="login-head">Name on Card</label>
-                                        <input type="text" formControlName="cardHolderName" class="form-control form-control-user poppins-medium" placeholder="Enter">
+                                        <input type="text" formControlName="cardHolderName" class="form-control form-control-user poppins-medium" placeholder="Enter Name on Card">
                                     </div>
 
                                     <div class="form-group">
@@ -71,10 +80,11 @@
 
                                     <div class="form-group">
                                         <label class="login-head">Cvv</label>
-                                        <input type="text" formControlName="cardCvv" class="form-control form-control-user poppins-medium" placeholder="Enter">
+                                        <input type="text" formControlName="cardCvv" class="form-control form-control-user poppins-medium" placeholder="Enter CVV">
                                     </div>
 
-                                    <div class="btn btn-login btn-user btn-block mt-5 mb-5" (click)="doPayment()">PAY NOW</div>
+                                    <!-- <div class="btn btn-login btn-user btn-block mt-5 mb-5" (click)="doPayment()">PAY NOW</div> -->
+									<button class="btn btn-login btn-user btn-block mt-5 mb-5" [disabled]="exform.invalid" (click)="doPayment()">PAY NOW</button>
                                 </form>
                             </div>
                         </div>

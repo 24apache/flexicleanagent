@@ -24,16 +24,18 @@ export class PreviewPaymentComponent implements OnInit {
 	ngOnInit() {
 		this.exform = this.fb.group({
 			cardType: ['', [Validators.required]],
-			cardNumber: ['', [Validators.required, Validators.pattern('^[0-9]+$'), this.cardNumberValidator()]],
-			cardHolderName: ['', [Validators.required]],
+			cardNumber: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(15), Validators.pattern('^[0-9]+$'), this.cardNumberValidator()]],
+			cardHolderName: ['', [Validators.required, Validators.maxLength(50)]],
 			cardExpiry: ['', [Validators.required]],
-			cardCvv: ['', [Validators.required]],
+			cardCvv: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(3), Validators.pattern('^[0-9]+$'), this.cardNumberValidator()]],
 		});
 		this.successModal = new window.bootstrap.Modal(document.getElementById('successModal'));
 	}
 
 	doPayment() {
-		this.openSuccessModal();
+		if (this.exform.valid) {
+			this.openSuccessModal();
+		}
 	}
 
 	openSuccessModal() {
