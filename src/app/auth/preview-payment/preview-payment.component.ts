@@ -1,44 +1,53 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit } from "@angular/core";
+import { AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators } from "@angular/forms";
+import { Router } from "@angular/router";
+import { CommonService } from "src/app/services/common.service";
+import { UserService, UserType } from "src/app/services/user.service";
 
 declare var window: any;
 
 @Component({
-  selector: 'app-preview-payment',
-  templateUrl: './preview-payment.component.html',
-  styleUrls: ['./preview-payment.component.scss']
-  
+	selector: 'app-preview-payment',
+	templateUrl: './preview-payment.component.html',
+	styleUrls: ['./preview-payment.component.scss'],
 })
-export class PreviewPaymentComponent {
+export class PreviewPaymentComponent implements OnInit {
+	successModal: any;
+	currentUser!: UserType;
+	exform!: FormGroup;
+	isLoading = false;
+	isSuccess = false;
+	resMessage?: string;
 
-  // exform!: FormGroup;
+	constructor(private fb: FormBuilder, private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 
-  // ngOnInit() {
+	ngOnInit() {
+		this.exform = this.fb.group({
+			cardType: ['', [Validators.required]],
+			cardNumber: ['', [Validators.required, Validators.pattern('^[0-9]+$'), this.cardNumberValidator()]],
+			cardHolderName: ['', [Validators.required]],
+			cardExpiry: ['', [Validators.required]],
+			cardCvv: ['', [Validators.required]],
+		});
+		this.successModal = new window.bootstrap.Modal(document.getElementById('successModal'));
+	}
 
-  //   this.exform = new FormGroup({
-  //     'email' : new FormControl(null, [Validators.required, Validators.email]),
-  //     'password': new FormControl (null, [Validators.required, Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$')])
-  //   })
+	doPayment() {
+		this.openSuccessModal();
+	}
 
-  // }
-  
+	openSuccessModal() {
+		this.successModal.show();
+	}
 
-  //MODAL
-  
-  formModal: any;
+	closeSuccessModal() {
+		this.successModal.hide();
+	}
 
-  ngOnInit(): void{
-    this.formModal = new window.bootstrap.Modal(
-      document.getElementById("exampleModal")
-    )
-  }
-
-  openModal(){
-    this.formModal.show();
-  }
-
-  doSomething(){
-    this.formModal.hide();
-  }
-  
+	cardNumberValidator(): ValidatorFn {
+		return (control: AbstractControl): { [key: string]: any } | null => {
+			const isNumber = /^\d+$/.test(control.value);
+			return isNumber ? null : { invalidCardNumber: { value: control.value } };
+		};
+	}
 }

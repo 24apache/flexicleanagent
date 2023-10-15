@@ -1,10 +1,9 @@
 import { Component, OnInit } from "@angular/core";
-import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { Area } from "src/app/models/area.model";
 import { City } from "src/app/models/city.model";
 import { Country } from "src/app/models/country.model";
-import { UserModel } from "src/app/models/user.model";
 import { CommonService } from "src/app/services/common.service";
 import { UserService, UserType } from "src/app/services/user.service";
 import { apiResponse } from "src/app/utils/common.util";
