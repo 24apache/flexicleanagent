@@ -25,6 +25,8 @@ export class PreviewDetailComponent implements OnInit {
 	constructor(private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 	ngOnInit(): void {
 		this.getUserInfo();
+		this.getAppSettings();
+		this.getCommissions();
 	}
 
 	getUserInfo() {
