@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { forkJoin, map } from "rxjs";
 import { AppCommission, AppSettings } from "src/app/models/app.settings.model";
 import { Area } from "src/app/models/area.model";
 import { City } from "src/app/models/city.model";
@@ -9,9 +10,9 @@ import { UserService, UserType } from "src/app/services/user.service";
 import { apiResponse } from "src/app/utils/common.util";
 
 @Component({
-  selector: 'app-preview-detail',
-  templateUrl: './preview-detail.component.html',
-  styleUrls: ['./preview-detail.component.scss']
+	selector: 'app-preview-detail',
+	templateUrl: './preview-detail.component.html',
+	styleUrls: ['./preview-detail.component.scss'],
 })
 export class PreviewDetailComponent implements OnInit {
 	currentUser!: UserType;
@@ -19,18 +20,83 @@ export class PreviewDetailComponent implements OnInit {
 	isSuccess = false;
 	resMessage?: string;
 	appSettings?: AppSettings;
-	appCommission?: AppCommission
+	appCommission?: AppCommission;
 	currency?: Currency;
 	country?: CountryOne;
 	city?: City;
 	area?: Area;
-	subscriptionCharge?: number = 3.000;
+	subscriptionCharge?: number = 3.0;
 
 	constructor(private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 	ngOnInit(): void {
-		this.getAppSettings();
-		this.getCommissions();
-		this.getUserInfo();
+		// this.getAppSettings();
+		// this.getCommissions();
+		// this.getUserInfo();
+		forkJoin({
+			userInfo: this.userServ.getUserByToken(),
+			appSettings: this.commonServ.appSettings(),
+			commissions: this.commonServ.commissions(),
+		})
+			.pipe(
+				map((responses: any) => {
+					this.currentUser = responses.userInfo;
+					this.appSettings = responses.appSettings.data;
+					this.appCommission = responses.commissions.data;
+
+					if (this.currentUser) {
+						this.loadDataForCurrentUser();
+					}
+				})
+			)
+			.subscribe();
+	}
+
+	private loadDataForCurrentUser() {
+		let countryId: string | undefined = this.currentUser?.country;
+		let cityId: string | undefined = this.currentUser?.city;
+		let areaId: string | undefined = this.currentUser?.area;
+
+		const requests: any[] = [];
+
+		if (countryId) {
+			requests.push(this.commonServ.country(countryId));
+		}
+
+		if (cityId) {
+			requests.push(this.commonServ.city(cityId));
+		}
+
+		if (areaId) {
+			requests.push(this.commonServ.area(areaId));
+		}
+
+		forkJoin(requests).subscribe(
+			(responses: any) => {
+				if (responses[0]) {
+					this.country = responses[0].data;
+					if (this.country?.currency) {
+						this.getCurrency(this.country.currency);
+					}
+				}
+
+				if (responses[1]) {
+					this.city = responses[1].data;
+				}
+
+				if (responses[2]) {
+					this.area = responses[2].data;
+				}
+
+				this.getTotalSubscriptionCharge();
+			},
+			(error: apiResponse) => {
+				console.log(error);
+				this.resMessage = error.message;
+				if (error && error.success == false && error.message === 'Validation Errors') {
+					this.resMessage = error.errors.invalid;
+				}
+			}
+		);
 	}
 
 	getUserInfo() {
@@ -40,16 +106,15 @@ export class PreviewDetailComponent implements OnInit {
 				let country: string;
 				let city: string;
 				let area: string;
-				if(this.currentUser?.country){
+				if (this.currentUser?.country) {
 					country = this.currentUser?.country;
 					this.getCountry(country);
 				}
-				if(this.currentUser?.city){
+				if (this.currentUser?.city) {
 					city = this.currentUser?.city;
 					this.getCity(city);
-
 				}
-				if(this.currentUser?.area){
+				if (this.currentUser?.area) {
 					area = this.currentUser?.area;
 					this.getArea(area);
 				}
@@ -111,7 +176,7 @@ export class PreviewDetailComponent implements OnInit {
 		this.commonServ.country(countryId).subscribe(
 			(response: apiResponse) => {
 				this.country = response.data;
-				if(this.country?.currency){
+				if (this.country?.currency) {
 					this.getCurrency(this.country?.currency);
 				}
 			},
@@ -155,14 +220,15 @@ export class PreviewDetailComponent implements OnInit {
 		);
 	}
 
-	getTotalSubscriptionCharge(){
+	getTotalSubscriptionCharge() {
 		let totalAmount = 0;
-		if(this.currentUser?.pos && this.appCommission?.POSSubscriptionCharge){
-			totalAmount +=this.appCommission?.POSSubscriptionCharge;
+
+		if (this.currentUser?.pos && this.appCommission?.POSSubscriptionCharge) {
+			totalAmount += this.appCommission?.POSSubscriptionCharge;
 		}
 
-		if(this.currentUser?.online){
-
+		if (this.currentUser?.online) {
+			// Handle online subscription charge if needed
 		}
 	}
 }
