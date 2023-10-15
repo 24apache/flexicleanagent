@@ -22,6 +22,24 @@ export class CommonService implements OnDestroy {
 		this.isLoading$ = this.isLoadingSubject.asObservable();
 	}
 
+	appSettings(): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/app-settings`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
+
+	commissions(): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/app-commissions`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
+
 	currency(id: string): Observable<apiResponse> {
 		return this.http.get<apiResponse>(`${API_ENDPOINT}/currencies/${id}`).pipe(
 			catchError((errorResponse: HttpErrorResponse) => {

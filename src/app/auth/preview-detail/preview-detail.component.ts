@@ -55,6 +55,38 @@ export class PreviewDetailComponent implements OnInit {
 		);
 	}
 
+	getAppSettings() {
+		this.commonServ.appSettings().subscribe(
+			(response: apiResponse) => {
+				console.log(response);
+				this.currency = response.data;
+			},
+			(error: apiResponse) => {
+				console.log(error);
+				this.resMessage = error.message;
+				if (error && error.success == false && error.message === 'Validation Errors') {
+					this.resMessage = error.errors.invalid;
+				}
+			}
+		);
+	}
+
+	getCommissions() {
+		this.commonServ.commissions().subscribe(
+			(response: apiResponse) => {
+				console.log(response);
+				this.currency = response.data;
+			},
+			(error: apiResponse) => {
+				console.log(error);
+				this.resMessage = error.message;
+				if (error && error.success == false && error.message === 'Validation Errors') {
+					this.resMessage = error.errors.invalid;
+				}
+			}
+		);
+	}
+
 	getCurrency(cityId: string) {
 		this.commonServ.currency(cityId).subscribe(
 			(response: apiResponse) => {
