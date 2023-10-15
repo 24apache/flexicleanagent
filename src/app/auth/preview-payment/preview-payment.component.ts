@@ -18,12 +18,13 @@ export class PreviewPaymentComponent implements OnInit {
 	isLoading = false;
 	isSuccess = false;
 	resMessage?: string;
+	selectedCardType: string = 'credit';
 
 	constructor(private fb: FormBuilder, private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 
 	ngOnInit() {
 		this.exform = this.fb.group({
-			cardType: ['', [Validators.required]],
+			cardType: [this.selectedCardType, [Validators.required]],
 			cardNumber: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(15), Validators.pattern('^[0-9]+$'), this.cardNumberValidator()]],
 			cardHolderName: ['', [Validators.required, Validators.maxLength(50)]],
 			cardExpiry: ['', [Validators.required]],
@@ -31,6 +32,11 @@ export class PreviewPaymentComponent implements OnInit {
 		});
 		this.successModal = new window.bootstrap.Modal(document.getElementById('successModal'));
 	}
+
+    onCardTypeChange() {
+        console.log('Selected card type:', this.selectedCardType);
+        this.exform.get("cardType")?.setValue(this.selectedCardType);
+    }
 
 	doPayment() {
 		if (this.exform.valid) {

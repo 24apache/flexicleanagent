@@ -29,7 +29,7 @@
                                                             <div class="benifit">Credit card</div>
                                                         </div>
                                                         <div class="col-4 text-right">
-                                                            <input type="radio" formControlName="cardType" id="cardType1" class="input-radios on" checked>
+                                                            <input type="radio" name="cardType" id="cardType1" value="credit" class="input-radios on" [(ngModel)]="selectedCardType" (ngModelChange)="onCardTypeChange()" checked>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -46,7 +46,7 @@
                                                             <div class="benifit">Debit card</div>
                                                         </div>
                                                         <div class="col-4 text-right">
-                                                            <input type="radio" formControlName="cardType" id="cardType2" class="input-radios on">
+                                                            <input type="radio" name="cardType" id="cardType2" value="debit" class="input-radios on" [(ngModel)]="selectedCardType" (ngModelChange)="onCardTypeChange()">
                                                         </div>
                                                     </div>
                                                 </div>

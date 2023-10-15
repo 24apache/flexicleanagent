@@ -1,8 +1,9 @@
 import { HttpClientModule } from "@angular/common/http";
 import { APP_INITIALIZER, NgModule } from "@angular/core";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { AlertComponent } from "./alert/alert.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { CompanySignupComponent } from "./auth/company-signup/company-signup.component";
@@ -63,7 +64,6 @@ import { PayoutComponent } from "./components/wallet/payout/payout.component";
 import { TransactionComponent } from "./components/wallet/transaction/transaction.component";
 import { WalletComponent } from "./components/wallet/wallet.component";
 import { UserService } from "./services/user.service";
-import { AlertComponent } from './alert/alert.component';
 
 function appInitializer(userService: UserService) {
   return () => {
@@ -142,7 +142,8 @@ function appInitializer(userService: UserService) {
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+	FormsModule
   ],
   providers: [
     {
