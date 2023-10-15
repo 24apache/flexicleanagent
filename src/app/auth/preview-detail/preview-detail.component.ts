@@ -58,7 +58,7 @@ export class PreviewDetailComponent implements OnInit {
 	getCurrency(cityId: string) {
 		this.commonServ.currency(cityId).subscribe(
 			(response: apiResponse) => {
-				this.city = response.data;
+				this.currency = response.data;
 			},
 			(error: apiResponse) => {
 				console.log(error);
