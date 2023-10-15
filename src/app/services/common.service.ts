@@ -22,8 +22,8 @@ export class CommonService implements OnDestroy {
 		this.isLoading$ = this.isLoadingSubject.asObservable();
 	}
 
-	countries(): Observable<apiResponse> {
-		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries`).pipe(
+	currency(id: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/currencies/${id}`).pipe(
 			catchError((errorResponse: HttpErrorResponse) => {
 				const customError: apiResponse = errorResponse.error;
 				return throwError(customError);
@@ -31,8 +31,8 @@ export class CommonService implements OnDestroy {
 		);
 	}
 
-	currency(id: string): Observable<apiResponse> {
-		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${id}`).pipe(
+	countries(): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries`).pipe(
 			catchError((errorResponse: HttpErrorResponse) => {
 				const customError: apiResponse = errorResponse.error;
 				return throwError(customError);
