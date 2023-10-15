@@ -72,7 +72,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
-                                                        <div class="charge">5 % Charge</div>
+                                                        <div class="charge">{{appCommission?.POSSubscriptionCharge}} {{currency?.code}} Charge</div>
                                                     </div>
                                                 </div>
                                                 <div *ngIf="currentUser?.online" class="row service-percent mt-3 mb-3">
@@ -84,7 +84,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-4">
-                                                                <div class="charge">5 % Charge</div>
+                                                                <div *ngIf="appCommission?.platformOnlineChargeType=='percentage'" class="charge">{{appCommission?.platformOnlineCharge}} % Charge</div>
+																<div *ngIf="appCommission?.platformOnlineChargeType=='fixed'" class="charge">{{appCommission?.platformOnlineCharge}} {{currency?.code}} Charge</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -96,7 +97,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
-                                                        <div class="charge">5 % Charge</div>
+                                                        <div *ngIf="appCommission?.platformLogisticChargeType=='percentage'" class="charge">{{appCommission?.platformLogisticCharge}} % Charge</div>
+														<div *ngIf="appCommission?.platformLogisticChargeType=='fixed'" class="charge">{{appCommission?.platformLogisticCharge}} {{currency?.code}} Charge</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -107,7 +109,7 @@
                                                 <h4 class="detail-head mt-3 mb-3">Subscription Amount</h4>
                                                 <div class="row sub-bhd mb-5">
                                                     <div class="col-lg-3 tooltip-container" placement="bottom">
-                                                        <h4 class="bhd">3.000 {{currency?.code}}</h4>
+                                                        <h4 class="bhd">{{subscriptionCharge}} {{currency?.code}}</h4>
                                                         <div class="tooltip">Subscrption charge to use the app</div>
                                                     </div>
                                                     <div class="col-lg-6">

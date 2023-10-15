@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { AppCommission, AppSettings } from "src/app/models/app.settings.model";
 import { Area } from "src/app/models/area.model";
 import { City } from "src/app/models/city.model";
 import { Country, CountryOne, Currency } from "src/app/models/country.model";
@@ -17,16 +18,19 @@ export class PreviewDetailComponent implements OnInit {
 	isLoading = false;
 	isSuccess = false;
 	resMessage?: string;
+	appSettings?: AppSettings;
+	appCommission?: AppCommission
 	currency?: Currency;
 	country?: CountryOne;
 	city?: City;
 	area?: Area;
+	subscriptionCharge?: number = 3.000;
 
 	constructor(private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 	ngOnInit(): void {
-		this.getUserInfo();
 		this.getAppSettings();
 		this.getCommissions();
+		this.getUserInfo();
 	}
 
 	getUserInfo() {
@@ -49,6 +53,7 @@ export class PreviewDetailComponent implements OnInit {
 					area = this.currentUser?.area;
 					this.getArea(area);
 				}
+				this.getTotalSubscriptionCharge();
 			},
 			(error) => {
 				console.log(error);
@@ -60,8 +65,7 @@ export class PreviewDetailComponent implements OnInit {
 	getAppSettings() {
 		this.commonServ.appSettings().subscribe(
 			(response: apiResponse) => {
-				console.log(response);
-				this.currency = response.data;
+				this.appSettings = response.data;
 			},
 			(error: apiResponse) => {
 				console.log(error);
@@ -76,8 +80,7 @@ export class PreviewDetailComponent implements OnInit {
 	getCommissions() {
 		this.commonServ.commissions().subscribe(
 			(response: apiResponse) => {
-				console.log(response);
-				this.currency = response.data;
+				this.appCommission = response.data;
 			},
 			(error: apiResponse) => {
 				console.log(error);
@@ -150,5 +153,16 @@ export class PreviewDetailComponent implements OnInit {
 				}
 			}
 		);
+	}
+
+	getTotalSubscriptionCharge(){
+		let totalAmount = 0;
+		if(this.currentUser?.pos && this.appCommission?.POSSubscriptionCharge){
+			totalAmount +=this.appCommission?.POSSubscriptionCharge;
+		}
+
+		if(this.currentUser?.online){
+
+		}
 	}
 }
