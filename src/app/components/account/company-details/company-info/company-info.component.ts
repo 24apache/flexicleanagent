@@ -20,6 +20,7 @@ export class CompanyInfoComponent implements OnInit {
 	exform!: FormGroup;
 	isLoading = false;
 	isSuccess = false;
+	isError = false;
 	resMessage?: string;
 	private _success = new Subject<string>();
 
@@ -71,6 +72,7 @@ export class CompanyInfoComponent implements OnInit {
 						console.log(response);
 						this.isLoading = false;
 						this.isSuccess = true;
+						this.isError = false;
 						this.resMessage = "Comapny information updated successfully.";
 						this._success.next(this.resMessage);
 					},
@@ -78,6 +80,7 @@ export class CompanyInfoComponent implements OnInit {
 						console.log(error);
 						this.isLoading = false;
 						this.isSuccess = false;
+						this.isError = true;
 						this.resMessage = error.message;
 						if (error && error.success == false && error.message === 'Validation Errors') {
 							this.resMessage = error.errors.invalid;
@@ -86,6 +89,7 @@ export class CompanyInfoComponent implements OnInit {
 					}
 				);
 			} else {
+				this.isError = true;
 				this.resMessage = 'Invalid process';
 				this._success.next(this.resMessage);
 			}

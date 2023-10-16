@@ -1,70 +1,69 @@
 <div class="container-fluid p-5">
     <h4 class="company-detail">Company Details</h4>
-<div>
-    <form [formGroup]="exform" class="g-3 mt-3 needs-validation borders p-10 mb-4" novalidate>
+	<div>
 		<ngb-alert #selfClosingAlert *ngIf="isSuccess" type="success" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
-		<ngb-alert #selfClosingAlert *ngIf="!isSuccess" type="danger" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
-        <div class="col mt-3">
-            <label for="validationCustom01" class="form-label company">COMPANY NAME</label>
-            <input type="text" class="form-control company-input" formControlName="companyName" id="companyName" placeholder="Super Laundry & Dry Cleaning - Manama">
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col mt-3">
-            <label for="validationCustom02" class="form-label company">OWNER NAME</label>
-            <input type="text" class="form-control company-input" formControlName="ownerName" id="ownerName" placeholder="Khalifa">
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col mt-3">
-            <h4 class="company">DO YOU HAVE TAX?</h4>
-        </div>
-        <div class="row g-3 p-3">
-            <div class="col-9">
-                <div class="row">
-                    <div class="btn-group tax-flex" (click)="onButtonGroupClick($event)">
-                        <button class="btn tax-no mb-2" [ngClass]="currentUser?.taxationNumber? 'active' : ''" type="button">YES</button>
-                        <button class="btn tax-no mb-2" [ngClass]="!currentUser?.taxationNumber? 'active' : ''" type="button">NO</button>
-                      </div>
-                </div>
-            </div>
-        </div>
-        <div class="col mt-2">
-            <label for="validationCustom02" class="form-label company">TAXATION NUMBER</label>
-            <input type="text" class="form-control company-input" formControlName="taxationNumber" id="validationCustom02" placeholder="1001450">
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-
-        <div class="col mt-3 mb-4">
-            <label for="validationCustom03" class="form-label company">COMPANY LOGO</label>
-            <label class="tax-kb">200 kb</label>
-            <div class="file-upload-btn">
-
-                <div class="image-upload-wrap">
-                    <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*">
-                    <div class="drag-text">
-                        <div class="upload"><img src="assets/images/uploading.svg" alt="upload"> Upload
-                        </div>
-                    </div>
-                </div>
-                <div class="file-upload-content">
-                    <img class="file-upload-image" src="#" alt="your image">
-                </div>
-            </div>
-        </div>
-		<div class="row g-3 mt-3 mb-4">
-			<div class="col mt-4">
-				<div class="btn clear">CLEAR</div>
+		<ngb-alert #selfClosingAlert *ngIf="isError" type="danger" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
+		<form [formGroup]="exform" class="g-3 mt-3 needs-validation borders p-10 mb-4" novalidate>
+			<div class="col mt-3">
+				<label for="validationCustom01" class="form-label company">COMPANY NAME</label>
+				<input type="text" class="form-control company-input" formControlName="companyName" id="companyName" placeholder="Super Laundry & Dry Cleaning - Manama">
+				<div class="valid-feedback">
+					Looks good!
+				</div>
 			</div>
-			<div class="col mt-4">
-				<button class="btn save" [disabled]="this.isLoading" (click)="updateCompanyInfo()">SAVE</button>
+			<div class="col mt-3">
+				<label for="validationCustom02" class="form-label company">OWNER NAME</label>
+				<input type="text" class="form-control company-input" formControlName="ownerName" id="ownerName" placeholder="Khalifa">
+				<div class="valid-feedback">
+					Looks good!
+				</div>
 			</div>
-		</div>
-    </form>
-</div>
+			<div class="col mt-3">
+				<h4 class="company">DO YOU HAVE TAX?</h4>
+			</div>
+			<div class="row g-3 p-3">
+				<div class="col-9">
+					<div class="row">
+						<div class="btn-group tax-flex" (click)="onButtonGroupClick($event)">
+							<button class="btn tax-no mb-2" [ngClass]="currentUser?.taxationNumber? 'active' : ''" type="button">YES</button>
+							<button class="btn tax-no mb-2" [ngClass]="!currentUser?.taxationNumber? 'active' : ''" type="button">NO</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mt-2">
+				<label for="validationCustom02" class="form-label company">TAXATION NUMBER</label>
+				<input type="text" class="form-control company-input" formControlName="taxationNumber" id="validationCustom02" placeholder="1001450">
+				<div class="valid-feedback">
+					Looks good!
+				</div>
+			</div>
 
+			<div class="col mt-3 mb-4">
+				<label for="validationCustom03" class="form-label company">COMPANY LOGO</label>
+				<label class="tax-kb">200 kb</label>
+				<div class="file-upload-btn">
+
+					<div class="image-upload-wrap">
+						<input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*">
+						<div class="drag-text">
+							<div class="upload"><img src="assets/images/uploading.svg" alt="upload"> Upload
+							</div>
+						</div>
+					</div>
+					<div class="file-upload-content">
+						<img class="file-upload-image" src="#" alt="your image">
+					</div>
+				</div>
+			</div>
+			<div class="row g-3 mt-3 mb-4">
+				<div class="col mt-4">
+					<div class="btn clear">CLEAR</div>
+				</div>
+				<div class="col mt-4">
+					<button class="btn save" [disabled]="this.isLoading" (click)="updateCompanyInfo()">SAVE</button>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
