@@ -48,8 +48,8 @@ export class CompanyInfoComponent implements OnInit {
 	}
 
 	customValidation(group: FormGroup) {
-		const haveTaxControl = this.exform.get('haveTax');
-		const taxationNumberControl = this.exform.get('taxationNumber');
+		const haveTaxControl = group.get('haveTax');
+		const taxationNumberControl = group.get('taxationNumber');
 
 		if (haveTaxControl && taxationNumberControl) {
 		  const haveTax = haveTaxControl.value;
@@ -64,18 +64,8 @@ export class CompanyInfoComponent implements OnInit {
 		return null;
 	}
 
-	onButtonGroupClick($event: { target: any; srcElement: any }) {
-		let clickedElement = $event.target || $event.srcElement;
-		debugger;
-		if (clickedElement.nodeName === 'BUTTON') {
-			let isCertainButtonAlreadyActive = clickedElement.parentElement.querySelector('.active');
-			// if a Button already has Class: .active
-			if (isCertainButtonAlreadyActive) {
-				isCertainButtonAlreadyActive.classList.remove('active');
-			}
-
-			clickedElement.className += ' active';
-		}
+	toggleHaveTax(hasTax: boolean) {
+		this.exform.get('haveTax')?.setValue(hasTax);
 	}
 
 	updateCompanyInfo() {
