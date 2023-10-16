@@ -7,18 +7,14 @@
 			<div class="col mt-3">
 				<label for="validationCustom01" class="form-label company">COMPANY NAME</label>
 				<input type="text" class="form-control company-input" formControlName="companyName" id="companyName" placeholder="Super Laundry & Dry Cleaning - Manama">
-				<div class="valid-feedback">
-					<small class="text-danger" *ngIf="exform.get('companyName')?.hasError('required')">This field is required.</small>
-					<small class="text-danger" *ngIf="exform.get('companyName')?.hasError('maxlength')">The minimum length for this field is 30 digits.</small>
-				</div>
+				<small class="text-danger" *ngIf="exform.get('companyName')?.hasError('required')">This field is required.</small>
+				<small class="text-danger" *ngIf="exform.get('companyName')?.hasError('maxlength')">The minimum length for this field is 30 digits.</small>
 			</div>
 			<div class="col mt-3">
 				<label for="validationCustom02" class="form-label company">OWNER NAME</label>
 				<input type="text" class="form-control company-input" formControlName="ownerName" id="ownerName" placeholder="Khalifa">
-				<div class="valid-feedback">
-					<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('required')">This field is required.</small>
-					<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('maxlength')">The minimum length for this field is 20 digits.</small>
-				</div>
+				<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('required')">This field is required.</small>
+				<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('maxlength')">The minimum length for this field is 20 digits.</small>
 			</div>
 			<div class="col mt-3">
 				<h4 class="company">DO YOU HAVE TAX?</h4>
@@ -37,10 +33,8 @@
 			<div class="col mt-2">
 				<label for="validationCustom02" class="form-label company">TAXATION NUMBER</label>
 				<input type="text" class="form-control company-input" formControlName="taxationNumber" id="validationCustom02" placeholder="1001450">
-				<div class="valid-feedback">
-					<small class="text-danger" *ngIf="exform.get('taxationNumber')?.hasError('required')">Taxation Number is required if you have tax.</small>
-					<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('maxlength')">The minimum length for this field is 20 digits.</small>
-				</div>
+				<small class="text-danger" *ngIf="exform.get('taxationNumber')?.hasError('required')">Taxation Number is required if you have tax.</small>
+				<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('maxlength')">The minimum length for this field is 20 digits.</small>
 			</div>
 
 			<div class="col mt-3 mb-4">
