@@ -57,7 +57,7 @@ export class CompanyInfoComponent implements OnInit {
 						console.log(response);
 						this.isLoading = false;
 						this.isSuccess = true;
-						this.router.navigateByUrl('preview-detail');
+						this.resMessage = "Comapny information updated successfully.";
 					},
 					(error: apiResponse) => {
 						console.log(error);
