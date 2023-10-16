@@ -2,8 +2,11 @@
     <h4 class="company-detail">Company Details</h4>
 <div>
     <form [formGroup]="exform" class="g-3 mt-3 needs-validation borders p-10 mb-4" novalidate>
-		<div *ngIf="resMessage" [ngClass]="isSuccess? 'text-success' : 'text-danger'">{{resMessage}}</div>
-      	<br />
+		<!-- <div *ngIf="resMessage" [ngClass]="isSuccess? 'text-success' : 'text-danger'">{{resMessage}}</div>
+      	<br /> -->
+		<!-- <ngb-alert #staticAlert *ngIf="!staticAlertClosed" (closed)="staticAlertClosed = true">Check out our awesome new features!</ngb-alert> -->
+	    <hr />
+		<ngb-alert #selfClosingAlert *ngIf="resMessage" type="success" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
         <div class="col mt-3">
             <label for="validationCustom01" class="form-label company">COMPANY NAME</label>
             <input type="text" class="form-control company-input" formControlName="companyName" id="companyName" placeholder="Super Laundry & Dry Cleaning - Manama">

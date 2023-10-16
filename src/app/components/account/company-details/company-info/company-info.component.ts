@@ -1,6 +1,8 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
+import { NgbAlert } from "@ng-bootstrap/ng-bootstrap";
+import { Subject, debounceTime } from "rxjs";
 import { Area } from "src/app/models/area.model";
 import { City } from "src/app/models/city.model";
 import { Country } from "src/app/models/country.model";
@@ -19,10 +21,22 @@ export class CompanyInfoComponent implements OnInit {
 	isLoading = false;
 	isSuccess = false;
 	resMessage?: string;
+	private _success = new Subject<string>();
+
+	// @ViewChild('staticAlert', { static: false }) staticAlert: NgbAlert;
+	@ViewChild('selfClosingAlert', { static: false }) selfClosingAlert!: NgbAlert;
 
 	constructor(private fb: FormBuilder, private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 
 	ngOnInit() {
+
+		this._success.subscribe((message) => (this.resMessage = message));
+		this._success.pipe(debounceTime(5000)).subscribe(() => {
+			if (this.selfClosingAlert) {
+				this.selfClosingAlert.close();
+			}
+		});
+
 		this.getUserInfo();
 		this.exform = this.fb.group({
 			companyName: ['', [Validators.required, Validators.minLength(6)]],
@@ -58,6 +72,7 @@ export class CompanyInfoComponent implements OnInit {
 						this.isLoading = false;
 						this.isSuccess = true;
 						this.resMessage = "Comapny information updated successfully.";
+						this._success.next(this.resMessage);
 					},
 					(error: apiResponse) => {
 						console.log(error);
@@ -67,10 +82,12 @@ export class CompanyInfoComponent implements OnInit {
 						if (error && error.success == false && error.message === 'Validation Errors') {
 							this.resMessage = error.errors.invalid;
 						}
+						this._success.next(this.resMessage? this.resMessage : "");
 					}
 				);
 			} else {
 				this.resMessage = 'Invalid process';
+				this._success.next(this.resMessage);
 			}
 		} else {
 			console.log("Errors");
