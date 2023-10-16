@@ -23,8 +23,8 @@
 				<div class="col-9">
 					<div class="row">
 						<div class="btn-group tax-flex">
-							<button class="btn tax-no mb-2" [ngClass]="{ 'active': currentUser?.taxationNumber }" type="button" (click)="toggleHaveTax(true)">YES</button>
-							<button class="btn tax-no mb-2" [ngClass]="{ 'active': !currentUser?.taxationNumber }" type="button" (click)="toggleHaveTax(false)">NO</button>
+							<button class="btn tax-no mb-2" [ngClass]="{ 'active': exform.get('haveTax') }" type="button" (click)="toggleHaveTax(true)">YES</button>
+							<button class="btn tax-no mb-2" [ngClass]="{ 'active': !exform.get('haveTax') }" type="button" (click)="toggleHaveTax(false)">NO</button>
 						</div>
 					</div>
 				</div>
@@ -34,7 +34,7 @@
 				<label for="validationCustom02" class="form-label company">TAXATION NUMBER</label>
 				<input type="text" class="form-control company-input" formControlName="taxationNumber" id="validationCustom02" placeholder="1001450">
 				<small class="text-danger" *ngIf="exform.get('taxationNumber')?.hasError('required')">Taxation Number is required if you have tax.</small>
-				<small class="text-danger" *ngIf="exform.get('ownerName')?.hasError('maxlength')">The minimum length for this field is 20 digits.</small>
+				<small class="text-danger" *ngIf="exform.get('taxationNumber')?.hasError('maxlength')">The minimum length for this field is 20 digits.</small>
 			</div>
 
 			<div class="col mt-3 mb-4">
