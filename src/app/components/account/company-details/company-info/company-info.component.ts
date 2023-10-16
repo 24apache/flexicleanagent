@@ -73,6 +73,7 @@ export class CompanyInfoComponent implements OnInit {
 				this.resMessage = 'Invalid process';
 			}
 		} else {
+			console.log("Errors");
 			Object.values(this.exform.controls).forEach((control) => control.markAsTouched());
 		}
 	}
