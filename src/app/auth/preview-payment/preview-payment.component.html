@@ -98,7 +98,6 @@
 										</div>
                                     </div>
 
-                                    <!-- <div class="btn btn-login btn-user btn-block mt-5 mb-5" (click)="doPayment()">PAY NOW</div> -->
 									<button class="btn btn-login btn-user btn-block mt-5 mb-5" [disabled]="exform.invalid" (click)="doPayment()">PAY NOW</button>
                                 </form>
                             </div>
@@ -118,7 +117,7 @@
                 <div class="sucessfully"><img src="assets/images/sucessfully.png" alt="add-user"></div>
                 <h4 class="created">Profile Created! Continue to App</h4>
                 <div class="text-center">
-                    <div class="btn save" data-bs-dismiss="modal" routerLink="/dashboard">CONTINUE</div> &nbsp;
+                    <div class="btn save" data-bs-dismiss="modal" (click)="continueToApp()">CONTINUE</div> &nbsp;
                 </div>
             </div>
         </div>

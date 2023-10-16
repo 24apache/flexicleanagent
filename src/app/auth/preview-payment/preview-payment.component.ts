@@ -53,6 +53,11 @@ export class PreviewPaymentComponent implements OnInit {
 		this.successModal.hide();
 	}
 
+	continueToApp(){
+		this.closeSuccessModal();
+		this.router.navigateByUrl('dashboard');
+	}
+
 	cardNumberValidator(): ValidatorFn {
 		return (control: AbstractControl): { [key: string]: any } | null => {
 			const isNumber = /^\d+$/.test(control.value);
