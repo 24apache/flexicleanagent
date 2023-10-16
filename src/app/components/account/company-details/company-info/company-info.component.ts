@@ -40,11 +40,28 @@ export class CompanyInfoComponent implements OnInit {
 
 		this.getUserInfo();
 		this.exform = this.fb.group({
-			companyName: ['', [Validators.required, Validators.minLength(6)]],
-			ownerName: ['', [Validators.required, Validators.minLength(6)]],
+			companyName: ['', [Validators.required, Validators.maxLength(30)]],
+			ownerName: ['', [Validators.required, Validators.maxLength(20)]],
 			haveTax: ['', [Validators.required]],
-			taxationNumber: ['', [Validators.required]]
-		});
+			taxationNumber: ['', Validators.maxLength(20)]
+    	}, { validator: this.customValidation });
+	}
+
+	customValidation(group: FormGroup) {
+		const haveTaxControl = this.exform.get('haveTax');
+		const taxationNumberControl = this.exform.get('taxationNumber');
+
+		if (haveTaxControl && taxationNumberControl) {
+		  const haveTax = haveTaxControl.value;
+
+		  if (haveTax && !taxationNumberControl.value) {
+			taxationNumberControl.setErrors({ required: true });
+		  } else {
+			taxationNumberControl.setErrors(null);
+		  }
+		}
+
+		return null;
 	}
 
 	onButtonGroupClick($event: { target: any; srcElement: any }) {
