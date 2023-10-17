@@ -58,6 +58,15 @@ export class CommonService implements OnDestroy {
 		);
 	}
 
+	states(countryId: string): Observable<apiResponse> {
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${countryId}/states`).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+	}
+
 	country(id: string): Observable<apiResponse> {
 		return this.http.get<apiResponse>(`${API_ENDPOINT}/countries/${id}`).pipe(
 			catchError((errorResponse: HttpErrorResponse) => {

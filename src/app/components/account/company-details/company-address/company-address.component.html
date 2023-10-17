@@ -1,90 +1,88 @@
 <div class="container-fluid p-5">
     <h4 class="company-detail mb-4">Address Details</h4>
-
     <div>
-
-        <form class="needs-validation borders p-10 mb-4" novalidate>
+		<ngb-alert #selfClosingAlert *ngIf="isSuccess" type="success" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
+		<ngb-alert #selfClosingAlert *ngIf="isError" type="danger" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
+        <form [formGroup]="exform" class="needs-validation borders p-10 mb-4">
             <div class="row g-3 p-3">
                 <div class="col-md-12 mt-4">
-                    <label for="validationCustom01" class="form-label company">No & Street/Road *</label>
-                    <input type="text" class="form-control company-input" id="validationCustom01" value=""
-                        placeholder="ENTER" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <label for="address1" class="form-label company">No & Street/Road *</label>
+                    <input formControlName="address1" type="text" class="form-control company-input" id="address1">
+					<div *ngIf="exform.get('address1')?.invalid && (exform.get('address1')?.dirty || exform.get('address1')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('address1')?.hasError('required')">This field is required.</small>
+  						<small class="text-danger" *ngIf="exform.get('address1')?.hasError('maxlength')">The minimum length for this field is 100 digits.</small>
+					</div>
                 </div>
                 <div class="col-md-12 mt-4">
-                    <label for="validationCustom02" class="form-label company">Apartment, Building, Flat </label>
-                    <input type="text" class="form-control company-input" id="validationCustom02" value=""
-                        placeholder="ENTER" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <label for="address2" class="form-label company">Apartment, Building, Flat </label>
+                    <input formControlName="address2" type="text" class="form-control company-input" id="address2">
+					<div *ngIf="exform.get('address2')?.invalid && (exform.get('address2')?.dirty || exform.get('address2')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('address2')?.hasError('maxlength')">The minimum length for this field is 100 digits.</small>
+					</div>
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <label for="validationCustom04" class="form-label company">Area *</label>
-                    <select class="form-select select-category" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid state.
-                    </div>
+                    <label for="area" class="form-label company">Area *</label>
+                    <select formControlName="area" class="form-select select-category" id="area" required>
+						<option selected disabled value="">Select Area</option>
+						<option *ngFor="let area of areas" [value]="area.id">{{ area.title }}</option>
+					</select>
+					<div *ngIf="exform.get('area')?.invalid && (exform.get('area')?.dirty || exform.get('area')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('area')?.hasError('required')">This field is required.</small>
+					</div>
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <label for="validationCustom04" class="form-label company">City *</label>
-                    <select class="form-select select-category" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid state.
-                    </div>
+                    <label for="city" class="form-label company">City *</label>
+                    <select formControlName="city" class="form-select select-category" id="city" (change)="getAreas()">
+						<option selected disabled value="">Select City</option>
+						<option *ngFor="let city of cities" [value]="city.id">{{ city.title }}</option>
+					</select>
+					<div *ngIf="exform.get('city')?.invalid && (exform.get('city')?.dirty || exform.get('city')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('city')?.touched && exform.get('city')?.hasError('required')">This field is required.</small>
+					</div>
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <label for="validationCustom04" class="form-label company">State / Province</label>
-                    <select class="form-select select-category" id="validationCustom04" required>
-                        <option selected disabled value="">State / Province</option>
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid state.
-                    </div>
+                    <label for="state" class="form-label company">State / Province</label>
+                    <select formControlName="state" class="form-select select-category" id="state" (change)="getCities()">
+						<option selected disabled value="">Select State / Province</option>
+						<option *ngFor="let state of states" [value]="state.id">{{ state.title }}</option>
+					</select>
+					<div *ngIf="exform.get('state')?.invalid && (exform.get('state')?.dirty || exform.get('state')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('state')?.hasError('required')">This field is required.</small>
+					</div>
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <label for="validationCustom04" class="form-label company">Country *</label>
-                    <select class="form-select select-category" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid state.
-                    </div>
+                    <label for="country" class="form-label company">Country *</label>
+                    <select formControlName="country" class="form-select select-category" id="country" (change)="getStates()">
+						<option selected disabled value="">Select Country</option>
+						<option *ngFor="let country of countries" [value]="country.id">{{ country.title }}</option>
+					</select>
+					<div *ngIf="exform.get('country')?.invalid && (exform.get('country')?.dirty || exform.get('country')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('country')?.hasError('required')">This field is required.</small>
+					</div>
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <label for="validationCustom04" class="form-label company">Zip Code*</label>
-                    <input type="text" class="form-control company-input" id="validationCustom02" value=""
-                        placeholder="ENTER" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <label for="zipcode" class="form-label company">Zip Code*</label>
+                    <input formControlName="zipcode" type="text" class="form-control company-input" id="zipcode">
+					<div *ngIf="exform.get('zipcode')?.invalid && (exform.get('zipcode')?.dirty || exform.get('zipcode')?.touched)">
+						<small class="text-danger" *ngIf="exform.get('zipcode')?.hasError('required')">This field is required.</small>
+						<small class="text-danger" *ngIf="exform.get('zipcode')?.hasError('maxlength')">The minimum length for this field is 10 digits.</small>
+					</div>
                 </div>
 
             </div>
+			<div class="row g-3 mt-3 mb-4">
+				<div class="col mt-4">
+					<div class="btn clear">CLEAR</div>
+				</div>
+				<div class="col mt-4">
+					<button class="btn save" [disabled]="this.isLoading || exform.invalid" (click)="updateCompanyInfo()">SAVE</button>
+				</div>
+			</div>
         </form>
-        <div class="row g-3 mt-3 mb-4">
-            <div class="col mt-4">
-                <div class="btn clear">CLEAR</div>
-            </div>
-            <div class="col mt-4">
-                <div class="btn save">SAVE</div>
-            </div>
-        </div>
     </div>
-
 </div>
