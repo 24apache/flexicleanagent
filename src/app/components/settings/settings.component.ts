@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 declare var window: any;
 
@@ -12,9 +12,9 @@ export class SettingsComponent {
   formModal: any;
 
   ngOnInit(): void{
-    this.formModal = new window.bootstrap.Modal(
-      document.getElementById("exampleModal")
-    )
+    // this.formModal = new window.bootstrap.Modal(
+    //   document.getElementById("exampleModal")
+    // )
   }
 
   openModal(){

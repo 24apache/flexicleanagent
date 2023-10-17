@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { ChangeDetectorRef, Component, OnInit, ViewChild } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { NgbAlert } from "@ng-bootstrap/ng-bootstrap";
@@ -24,7 +24,7 @@ export class CompanyInfoComponent implements OnInit {
 	// @ViewChild('staticAlert', { static: false }) staticAlert: NgbAlert;
 	@ViewChild('selfClosingAlert', { static: false }) selfClosingAlert!: NgbAlert;
 
-	constructor(private fb: FormBuilder, private router: Router, private userServ: UserService, private commonServ: CommonService) {}
+	constructor(private fb: FormBuilder, private cdr: ChangeDetectorRef, private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 
 	ngOnInit() {
 
@@ -112,6 +112,7 @@ export class CompanyInfoComponent implements OnInit {
 				this.exform.get('ownerName')?.setValue(this.currentUser?.ownerName);
 				this.exform.get('haveTax')?.setValue(this.currentUser?.haveTax);
 				this.exform.get('taxationNumber')?.setValue(this.currentUser?.taxationNumber);
+				this.cdr.detectChanges();
 			},
 			(error) => {
 				console.log(error);

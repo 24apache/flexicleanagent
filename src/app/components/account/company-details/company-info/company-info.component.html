@@ -3,7 +3,7 @@
 	<div>
 		<ngb-alert #selfClosingAlert *ngIf="isSuccess" type="success" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
 		<ngb-alert #selfClosingAlert *ngIf="isError" type="danger" (closed)="resMessage = ''">{{ resMessage }}</ngb-alert>
-		<form [formGroup]="exform" class="g-3 mt-3 needs-validation borders p-10 mb-4" novalidate>
+		<form [formGroup]="exform" class="g-3 mt-3 needs-validation borders p-10 mb-4">
 			<div class="col mt-3">
 				<label for="validationCustom01" class="form-label company">COMPANY NAME</label>
 				<input type="text" class="form-control company-input" formControlName="companyName" id="companyName" placeholder="Super Laundry & Dry Cleaning - Manama">
@@ -23,8 +23,8 @@
 				<div class="col-9">
 					<div class="row">
 						<div class="btn-group tax-flex">
-							<button class="btn tax-no mb-2" [ngClass]="{ 'active': exform.get('haveTax') }" type="button" (click)="toggleHaveTax(true)">YES</button>
-							<button class="btn tax-no mb-2" [ngClass]="{ 'active': !exform.get('haveTax') }" type="button" (click)="toggleHaveTax(false)">NO</button>
+							<button class="btn tax-no mb-2" [ngClass]="{ 'active': exform.get('haveTax')?.value}" type="button" (click)="toggleHaveTax(true)">YES</button>
+							<button class="btn tax-no mb-2" [ngClass]="{ 'active': !exform.get('haveTax')?.value }" type="button" (click)="toggleHaveTax(false)">NO</button>
 						</div>
 					</div>
 				</div>
