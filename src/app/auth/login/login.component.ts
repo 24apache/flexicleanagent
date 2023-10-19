@@ -13,8 +13,8 @@ import { UserModel } from "../../models/user.model";
 })
 export class LoginComponent implements OnInit, OnDestroy {
 	defaultAuth: any = {
-		email: '24apache@gmail.com',
-		password: '123456',
+		email: '',
+		password: '',
 	};
 	loginForm!: FormGroup; // Add ! to indicate it will be initialized later
 	hasError!: boolean; // Add ! to indicate it will be initialized later
