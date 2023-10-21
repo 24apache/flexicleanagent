@@ -1,1 +1,31 @@
-<p>stats works!</p>
+
+    <div class="row mt-2">
+        <div class="col-md-6 mt-3 mb-3">
+            <div class="row chartForm">
+                <div class="col-4">
+                    <select class="form-select select-all" id="validationDefault04" required>
+                        <option selected disabled value="">FROM </option>
+                        <option>ONE</option>
+                        <option>TOW</option>
+                        <option>THREE</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <select class="form-select select-all" id="validationDefault04" required>
+                        <option selected disabled value="">FROM </option>
+                        <option>ONE</option>
+                        <option>TOW</option>
+                        <option>THREE</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <input type="text" value="" placeholder="Search" class="form-control chartSearch">
+                </div>
+            </div>
+            <app-barchart></app-barchart>
+        </div>
+
+        <div class="col-md-6 mb-3 mt-3">
+            <app-linechart></app-linechart>
+        </div>
+    </div>

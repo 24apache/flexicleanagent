@@ -64,6 +64,9 @@ import { PayoutComponent } from "./components/wallet/payout/payout.component";
 import { TransactionComponent } from "./components/wallet/transaction/transaction.component";
 import { WalletComponent } from "./components/wallet/wallet.component";
 import { UserService } from "./services/user.service";
+import { HighchartsChartModule } from "highcharts-angular";
+import { BarchartComponent } from './components/reports/stats/barchart/barchart.component';
+import { LinechartComponent } from './components/reports/stats/linechart/linechart.component';
 
 function appInitializer(userService: UserService) {
   return () => {
@@ -135,12 +138,15 @@ function appInitializer(userService: UserService) {
     PreviewPaymentComponent,
     PreviewDetailComponent,
     CompanySignupComponent,
-    AlertComponent
+    AlertComponent,
+    BarchartComponent,
+    LinechartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HighchartsChartModule,
     ReactiveFormsModule,
     HttpClientModule,
 	FormsModule

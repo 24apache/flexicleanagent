@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                         <label class="login-head">Confirm Password</label>
                                         <input formControlName="cPassword" type="password" class="form-control form-control-user poppins-medium" placeholder="Confirm Password">
-                                        <div *ngIf="exform.hasError('passwordMismatch') && (exform.get('password')?.dirty || exform.get('cPassword')?.dirty)" class="text-danger">Passwords do not match.</div>
+                                        <div *ngIf="exform.hasError('passwordMismatch') && (exform.get('password')?.dirty || exform.get('cPassword')?.dirty)" class="text-danger dangerText">Passwords do not match.</div>
                                     </div>
 
                                     <div class="form-group">
