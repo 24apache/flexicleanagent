@@ -36,7 +36,7 @@
 
                                     <div class="form-group">
                                         <label class="login-head">Country</label>
-                                        <select formControlName="country" class="form-select select-category" id="validationCustom04" (change)="getCities()" required>
+                                        <select formControlName="country" class="form-select select-category" id="country" (change)="getCities()" required>
                                           <option selected disabled value="">Select Country</option>
                                           <option *ngFor="let country of countries" [value]="country.id">{{ country.title }}</option>
                                         </select>
@@ -44,7 +44,7 @@
 
                                     <div class="form-group">
                                         <label class="login-head">City</label>
-                                        <select formControlName="city" class="form-select select-category" id="validationCustom04" (change)="getAreas()" required>
+                                        <select formControlName="city" class="form-select select-category" id="city" (change)="getAreas()" required>
                                             <option selected disabled value="">Select City</option>
                                             <option *ngFor="let city of cities" [value]="city.id">{{ city.title }}</option>
                                         </select>
@@ -52,7 +52,7 @@
 
                                     <div class="form-group">
                                         <label class="login-head">Area</label>
-                                        <select formControlName="area" class="form-select select-category" id="validationCustom04" required>
+                                        <select formControlName="area" class="form-select select-category" id="area" required>
                                           <option selected disabled value="">Select Area</option>
                                             <option *ngFor="let area of areas" [value]="area.id">{{ area.title }}</option>
                                         </select>
@@ -62,6 +62,24 @@
                                         <label class="login-head">Zip code</label>
                                         <input formControlName="zipcode" type="text" class="form-control form-control-user poppins-medium" placeholder="Zip Code" required>
                                     </div>
+
+									<!-- <div class="form-group">
+										<div class="dropdown h-100" class="statusDropdownContainer">
+											<a class="btn btn-white dropdown-toggle mb-2 statusFilterDropdown h-100 flex-middle" href="#" role="button"
+												id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="text-truncate">Expert: {{ selectedValue ? selectedValue : 'All' }}</span>
+											</a>
+											<div class="dropdown-menu w-100 pt-0" aria-labelledby="dropdownMenuButton">
+												<input type="text" class="w-100 p-2 searchInput" [value]="searchValue" (input)="filterDropdown($event)">
+
+												<a *ngFor="let option of filteredList; let i = index" class="dropdown-item pointer text-contain"
+													[ngClass]="{ 'alternateBackground': i % 2 == 0 }" (click)="selectValue(option.title)">
+													{{ option.title }}
+												</a>
+												<div *ngIf="filteredList.length <=0" class="text-center text-muted mt-1">No expert found</div>
+											</div>
+										</div>
+									</div> -->
 
                                     <button [disabled]="this.isLoading" (click)="registerCompany()" class="btn btn-login btn-user btn-block mt-5 mb-3" href="javascript:void(0);">Preview Deatils</button>
                                 </form>

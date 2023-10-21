@@ -23,6 +23,10 @@ export class CompanySignupComponent implements OnInit {
 	cities!: City[];
 	areas!: Area[];
 
+	  public selectedValue: string = "";
+	  public searchValue: string = "";
+	  public filteredList!: Country[];
+
 	constructor(private fb: FormBuilder, private router: Router, private userServ: UserService, private commonServ: CommonService) {}
 
 	ngOnInit() {
@@ -37,6 +41,22 @@ export class CompanySignupComponent implements OnInit {
 			zipcode: ['', [Validators.required]],
 		});
 	}
+
+	filterDropdown(event: any) {
+		const searchString = event.target['value'].toLowerCase();
+		window.scrollTo(window.scrollX, window.scrollY + 1);
+		if (!searchString) {
+		  this.filteredList = this.countries.slice();
+		  return;
+		} else {
+		  this.filteredList = this.countries.filter((country: { title: string; }) => country.title.toLowerCase().indexOf(searchString) > -1 );
+		}
+		window.scrollTo(window.scrollX, window.scrollY - 1);
+	  }
+
+	  selectValue(name: string) {
+		this.selectedValue = name;
+	  }
 
 	registerCompany() {
 		console.log(this.exform.value);
@@ -98,6 +118,7 @@ export class CompanySignupComponent implements OnInit {
 		this.commonServ.countries().subscribe(
 			(response: apiResponse) => {
 				this.countries = response.data;
+				this.filteredList = response.data;
 				console.log(this.countries);
 			},
 			(error: apiResponse) => {
