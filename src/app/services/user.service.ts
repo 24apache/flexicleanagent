@@ -153,6 +153,42 @@ export class UserService implements OnDestroy {
 		}
 	}
 
+	updateWorkingHours(record: any): Observable<apiResponse> {
+		let httpHeaders = new HttpHeaders({});
+		const auth = this.getAuthFromLocalStorage();
+		if (auth && auth.authToken) {
+			httpHeaders = new HttpHeaders({
+				Authorization: `Bearer ${auth.authToken}`,
+			});
+		}
+
+		return this.http.post<apiResponse>(`${API_ENDPOINT}/working-hours`, record, { headers: httpHeaders }).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+
+	}
+
+	getWorkingHours(): Observable<apiResponse> {
+		let httpHeaders = new HttpHeaders({});
+		const auth = this.getAuthFromLocalStorage();
+		if (auth && auth.authToken) {
+			httpHeaders = new HttpHeaders({
+				Authorization: `Bearer ${auth.authToken}`,
+			});
+		}
+
+		return this.http.get<apiResponse>(`${API_ENDPOINT}/working-hours`, { headers: httpHeaders }).pipe(
+			catchError((errorResponse: HttpErrorResponse) => {
+				const customError: apiResponse = errorResponse.error;
+				return throwError(customError);
+			})
+		);
+
+	}
+
 	ngOnDestroy() {
 		this.unsubscribe.forEach((sb) => sb.unsubscribe());
 	}
